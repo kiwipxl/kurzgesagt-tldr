@@ -3,6 +3,7 @@ const { google } = require('googleapis');
 const { authenticate } = require('@google-cloud/local-auth');
 const transcript = require('./transcript');
 const sources = require('./sources');
+const database = require('./database');
 
 function googleAuthenticate() {
     return new Promise((resolve, reject) => {
@@ -18,3 +19,14 @@ function googleAuthenticate() {
         });
     });
 }
+
+async function init() {
+    try {
+        await database.connect();
+    }
+    catch (err) {
+        console.error('failed to connect to database', err);
+    }
+}
+
+init();
