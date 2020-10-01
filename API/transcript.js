@@ -31,34 +31,24 @@ function loadSubtitleTrack(videoId) {
     return fs.readFileSync(getSubtitlePath(videoId), 'utf8');
 }
 
-function downloadSubtitleTrack(google, videoId) {
-    return new Promise((resolve, reject) => {
-        const youtube = google.youtube('v3');
+async function downloadSubtitleTrack(google, videoId) {
+    const youtube = google.youtube('v3');
 
-        youtube.captions.list({
-            part: ['id', 'snippet'], 
-            videoId: videoId
-        }).then(captionsRes => {
-            const captions = captionsRes.data;
-            let found = false;
-
-            for (const index in captions.items) {
-                const caption = captions.items[index];
-
-                if (caption.snippet.language == 'en') {
-                    found = true;
-
-                    youtube.captions.download({
-                        id: caption.id, 
-                        tfmt: 'srt'
-                    }).then(res => resolve(res.data))
-                    .catch(reject);
-                }
-            }
-
-            if (!found) {
-                reject(new Error('no english subtitles found.'));
-            }
-        }).catch(reject);
+    const captionsListRes = await youtube.captions.list({
+        part: ['id', 'snippet'], 
+        videoId: videoId
     });
+    
+    for (const caption of captionsListRes.data.items) {
+        if (caption.snippet.language == 'en') {
+            const captionsRes = await youtube.captions.download({
+                id: caption.id, 
+                tfmt: 'srt'
+            });
+
+            return captionsRes.data;
+        }
+    }
+
+    throw new Error('no english subtitles found.');
 }
