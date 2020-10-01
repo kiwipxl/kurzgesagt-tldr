@@ -1,7 +1,7 @@
 const request = require('request');
 const cheerio = require('cheerio');
 
-module.exports = (videoId) => {
+module.exports = async (videoId) => {
     return new Promise((resolve, reject) => {
         request('https://sites.google.com/view/sourcesclimateresponsibility', (err, res, body) => {
             if (err) {

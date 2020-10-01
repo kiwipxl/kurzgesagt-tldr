@@ -1,10 +1,9 @@
 const path = require('path');
 const fs = require('fs');
-const youtube = google.youtube('v3');
 
 const UPLOADED_VIDEOS_PLAYLIST_ID = 'UUsXVk37bltHxD1rDPwtNM8Q';
 
-async function processVideos(pageToken) {
+async function processVideos(google, pageToken) {
     const youtube = google.youtube('v3');
 
     console.log('fetching videos on', pageToken, '...');
@@ -27,6 +26,6 @@ async function processVideos(pageToken) {
     console.log('processing videos complete.');
 }
 
-module.exports = async () => {
-    await processVideos(undefined);
+module.exports = async (google) => {
+    await processVideos(google);
 };

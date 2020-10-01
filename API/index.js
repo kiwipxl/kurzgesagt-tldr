@@ -1,9 +1,8 @@
 const path = require('path');
 const { google } = require('googleapis');
 const { authenticate } = require('@google-cloud/local-auth');
-const transcript = require('./transcript');
-const sources = require('./sources');
 const database = require('./database');
+const scrape = require('./scrape/scrape');
 
 function googleAuthenticate() {
     return new Promise((resolve, reject) => {

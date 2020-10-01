@@ -1,10 +1,9 @@
 const path = require('path');
 const fs = require('fs');
-const youtube = google.youtube('v3');
 
 const CHANNEL_ID = 'UCsXVk37bltHxD1rDPwtNM8Q';
 
-module.exports = () => {
+module.exports = async (google) => {
     const youtube = google.youtube('v3');
 
     const playlistsListRes = await youtube.playlists.list({
@@ -26,6 +25,4 @@ module.exports = () => {
             console.log('label:', playlist.snippet.title, 'details:', item.snippet.title, item.snippet.resourceId.videoId);
         }
     }
-
-    throw new Error('no english subtitles found.');
 };
