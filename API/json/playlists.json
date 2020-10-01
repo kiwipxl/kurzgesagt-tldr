@@ -1,0 +1,241 @@
+{
+  "kind": "youtube#playlistListResponse",
+  "etag": "QHep_EpUL2elsxysRtwfzqjfQ98",
+  "nextPageToken": "CAUQAA",
+  "pageInfo": {
+    "totalResults": 7,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#playlist",
+      "etag": "GNaDh5h6-yJn1zPNEeetX9Bxvv0",
+      "id": "PLFs4vir_WsTxontcYm5ctqp89cNBJKNrs",
+      "snippet": {
+        "publishedAt": "2016-10-22T05:16:57Z",
+        "channelId": "UCsXVk37bltHxD1rDPwtNM8Q",
+        "title": "The Existential Crisis Playlist",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/5TbUxGZtwGI/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/5TbUxGZtwGI/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/5TbUxGZtwGI/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/5TbUxGZtwGI/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/5TbUxGZtwGI/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Kurzgesagt – In a Nutshell",
+        "localized": {
+          "title": "The Existential Crisis Playlist",
+          "description": ""
+        }
+      },
+      "contentDetails": {
+        "itemCount": 13
+      }
+    },
+    {
+      "kind": "youtube#playlist",
+      "etag": "FZ7_CQAgTPx6sl6sslJAEXuYAJc",
+      "id": "PLFs4vir_WsTySi9F8v5pvCi6zQj7Cwneu",
+      "snippet": {
+        "publishedAt": "2016-04-19T23:00:13Z",
+        "channelId": "UCsXVk37bltHxD1rDPwtNM8Q",
+        "title": "Human Stuff",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/n3Xv_g3g-mA/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/n3Xv_g3g-mA/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/n3Xv_g3g-mA/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/n3Xv_g3g-mA/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/n3Xv_g3g-mA/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Kurzgesagt – In a Nutshell",
+        "localized": {
+          "title": "Human Stuff",
+          "description": ""
+        }
+      },
+      "contentDetails": {
+        "itemCount": 22
+      }
+    },
+    {
+      "kind": "youtube#playlist",
+      "etag": "0fZqhmgTXj78rCkTyp1BgPD9dOg",
+      "id": "PLFs4vir_WsTyY31efyHdmtp9l7DpR0Wvi",
+      "snippet": {
+        "publishedAt": "2015-03-12T15:42:10Z",
+        "channelId": "UCsXVk37bltHxD1rDPwtNM8Q",
+        "title": "Medicine & Biology",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/BSypUV6QUNw/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/BSypUV6QUNw/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/BSypUV6QUNw/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/BSypUV6QUNw/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/BSypUV6QUNw/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Kurzgesagt – In a Nutshell",
+        "localized": {
+          "title": "Medicine & Biology",
+          "description": ""
+        }
+      },
+      "contentDetails": {
+        "itemCount": 15
+      }
+    },
+    {
+      "kind": "youtube#playlist",
+      "etag": "KuHeXREGfkNUVBzZchnaTpXcx0E",
+      "id": "PLFs4vir_WsTzcfD7ZE8uO3yX-GCKUk9xZ",
+      "snippet": {
+        "publishedAt": "2014-12-20T22:04:12Z",
+        "channelId": "UCsXVk37bltHxD1rDPwtNM8Q",
+        "title": "Our Best Stuff",
+        "description": "New here? Try these.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/UjtOGPJ0URM/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/UjtOGPJ0URM/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/UjtOGPJ0URM/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/UjtOGPJ0URM/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/UjtOGPJ0URM/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Kurzgesagt – In a Nutshell",
+        "localized": {
+          "title": "Our Best Stuff",
+          "description": "New here? Try these."
+        }
+      },
+      "contentDetails": {
+        "itemCount": 13
+      }
+    },
+    {
+      "kind": "youtube#playlist",
+      "etag": "aGqkSMiNM_6uWBM7wxHmkM2bK7o",
+      "id": "PLFs4vir_WsTysVwsTy7hVL89W2MdQtU_k",
+      "snippet": {
+        "publishedAt": "2014-08-27T00:42:30Z",
+        "channelId": "UCsXVk37bltHxD1rDPwtNM8Q",
+        "title": "Futurism",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/uqKGREZs6-w/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/uqKGREZs6-w/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/uqKGREZs6-w/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/uqKGREZs6-w/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/uqKGREZs6-w/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Kurzgesagt – In a Nutshell",
+        "localized": {
+          "title": "Futurism",
+          "description": ""
+        }
+      },
+      "contentDetails": {
+        "itemCount": 12
+      }
+    }
+  ]
+}

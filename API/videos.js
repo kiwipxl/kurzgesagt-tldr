@@ -2,29 +2,31 @@ const path = require('path');
 const fs = require('fs');
 const youtube = google.youtube('v3');
 
-const CHANNEL_ID = 'UCsXVk37bltHxD1rDPwtNM8Q';
+const UPLOADED_VIDEOS_PLAYLIST_ID = 'UUsXVk37bltHxD1rDPwtNM8Q';
 
-module.exports = () => {
+async function processVideos(pageToken) {
     const youtube = google.youtube('v3');
 
-    const captionsListRes = await youtube.captions.list({
+    console.log('fetching videos on', pageToken, '...');
+
+    const playlistItemsRes = await youtube.playlistItems.list({
         part: ['id', 'snippet'], 
-        videoId: videoId
+        maxResults: 25, 
+        pageToken: pageToken, 
+        playlistId: UPLOADED_VIDEOS_PLAYLIST_ID
     });
-    const captionsList = captionsListRes.data;
 
-    for (const index in captionsList.items) {
-        const caption = captionsList.items[index];
-
-        if (caption.snippet.language == 'en') {
-            const captionsRes = await youtube.captions.download({
-                id: caption.id, 
-                tfmt: 'srt'
-            });
-
-            return captionsRes.data;
-        }
+    for (const playlistItem of playlistItemsRes.data.items) {
+        console.log(playlistItem.snippet.title, playlistItem.snippet.thumbnails.maxres.url);
     }
 
-    throw new Error('no english subtitles found.');
+    if (playlistItemsRes.nextPageToken) {
+        await processVideos(playlistItemsRes.nextPageToken);
+    }
+
+    console.log('processing videos complete.');
+}
+
+module.exports = async () => {
+    await processVideos(undefined);
 };
