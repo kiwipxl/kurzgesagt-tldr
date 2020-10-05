@@ -1,5 +1,5 @@
 const scrape_video_info = require('./scrape_video_info');
-const scrape_uploaded_video_list = require('./scrape_uploaded_video_list');
+const scrape_video_list = require('./scrape_video_list');
 const scrape_captions = require('./scrape_captions');
 const scrape_sources = require('./scrape_sources');
 const scrape_playlists = require('./scrape_playlists');
@@ -74,24 +74,23 @@ captions: [
 ], 
 
 scrape_info: {
-    last_scraped_uploaded_video_list: DateTime
+    last_scraped_all_videos_list: DateTime, 
+    last_scraped_new_videos_list: DateTime
 }
 */
 
 module.exports = async (google) => {
     try {
-        // await scrape_uploaded_video_list(google);
+        await scrape_video_list(google);
 
         const videosCursor = database.db().collection('video_info').find({});
         for await (const videoInfo of videosCursor) {
-            // await scrape_video_info(google, videoInfo.id);
+            await scrape_video_info(google, videoInfo.id);
             // await scrape_sources(videoInfo.id);
             await scrape_captions(google, videoInfo.id);
-
-            break;
         }
         
-        // await scrape_playlists(google);
+        await scrape_playlists(google);
     }
     catch (err) {
         console.error(err);

@@ -2,7 +2,7 @@ const database = require('../database');
 
 const CHANNEL_ID = 'UCsXVk37bltHxD1rDPwtNM8Q';
 
-const SCRAPE_FREQUENCY_MINUTES = 60;
+const SCRAPE_FREQUENCY_MINUTES = 60 * 24 * 3;
 
 module.exports = async (google) => {
     const scrapeInfo = await database.db().collection('scrape_info').findOne();

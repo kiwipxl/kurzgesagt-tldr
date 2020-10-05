@@ -18,6 +18,8 @@ async function init() {
         await database.connect();
 
         await scrape(google);
+
+        // TODO: set a timer to continuously scrape every few hours or so
     }
     catch (err) {
         console.error('failed to connect to database', err);

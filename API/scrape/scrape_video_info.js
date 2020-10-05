@@ -1,6 +1,6 @@
 const database = require('../database');
 
-const SCRAPE_FREQUENCY_MINUTES = 60;
+const SCRAPE_FREQUENCY_MINUTES = 60 * 24;
 
 module.exports = async (google, videoId) => {
     const dbVideoInfo = await database.db().collection('video_info').findOne({id: videoId});
@@ -16,7 +16,7 @@ module.exports = async (google, videoId) => {
             return;
         }
     }
-    
+
     const youtube = google.youtube('v3');
 
     console.log('scraping video info for', videoId);

@@ -1,9 +1,11 @@
 const { parseSync, stringifySync } = require('subtitle');
 const database = require('../database');
 
+const SCRAPE_FREQUENCY_MINUTES = 60 * 24 * 5;
+
 module.exports = async (google, videoId) => {
     const dbCaptions = await database.db().collection('captions').findOne({id: videoId});
-    
+
     if (dbCaptions && dbCaptions.last_scraped) {
         const timeSinceLastScrape = Date.now() - dbCaptions.last_scraped;
         if (timeSinceLastScrape < (SCRAPE_FREQUENCY_MINUTES * 60 * 1000)) {
