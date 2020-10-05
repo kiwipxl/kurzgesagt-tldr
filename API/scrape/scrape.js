@@ -93,6 +93,10 @@ module.exports = async (google) => {
         await scrape_playlists(google);
     }
     catch (err) {
-        console.error(err);
+        if (err.errors && err.errors[0].reason == 'quotaExceeded') {
+            console.error('scrape failed: youtube api quota exceeded. try again in 24h');
+        }else {
+            console.error('scrape failed', err);
+        }
     }
 };
