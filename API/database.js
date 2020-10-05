@@ -1,15 +1,18 @@
 const { MongoClient } = require('mongodb');
 
-const uri = 'mongodb+srv://<username>:<password>@<your-cluster-url>/test?retryWrites=true&w=majority';
-const client = new MongoClient(uri);
+const uri = 'mongodb+srv://admin:admin_password@kurzgesagt-tldr.u4ny2.mongodb.net/kurzgesagt-tldr?retryWrites=true&w=majority';
+const client = new MongoClient(uri, {
+    useUnifiedTopology: true
+});
+let database;
 
 async function connect() {
     await client.connect();
 
-    const list = await client.db().admin().listDatabases();
-    list.databases.forEach(db => console.log(db));
+    database = client.db('kurzgesagt-tldr');
 }
 
 module.exports = {
-    connect: connect
+    connect: connect, 
+    db: () => database
 };

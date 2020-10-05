@@ -2,19 +2,32 @@ const path = require('path');
 const fs = require('fs');
 const { parseSync, stringifySync } = require('subtitle');
 
+function generateTranscript() {
+    let transcript = '';
+
+    let captions = parseSync(srtString);
+    for (const caption of captions) {
+        transcript += caption.data.text + ' ';
+    }
+
+    transcript = transcript.replace(/\n/g, ' ');
+    transcript = transcript.replace(/\.^ /g, '. ');
+
+    return transcript;
+}
+
 module.exports = async (google, videoId) => {
-    let srtString = loadSubtitleTrack(videoId);
+    let srtString = loadCaptionsTrack(videoId);
     if (!srtString) {
-        srtString = await downloadSubtitleTrack(google, videoId);
-        await fs.writeFile(getSubtitlePath(videoId));
+        srtString = await downloadCaptionsTrack(google, videoId);
+        await fs.writeFile(getCaptionsPath(videoId));
     }
 
     let transcript = '';
 
-    let subtitles = parseSync(srtString);
-    for (const index in subtitles) {
-        const subtitle = subtitles[index];
-        transcript += subtitle.data.text + ' ';
+    let captions = parseSync(srtString);
+    for (const caption of captions) {
+        transcript += caption.data.text + ' ';
     }
 
     transcript = transcript.replace(/\n/g, ' ');
@@ -23,15 +36,15 @@ module.exports = async (google, videoId) => {
     return transcript;
 };
 
-function getSubtitlePath(videoId) {
+function getCaptionsPath(videoId) {
     return path.combine(__dirname, './' + videoId + '/captions.srt');
 }
 
-function loadSubtitleTrack(videoId) {
-    return fs.readFileSync(getSubtitlePath(videoId), 'utf8');
+function loadCaptionsTrack(videoId) {
+    return fs.readFileSync(getCaptionsPath(videoId), 'utf8');
 }
 
-async function downloadSubtitleTrack(google, videoId) {
+async function downloadCaptionsTrack(google, videoId) {
     const youtube = google.youtube('v3');
 
     const captionsListRes = await youtube.captions.list({
@@ -50,5 +63,5 @@ async function downloadSubtitleTrack(google, videoId) {
         }
     }
 
-    throw new Error('no english subtitles found.');
+    throw new Error('no english captions track found.');
 }
