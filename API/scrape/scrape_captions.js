@@ -2,20 +2,6 @@ const path = require('path');
 const fs = require('fs');
 const { parseSync, stringifySync } = require('subtitle');
 
-function generateTranscript() {
-    let transcript = '';
-
-    let captions = parseSync(srtString);
-    for (const caption of captions) {
-        transcript += caption.data.text + ' ';
-    }
-
-    transcript = transcript.replace(/\n/g, ' ');
-    transcript = transcript.replace(/\.^ /g, '. ');
-
-    return transcript;
-}
-
 module.exports = async (google, videoId) => {
     let srtString = loadCaptionsTrack(videoId);
     if (!srtString) {
@@ -35,6 +21,20 @@ module.exports = async (google, videoId) => {
 
     return transcript;
 };
+
+function generateTranscript() {
+    let transcript = '';
+
+    let captions = parseSync(srtString);
+    for (const caption of captions) {
+        transcript += caption.data.text + ' ';
+    }
+
+    transcript = transcript.replace(/\n/g, ' ');
+    transcript = transcript.replace(/\.^ /g, '. ');
+
+    return transcript;
+}
 
 function getCaptionsPath(videoId) {
     return path.combine(__dirname, './' + videoId + '/captions.srt');
