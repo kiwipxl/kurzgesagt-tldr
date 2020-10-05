@@ -1,6 +1,43 @@
+const moment = require('moment');
 const database = require('../database');
 
-const SCRAPE_FREQUENCY_MINUTES = 60 * 24;
+const SCRAPE_FREQ = [
+    {
+        daysAgoPublished: { start: 0, end: 7 }, 
+        freqInHours: { start: 8, end: 12 }
+    }, 
+    {
+        daysAgoPublished: { start: 7, end: 30 }, 
+        freqInHours: { start: 12, end: 48 }
+    }, 
+    {
+        daysAgoPublished: { start: 30, end: 30 * 6 }, 
+        freqInHours: { start: 48, end: 24 * 7 }
+    }, 
+    {
+        daysAgoPublished: { start: 30 * 6, end: 30 * 24 }, 
+        freqInHours: { start: 24 * 7, end: 24 * 21 }
+    }
+];
+
+function getRemainingHoursUntilScrape(daysAgoPublished, lastScraped) {
+    if (!lastScraped) {
+        return 0;
+    }
+
+    for (const data of SCRAPE_FREQ) {
+        if (daysAgoPublished >= data.daysAgoPublished.start) {
+            if (daysAgoPublished <= data.daysAgoPublished.end) {
+                const t = (daysAgoPublished - data.daysAgoPublished.start) / (data.daysAgoPublished.end - data.daysAgoPublished.start);
+                const freqInHours = data.freqInHours.start + (data.freqInHours.end - data.freqInHours.start) * t;
+                
+                return freqInHours - moment().diff(moment(lastScraped), 'hours');
+            }
+        }
+    }
+
+    return Number.MAX_SAFE_INTEGER;
+}
 
 module.exports = async (google, videoId) => {
     const dbVideoInfo = await database.db().collection('video_info').findOne({id: videoId});
@@ -8,14 +45,15 @@ module.exports = async (google, videoId) => {
         throw new Error('failed to find video id', videoId);
     }
 
-    if (dbVideoInfo.last_scraped) {
-        const timeSinceLastScrape = Date.now() - dbVideoInfo.last_scraped;
-        if (timeSinceLastScrape < (SCRAPE_FREQUENCY_MINUTES * 60 * 1000)) {
-            const cooldownMinutes = Math.round(SCRAPE_FREQUENCY_MINUTES - (timeSinceLastScrape / 60 / 1000));
-            console.log('skipping video info scrape for ' + videoId + '. can try again in ' + cooldownMinutes + 'm');
-            return;
-        }
+    const daysAgoPublished = moment().diff(moment(dbVideoInfo.publishedAt), 'days');
+    const remainingHoursUntilScrape = getRemainingHoursUntilScrape(daysAgoPublished, dbVideoInfo.last_scraped);
+
+    if (remainingHoursUntilScrape > 0) {
+        console.log('skipping video info scrape for ' + videoId + '. try again ' + moment().add(remainingHoursUntilScrape, 'hours').fromNow());
+        return;
     }
+
+    return;
 
     const youtube = google.youtube('v3');
 

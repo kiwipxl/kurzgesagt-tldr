@@ -4,8 +4,8 @@ const database = require('../database');
 // 'uploads' playlist (channel/contentDetails/relatedPlaylists/uploaded).
 const UPLOADED_VIDEOS_PLAYLIST_ID = 'UUsXVk37bltHxD1rDPwtNM8Q';
 
-const SCRAPE_NEW_VIDEOS_FREQUENCY_MINUTES = 60;
-const SCRAPE_ALL_VIDEOS_FREQUENCY_MINUTES = 60 * 24 * 5;
+const SCRAPE_NEW_VIDEOS_FREQ_MINUTES = 60;
+const SCRAPE_ALL_VIDEOS_FREQ_MINUTES = 60 * 24 * 5;
 
 async function scrapeVideoList(google, pageToken, maxResults) {
     const youtube = google.youtube('v3');
@@ -40,8 +40,8 @@ async function scrapeNewVideos(google) {
     const scrapeInfo = await database.db().collection('scrape_info').findOne();
     if (scrapeInfo && scrapeInfo.last_scraped_new_videos_list) {
         const timeSinceLastScrape = Date.now() - scrapeInfo.last_scraped_new_videos_list;
-        if (timeSinceLastScrape < (SCRAPE_NEW_VIDEOS_FREQUENCY_MINUTES * 60 * 1000)) {
-            const cooldownMinutes = Math.round(SCRAPE_NEW_VIDEOS_FREQUENCY_MINUTES - (timeSinceLastScrape / 60 / 1000));
+        if (timeSinceLastScrape < (SCRAPE_NEW_VIDEOS_FREQ_MINUTES * 60 * 1000)) {
+            const cooldownMinutes = Math.round(SCRAPE_NEW_VIDEOS_FREQ_MINUTES - (timeSinceLastScrape / 60 / 1000));
             console.log('skipping new videos list scrape. can try again in ' + cooldownMinutes + 'm');
             return;
         }
@@ -64,8 +64,8 @@ async function scrapeAllVideos(google) {
     const scrapeInfo = await database.db().collection('scrape_info').findOne();
     if (scrapeInfo && scrapeInfo.last_scraped_all_videos_list) {
         const timeSinceLastScrape = Date.now() - scrapeInfo.last_scraped_all_videos_list;
-        if (timeSinceLastScrape < (SCRAPE_ALL_VIDEOS_FREQUENCY_MINUTES * 60 * 1000)) {
-            const cooldownMinutes = Math.round(SCRAPE_ALL_VIDEOS_FREQUENCY_MINUTES - (timeSinceLastScrape / 60 / 1000));
+        if (timeSinceLastScrape < (SCRAPE_ALL_VIDEOS_FREQ_MINUTES * 60 * 1000)) {
+            const cooldownMinutes = Math.round(SCRAPE_ALL_VIDEOS_FREQ_MINUTES - (timeSinceLastScrape / 60 / 1000));
             console.log('skipping all videos list scrape. can try again in ' + cooldownMinutes + 'm');
             return;
         }
