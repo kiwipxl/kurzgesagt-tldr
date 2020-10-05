@@ -66,12 +66,10 @@ captions: [
     {
         videoId: String, 
         srt: {
-            en: {
-                data: String, 
-                last_scraped: DateTime
-            }
+            en: String
         }, 
         transcript: String
+        last_scraped: DateTime
     }
 ], 
 
@@ -88,10 +86,12 @@ module.exports = async (google) => {
         for await (const videoInfo of videosCursor) {
             // await scrape_video_info(google, videoInfo.id);
             // await scrape_sources(videoInfo.id);
-            // await scrape_captions(google, videoInfo.id);
+            await scrape_captions(google, videoInfo.id);
+
+            break;
         }
         
-        await scrape_playlists(google);
+        // await scrape_playlists(google);
     }
     catch (err) {
         console.error(err);

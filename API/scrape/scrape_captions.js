@@ -1,57 +1,28 @@
-const path = require('path');
-const fs = require('fs');
 const { parseSync, stringifySync } = require('subtitle');
+const database = require('../database');
 
 module.exports = async (google, videoId) => {
-    let srtString = loadCaptionsTrack(videoId);
-    if (!srtString) {
-        srtString = await downloadCaptionsTrack(google, videoId);
-        await fs.writeFile(getCaptionsPath(videoId));
+    const dbCaptions = await database.db().collection('captions').findOne({id: videoId});
+    
+    if (dbCaptions && dbCaptions.last_scraped) {
+        const timeSinceLastScrape = Date.now() - dbCaptions.last_scraped;
+        if (timeSinceLastScrape < (SCRAPE_FREQUENCY_MINUTES * 60 * 1000)) {
+            const cooldownMinutes = Math.round(SCRAPE_FREQUENCY_MINUTES - (timeSinceLastScrape / 60 / 1000));
+            console.log('skipping captions scrape for ' + videoId + '. can try again in ' + cooldownMinutes + 'm');
+            return;
+        }
     }
 
-    let transcript = '';
+    console.log('scraping captions for', videoId);
 
-    let captions = parseSync(srtString);
-    for (const caption of captions) {
-        transcript += caption.data.text + ' ';
-    }
-
-    transcript = transcript.replace(/\n/g, ' ');
-    transcript = transcript.replace(/\.^ /g, '. ');
-
-    return transcript;
-};
-
-function generateTranscript() {
-    let transcript = '';
-
-    let captions = parseSync(srtString);
-    for (const caption of captions) {
-        transcript += caption.data.text + ' ';
-    }
-
-    transcript = transcript.replace(/\n/g, ' ');
-    transcript = transcript.replace(/\.^ /g, '. ');
-
-    return transcript;
-}
-
-function getCaptionsPath(videoId) {
-    return path.combine(__dirname, './' + videoId + '/captions.srt');
-}
-
-function loadCaptionsTrack(videoId) {
-    return fs.readFileSync(getCaptionsPath(videoId), 'utf8');
-}
-
-async function downloadCaptionsTrack(google, videoId) {
     const youtube = google.youtube('v3');
 
     const captionsListRes = await youtube.captions.list({
         part: ['id', 'snippet'], 
         videoId: videoId
     });
-    
+
+    let enSRT;
     for (const caption of captionsListRes.data.items) {
         if (caption.snippet.language == 'en') {
             const captionsRes = await youtube.captions.download({
@@ -59,9 +30,44 @@ async function downloadCaptionsTrack(google, videoId) {
                 tfmt: 'srt'
             });
 
-            return captionsRes.data;
+            enSRT = captionsRes.data;
         }
     }
 
-    throw new Error('no english captions track found.');
+    if (!enSRT) {
+        throw new Error('failed to find english .srt captions track for', videoId);
+    }
+
+    const transcript = generateTranscript(enSRT);
+
+    await database.db().collection('captions').updateOne(
+        { id: videoId }, 
+        {
+            $set: {
+                id: videoId, 
+                captions: {
+                    srt: {
+                        en: enSRT
+                    }
+                }, 
+                transcript: transcript, 
+                last_scraped: Date.now()
+            }
+        }, 
+        { upsert: true }
+    );
+};
+
+function generateTranscript(srt) {
+    let transcript = '';
+
+    let captions = parseSync(srt);
+    for (const caption of captions) {
+        transcript += caption.data.text + ' ';
+    }
+
+    transcript = transcript.replace(/\n/g, ' ');
+    transcript = transcript.replace(/\.^ /g, '. ');
+
+    return transcript;
 }
