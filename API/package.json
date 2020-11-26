@@ -6,6 +6,7 @@
   "dependencies": {
     "@google-cloud/local-auth": "^1.0.0",
     "cheerio": "^1.0.0-rc.3",
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "googleapis": "^60.0.1",
     "moment": "^2.29.0",

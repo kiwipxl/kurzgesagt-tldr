@@ -1,10 +1,13 @@
 const express = require('express');
-const app = express();
+const cors = require('cors');
 const database = require('./database');
 
+const app = express();
 const port = 7800;
 
 module.exports.start = function() {
+    app.use(cors());
+    
     app.get('/', async (req, res) => {
         let startAt = req.query.startAt || 0;
         let maxResults = req.query.maxResults || 5;

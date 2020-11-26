@@ -1,75 +1,30 @@
+import React from 'react';
 import VideoCard from './VideoCard';
 
 export default (props) => {
+  const [items, setItems] = React.useState([]);
+
+  React.useEffect(() => {
+    fetch('http://localhost:7800')
+      .then(res => res.json())
+      .then(json => setItems(json))
+      .catch(err => console.error(err));
+  }, []);
 
   return (
     <div className="video-feed">
-      {/* <div className="video-card-container">
-        <div className="video-card"></div>
-      </div>
-      <div className="video-card-container">
-        <div className="video-card"></div>
-      </div> */}
+      {items.map(video => (
+        <div key={video.id} className="video-feed-card-container">
+          <VideoCard
+            title={video.title}
+            numViews={video.numViews}
+            publishedAt={video.publishedAt}
+            thumbnail={video.thumbnails.maxresUrl}
+          >
 
-      <div className="video-feed-card-container">
-        <VideoCard
-          title="How large can a bacteria get? Life & Size 3"
-          numViews={100}
-          thumbnail="https://i.ytimg.com/vi/wbR-5mHI6bo/maxresdefault.jpg"
-        >
-
-        </VideoCard>
-      </div>
-
-      <div className="video-feed-card-container">
-        <VideoCard
-          title="How large can a bacteria get? Life & Size 3"
-          numViews={100}
-          thumbnail="https://i.ytimg.com/vi/wbR-5mHI6bo/maxresdefault.jpg"
-        >
-
-        </VideoCard>
-      </div>
-
-      <div className="video-feed-card-container">
-        <VideoCard
-          title="How large can a bacteria get? Life & Size 3"
-          numViews={100}
-          thumbnail="https://i.ytimg.com/vi/wbR-5mHI6bo/maxresdefault.jpg"
-        >
-
-        </VideoCard>
-      </div>
-
-      <div className="video-feed-card-container">
-        <VideoCard
-          title="How large can a bacteria get? Life & Size 3"
-          numViews={100}
-          thumbnail="https://i.ytimg.com/vi/wbR-5mHI6bo/maxresdefault.jpg"
-        >
-
-        </VideoCard>
-      </div>
-
-      <div className="video-feed-card-container">
-        <VideoCard
-          title="How large can a bacteria get? Life & Size 3"
-          numViews={100}
-          thumbnail="https://i.ytimg.com/vi/wbR-5mHI6bo/maxresdefault.jpg"
-        >
-
-        </VideoCard>
-      </div>
-
-      <div className="video-feed-card-container">
-        <VideoCard
-          title="How large can a bacteria get? Life & Size 3"
-          numViews={100}
-          thumbnail="https://i.ytimg.com/vi/wbR-5mHI6bo/maxresdefault.jpg"
-        >
-
-        </VideoCard>
-      </div>
+          </VideoCard>
+        </div>
+      ))}
     </div>
   )
 }
