@@ -1,39 +1,42 @@
-.App {
-  text-align: center;
+
+.video-grid-container {
+  margin-left: 10%;
+  margin-right: 10%;
+
+  margin-top: 5%;
+  margin-bottom: 5%;
+
+  padding: 20px;
+  background-color: #eeeeee;
+  border-radius: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  grid-row-gap: 35px;
+  grid-column-gap: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
+.video-grid-card-container {
+
 }
 
-.App-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.video-card {
+  width: 100%;
+  box-shadow: 0px 0px 10px #dddddd;
 }
 
-.App-link {
-  color: rgb(112, 76, 182);
+.video-card-img {
+  /* clip-path: inset(30px 0px 30px 0px);
+  margin-bottom: -30px;
+  margin-top: -30px; */
 }
 
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px)
-  }
-  100% {
-    transform: translateY(0px)
-  }
+.video-card-title {
+
+}
+
+.video-card-info {
+  color: #777777;
 }
