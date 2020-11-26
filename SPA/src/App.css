@@ -1,5 +1,5 @@
 
-.video-grid-container {
+.video-feed-container {
   margin-left: 10%;
   margin-right: 10%;
 
@@ -11,14 +11,14 @@
   border-radius: 20px;
 }
 
-.video-grid {
+.video-feed {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   grid-row-gap: 35px;
-  grid-column-gap: 10px;
+  grid-column-gap: 20px;
 }
 
-.video-grid-card-container {
+.video-feed-card-container {
 
 }
 
