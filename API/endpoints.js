@@ -5,6 +5,10 @@ const database = require('./database');
 const app = express();
 const port = 7800;
 
+async function getInfo(videoId) {
+    return await database.db().collection('video_info').findOne({id: videoId});
+}
+
 async function getSources(videoId) {
     return await database.db().collection('sources').findOne({id: videoId});
 }
@@ -44,6 +48,7 @@ module.exports.start = function() {
         const videoId = req.params.videoId;
 
         res.send({
+            info: await getInfo(videoId), 
             sources: await getSources(videoId), 
             transcript: await getTranscript(videoId), 
             tags: await getTags(videoId)

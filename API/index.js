@@ -12,7 +12,7 @@ async function init() {
         console.error('failed to connect to database', err);
     }
 
-    await transcript.regenerateDatabase();
+    // await transcript.regenerateDatabase();
     
     endpoints.start();
 

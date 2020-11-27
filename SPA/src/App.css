@@ -50,6 +50,10 @@
   grid-column: 1 / -1;
 }
 
+.video-details-title {
+  margin-bottom: 20px;
+}
+
 .transcript-card {
   margin-top: 20px;
 }

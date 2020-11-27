@@ -63,6 +63,10 @@ export default () => {
 
     return (
         <div className="video-feed-container">
+            <h2 className='video-details-title'>
+                {videoDetails.info.title}
+            </h2>
+
             <VideoDetailsNav
                 videoId={videoId}
                 tab={tab}
