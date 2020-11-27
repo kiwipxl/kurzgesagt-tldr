@@ -1,4 +1,5 @@
 import Card from 'react-bootstrap/Card';
+import { DateTime } from 'luxon';
 
 export default (props) => {
     let viewsShortHand;
@@ -12,6 +13,8 @@ export default (props) => {
         viewsShortHand = props.numViews.toString();
     }
 
+    let publishDateFormat = DateTime.fromISO(props.publishedAt).toRelative();
+
     return (
         <Card className="video-card">
         <Card.Img className="video-card-img" variant="top" src={props.thumbnail}/>
@@ -20,7 +23,7 @@ export default (props) => {
             <Card.Title className="video-card-title">{props.title}</Card.Title>
 
             <Card.Text className="video-card-info">
-            {`${viewsShortHand} views | 1 month ago`}
+            {`${viewsShortHand} views | ${publishDateFormat}`}
             </Card.Text>
         </Card.Body>
         </Card>
