@@ -49,3 +49,15 @@
   across ALL rows of the grid so we can center it. */
   grid-column: 1 / -1;
 }
+
+.transcript-card {
+  margin-top: 20px;
+}
+
+.tags-card {
+  margin-top: 20px;
+}
+
+.sources-card {
+  margin-top: 20px;
+}

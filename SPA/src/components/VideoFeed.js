@@ -53,6 +53,7 @@ export default (props) => {
       {items.map(video => (
         <div key={video.id} className="video-feed-card-container">
           <VideoCard
+            id={video.id}
             title={video.title}
             numViews={video.numViews}
             publishedAt={video.publishedAt}

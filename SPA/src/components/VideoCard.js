@@ -16,7 +16,11 @@ export default (props) => {
     let publishDateFormat = DateTime.fromISO(props.publishedAt).toRelative();
 
     return (
-        <Card className="video-card" onClick={props.onClick}>
+        <Card className="video-card" onClick={() => {
+            if (props.onClick) {
+                props.onClick(props.id);
+            }
+        }}>
         <Card.Img className="video-card-img" variant="top" src={props.thumbnail}/>
 
         <Card.Body>

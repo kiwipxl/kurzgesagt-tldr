@@ -4,8 +4,8 @@ import { useHistory } from 'react-router-dom';
 export default () => {
     const routerHistory = useHistory();
 
-    function onVideoClicked() {
-        routerHistory.push('/video');
+    function onVideoClicked(id) {
+        routerHistory.push(`/${id}/sources`);
     }
 
     return (
