@@ -7,10 +7,10 @@ const port = 7800;
 
 module.exports.start = function() {
     app.use(cors());
-    
+
     app.get('/', async (req, res) => {
-        let startAt = req.query.startAt || 0;
-        let maxResults = req.query.maxResults || 5;
+        let startAt = parseInt(req.query.startAt) || 0;
+        let maxResults = parseInt(req.query.maxResults) || 5;
 
         const cursor = await database.db().collection('video_info')
             .find({ title: { $exists: true }})
