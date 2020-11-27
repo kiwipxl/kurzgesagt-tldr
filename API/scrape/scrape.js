@@ -10,7 +10,7 @@ Database model.
 
 video_info: [
     {
-        videoId: String, 
+        id: String, // video id
         publishedAt: DateTime, 
         title: String, 
         description: String, 
@@ -38,7 +38,7 @@ video_info: [
 
 sources: [
     {
-        videoId: String, 
+        id: String, // video id
         url: String, 
         last_scraped: DateTime, 
 
@@ -64,9 +64,11 @@ playlists: [
 
 captions: [
     {
-        videoId: String, 
-        srt: {
-            en: String
+        id: String, // video id
+        captions: {
+            srt: {
+                en: String
+            }
         }, 
         transcript: String
         last_scraped: DateTime

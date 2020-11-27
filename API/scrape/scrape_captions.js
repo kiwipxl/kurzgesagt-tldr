@@ -2,6 +2,7 @@ const { parseSync, stringifySync } = require('subtitle');
 const moment = require('moment');
 const database = require('../database');
 const util = require('./util');
+const transcript = require('../transcript');
 
 const SCRAPE_FREQ_INFO = [
     {
@@ -68,7 +69,7 @@ module.exports = async (google, videoId) => {
         throw new Error('failed to find english .srt captions track for', videoId);
     }
 
-    const transcript = generateTranscript(enSRT);
+    const generatedTranscript = transcript.generate(enSRT);
 
     await database.db().collection('captions').updateOne(
         { id: videoId }, 
@@ -80,24 +81,10 @@ module.exports = async (google, videoId) => {
                         en: enSRT
                     }
                 }, 
-                transcript: transcript, 
+                transcript: generatedTranscript, 
                 last_scraped: Date.now()
             }
         }, 
         { upsert: true }
     );
 };
-
-function generateTranscript(srt) {
-    let transcript = '';
-
-    let captions = parseSync(srt);
-    for (const caption of captions) {
-        transcript += caption.data.text + ' ';
-    }
-
-    transcript = transcript.replace(/\n/g, ' ');
-    transcript = transcript.replace(/\.^ /g, '. ');
-
-    return transcript;
-}

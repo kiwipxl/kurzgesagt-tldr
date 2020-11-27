@@ -27,7 +27,7 @@ module.exports.start = function() {
         let maxResults = parseInt(req.query.maxResults) || 5;
 
         const cursor = await database.db().collection('video_info')
-            .find({ title: { $exists: true }})
+            .find({ title: { $exists: true }})  // ensure our database entry is valid
             .sort({ publishedAt: -1 })
             .limit(maxResults)
             .skip(startAt);

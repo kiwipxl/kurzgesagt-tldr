@@ -2,6 +2,7 @@ const database = require('./database');
 const scrape = require('./scrape/scrape');
 const auth = require('./auth');
 const endpoints = require('./endpoints');
+const transcript = require('./transcript');
 
 async function init() {
     try {
@@ -10,6 +11,8 @@ async function init() {
     catch (err) {
         console.error('failed to connect to database', err);
     }
+
+    await transcript.regenerateDatabase();
     
     endpoints.start();
 
