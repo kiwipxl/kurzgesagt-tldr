@@ -40,3 +40,12 @@
 .video-card-info {
   color: #777777;
 }
+
+.video-feed-spinner {
+  display: flex;
+  justify-content: center;
+
+  /* The video feed uses a grid, so we want to our spinner to span
+  across ALL rows of the grid so we can center it. */
+  grid-column: 1 / -1;
+}

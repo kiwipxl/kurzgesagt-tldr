@@ -1,6 +1,7 @@
 import React from 'react';
 import VideoCard from './VideoCard';
 import queryString from 'query-string';
+import Spinner from 'react-bootstrap/Spinner';
 
 export default (props) => {
   const [items, setItems] = React.useState([]);
@@ -12,9 +13,7 @@ export default (props) => {
     if (!isFetching) {
       return;
     }
-
-    console.log(`fetching from ${items.length}`);
-
+    
     const params = {
       startAt: items.length, 
       maxResults: 10
@@ -63,6 +62,14 @@ export default (props) => {
           </VideoCard>
         </div>
       ))}
+
+      {isFetching && 
+        <div className="video-feed-spinner">
+          <Spinner animation="border" role="status">
+            <span className="sr-only">Loading...</span>
+          </Spinner>
+        </div>
+      }
     </div>
   )
 }
