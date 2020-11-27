@@ -6,7 +6,22 @@ import VideoSources from '../components/VideoSources';
 import VideoTags from '../components/VideoTags';
 
 export default () => {
-    const { videoId, tab } = useParams();
+    const { videoId } = useParams();
+    const defaultTab = 'sources';
+
+    const [tab, setTab] = React.useState(defaultTab);
+
+    if (window.location.hash !== '') {
+        // Override current tab with hash tab (e.g. /video/3mnSDifDSxQ#transcript)
+        const hashTab = window.location.hash.replace('#', '');
+        if (hashTab !== tab) {
+            setTab(hashTab);
+        }
+    }
+
+    function onClickTab(newTab) {
+        setTab(newTab);
+    }
 
     let detailsEl = null;
     switch (tab) {
@@ -25,7 +40,12 @@ export default () => {
 
     return (
         <div className="video-feed-container">
-            <VideoDetailsNav videoId={videoId} defaultTab={tab}>
+            <VideoDetailsNav
+                videoId={videoId}
+                tab={tab}
+                defaultTab={defaultTab}
+                onClickTab={onClickTab}
+            >
 
             </VideoDetailsNav>
 

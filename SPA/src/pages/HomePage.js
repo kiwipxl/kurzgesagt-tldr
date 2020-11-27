@@ -5,7 +5,7 @@ export default () => {
     const routerHistory = useHistory();
 
     function onVideoClicked(id) {
-        routerHistory.push(`/${id}/sources`);
+        routerHistory.push(`/video/${id}`);
     }
 
     return (

@@ -5,15 +5,20 @@ export default (props) => {
     const routerHistory = useHistory();
 
     const onClick = (eventKey) => {
-        routerHistory.push(`/${props.videoId}/${eventKey}`);
+        routerHistory.replace(`/video/${props.videoId}#${eventKey}`);
 
-        if (props.onSwitchTab) {
-            props.onSwitchTab(eventKey);
+        if (props.onClickTab) {
+            props.onClickTab(eventKey);
         }
     };
 
     return (
-        <Nav variant="pills" onSelect={onClick} defaultActiveKey={props.defaultTab}>
+        <Nav
+            variant="pills"
+            onSelect={onClick}
+            activeKey={props.tab || ""}
+            defaultActiveKey={props.defaultTab}
+        >
             <Nav.Item>
                 <Nav.Link eventKey="sources">Sources</Nav.Link>
             </Nav.Item>
