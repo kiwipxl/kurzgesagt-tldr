@@ -13,7 +13,7 @@ export default (props) => {
     if (!isFetching) {
       return;
     }
-    
+
     const params = {
       startAt: items.length, 
       maxResults: 10
@@ -57,6 +57,7 @@ export default (props) => {
             numViews={video.numViews}
             publishedAt={video.publishedAt}
             thumbnail={video.thumbnails.maxresUrl}
+            onClick={props.onVideoClick}
           >
 
           </VideoCard>
