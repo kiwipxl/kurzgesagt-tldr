@@ -1,10 +1,18 @@
 import Card from 'react-bootstrap/Card';
 
-export default () => {
+export default (props) => {
+    console.log(props.tags);
+
     return (
         <Card className='tags-card'>
             <Card.Body>
-                tags
+                <div className='chip-grid'>
+                    {props.tags.map((tag) => (
+                        <div key={tag} className='chip'>
+                            {tag}
+                        </div>
+                    ))}
+                </div>
             </Card.Body>
         </Card>
     );
