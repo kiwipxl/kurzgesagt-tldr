@@ -58,6 +58,7 @@ export default (props) => {
             numViews={video.numViews}
             publishedAt={video.publishedAt}
             thumbnail={video.thumbnails.maxresUrl}
+            duration={video.duration}
             onClick={props.onVideoClick}
           >
 

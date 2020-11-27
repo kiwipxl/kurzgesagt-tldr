@@ -1,7 +1,11 @@
+import React from 'react';
 import Card from 'react-bootstrap/Card';
-import { DateTime } from 'luxon';
+import { DateTime, Duration } from 'luxon';
 
 export default (props) => {
+    const [imgHeight, setImgHeight] = React.useState(0);
+    const imgRef = React.useRef(null);
+
     let viewsShortHand;
     if (props.numViews >= 1000000) {
         viewsShortHand = (Math.round(props.numViews / 1000000 * 10) / 10).toString() + "M";
@@ -13,23 +17,59 @@ export default (props) => {
         viewsShortHand = props.numViews.toString();
     }
 
-    let publishDateFormat = DateTime.fromISO(props.publishedAt).toRelative();
+    const publishDateRelative = DateTime.fromISO(props.publishedAt).toRelative();
+    
+    const duration = Duration.fromISO(props.duration);
+    const durationFormatted = duration.toFormat("hh:mm:ss");
 
+    let durationString = "";
+    let foundStart = false;
+    for (let char of durationFormatted) {
+        if (char != '0' && char != ':') {
+            foundStart = true;
+        }
+
+        if (foundStart) {
+            durationString += char;
+        }
+    }
+
+    // We need to watch when the image height changes (e.g. everytime the window size changes)
+    // so that we can offset our duration based on it.
+    const resizeObserver = new ResizeObserver(entries => {
+        setImgHeight(entries[0].target.clientHeight);
+    });
+
+    React.useEffect(() => {
+        resizeObserver.observe(imgRef.current);
+
+        return () => resizeObserver.unobserve(imgRef.current);
+    }, []);
+    
     return (
         <Card className="video-card" onClick={() => {
             if (props.onClick) {
                 props.onClick(props.id);
             }
         }}>
-        <Card.Img className="video-card-img" variant="top" src={props.thumbnail}/>
+            <Card.Img ref={imgRef} className="video-card-img" variant="top" src={props.thumbnail}/>
+            
+            {/*
+            Because Card.Img is a void element, it cannot have children.
+            And so how do we position our duration at the bottom of the image?
+            Here's an odd way - let's calculate the image height and offset it dynamically.
+            */}
+            <div className='video-card-duration' style={{top: `calc(${imgHeight}px - 1.5em - 8px)`}}>
+                {durationString}
+            </div>
 
-        <Card.Body>
-            <Card.Title className="video-card-title">{props.title}</Card.Title>
+            <Card.Body>
+                <Card.Title className="video-card-title">{props.title}</Card.Title>
 
-            <Card.Text className="video-card-info">
-            {`${viewsShortHand} views | ${publishDateFormat}`}
-            </Card.Text>
-        </Card.Body>
+                <Card.Text className="video-card-info">
+                {`${viewsShortHand} views | ${publishDateRelative}`}
+                </Card.Text>
+            </Card.Body>
         </Card>
     );
 }
