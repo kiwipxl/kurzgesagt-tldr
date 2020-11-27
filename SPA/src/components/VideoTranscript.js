@@ -1,10 +1,10 @@
 import Card from 'react-bootstrap/Card';
 
-export default () => {
+export default (props) => {
     return (
         <Card className='transcript-card'>
             <Card.Body>
-                transcript
+                {props.transcript}
             </Card.Body>
         </Card>
     );
