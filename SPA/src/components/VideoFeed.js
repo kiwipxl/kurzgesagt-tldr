@@ -16,7 +16,7 @@ export default (props) => {
 
     const params = {
       startAt: items.length, 
-      maxResults: 10
+      maxResults: 12
     };
 
     fetch(`http://localhost:7800/?${queryString.stringify(params)}`)
@@ -29,12 +29,12 @@ export default (props) => {
   }, [isFetching]);
 
   function onScroll(ev) {
-    if (!rootRef.current.firstElementChild) {
+    if (!rootRef.current || !rootRef.current.firstElementChild) {
       return;
     }
 
     const rootRefBottom = rootRef.current.getClientRects()[0].bottom;
-    const cardHeightPadding = 50; // rough value, good enough
+    const cardHeightPadding = 100; // rough value, good enough
     const cardHeight = rootRef.current.firstElementChild.clientHeight + cardHeightPadding;
 
     if (rootRefBottom - cardHeight <= window.innerHeight) {

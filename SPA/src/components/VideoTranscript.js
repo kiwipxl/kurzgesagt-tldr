@@ -3,7 +3,7 @@ import parse from 'html-react-parser';
 
 export default (props) => {
     return (
-        <Card className='transcript-card'>
+        <Card className='video-details-card'>
             <Card.Body>
                 <div>
                     {parse(props.transcript.replaceAll('\n', '<br/>'))}

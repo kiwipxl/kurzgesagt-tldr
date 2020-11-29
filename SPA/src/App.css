@@ -64,15 +64,7 @@
   margin-bottom: 20px;
 }
 
-.transcript-card {
-  margin-top: 20px;
-}
-
-.tags-card {
-  margin-top: 20px;
-}
-
-.sources-card {
+.video-details-card {
   margin-top: 20px;
 }
 
@@ -95,7 +87,11 @@
   border-radius: 20px;
 }
 
-.video-details-spinner {
+.center {
   display: flex;
   justify-content: center;
+}
+
+.youtube-player {
+  padding: 20px;
 }

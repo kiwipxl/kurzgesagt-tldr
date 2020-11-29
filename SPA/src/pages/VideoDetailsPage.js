@@ -5,7 +5,8 @@ import VideoDetailsNav from '../components/VideoDetailsNav';
 import VideoTranscript from '../components/VideoTranscript';
 import VideoSources from '../components/VideoSources';
 import VideoTags from '../components/VideoTags';
-import VideoDescription from '../components/VideoDescription';
+import Video from '../components/Video';
+import VideoSoundTrack from '../components/VideoSoundTrack';
 
 export default () => {
     const { videoId } = useParams();
@@ -40,7 +41,7 @@ export default () => {
     if (isFetching) {
         return (
             <div className="content-container">
-                <Spinner animation="border" role="status" className='video-details-spinner'>
+                <Spinner animation="border" role="status" className='center'>
                     <span className="sr-only">Loading...</span>
                 </Spinner>
             </div>
@@ -49,8 +50,8 @@ export default () => {
 
     let detailsEl = null;
     switch (tab) {
-        case 'description':
-            detailsEl = <VideoDescription description={videoDetails.info.description}></VideoDescription>;
+        case 'video':
+            detailsEl = <Video id={videoDetails.info.id} description={videoDetails.info.description}></Video>;
             break;
 
         case 'sources':
@@ -64,6 +65,9 @@ export default () => {
         case 'tags':
             detailsEl = <VideoTags tags={videoDetails.tags}></VideoTags>;
             break;
+        
+        case 'soundtrack':
+            detailsEl = <VideoSoundTrack></VideoSoundTrack>;
     }
 
     return (

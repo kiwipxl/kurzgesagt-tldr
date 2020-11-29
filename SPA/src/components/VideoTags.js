@@ -2,7 +2,7 @@ import Card from 'react-bootstrap/Card';
 
 export default (props) => {
     return (
-        <Card className='tags-card'>
+        <Card className='video-details-card'>
             <Card.Body>
                 <div className='chip-grid'>
                     {props.tags.map((tag) => (
