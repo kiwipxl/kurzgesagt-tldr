@@ -42,8 +42,6 @@ export default (props) => {
 
     React.useEffect(() => {
         resizeObserver.observe(imgRef.current);
-
-        return () => resizeObserver.unobserve(imgRef.current);
     }, []);
     
     return (

@@ -9,7 +9,7 @@ export default () => {
     }
 
     return (
-      <div className="video-feed-container">
+      <div className="content-container">
         <VideoFeed onVideoClick={onVideoClicked}>
 
         </VideoFeed>

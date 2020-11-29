@@ -1,8 +1,6 @@
 import Card from 'react-bootstrap/Card';
 
 export default (props) => {
-    console.log(props.tags);
-
     return (
         <Card className='tags-card'>
             <Card.Body>

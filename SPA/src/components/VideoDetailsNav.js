@@ -20,6 +20,10 @@ export default (props) => {
             defaultActiveKey={props.defaultTab}
         >
             <Nav.Item>
+                <Nav.Link eventKey="description">Description</Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
                 <Nav.Link eventKey="sources">Sources</Nav.Link>
             </Nav.Item>
 

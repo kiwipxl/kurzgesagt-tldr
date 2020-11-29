@@ -5,10 +5,11 @@ import VideoDetailsNav from '../components/VideoDetailsNav';
 import VideoTranscript from '../components/VideoTranscript';
 import VideoSources from '../components/VideoSources';
 import VideoTags from '../components/VideoTags';
+import VideoDescription from '../components/VideoDescription';
 
 export default () => {
     const { videoId } = useParams();
-    const defaultTab = 'sources';
+    const defaultTab = 'description';
 
     const [tab, setTab] = React.useState(defaultTab);
     const [videoDetails, setVideoDetails] = React.useState({});
@@ -26,8 +27,32 @@ export default () => {
         setTab(newTab);
     }
 
+    React.useEffect(() => {
+        fetch(`http://localhost:7800/video/${videoId}`)
+            .then(res => res.json())
+            .then(json => {
+                setVideoDetails(json);
+                setIsFetching(false);
+            })
+            .catch(err => console.error(err));
+    }, []);
+
+    if (isFetching) {
+        return (
+            <div className="content-container">
+                <Spinner animation="border" role="status" className='video-details-spinner'>
+                    <span className="sr-only">Loading...</span>
+                </Spinner>
+            </div>
+        );
+    }
+
     let detailsEl = null;
     switch (tab) {
+        case 'description':
+            detailsEl = <VideoDescription description={videoDetails.info.description}></VideoDescription>;
+            break;
+
         case 'sources':
             detailsEl = <VideoSources sources={videoDetails.sources}></VideoSources>;
             break;
@@ -41,28 +66,8 @@ export default () => {
             break;
     }
 
-    React.useEffect(() => {
-        fetch(`http://localhost:7800/video/${videoId}`)
-            .then(res => res.json())
-            .then(json => {
-                setVideoDetails(json);
-                setIsFetching(false);
-            })
-            .catch(err => console.error(err));
-    }, []);
-
-    if (isFetching) {
-        return (
-            <div className="video-feed-container">
-                <Spinner animation="border" role="status">
-                    <span className="sr-only">Loading...</span>
-                </Spinner>
-            </div>
-        );
-    }
-
     return (
-        <div className="video-feed-container">
+        <div className="content-container">
             <h2 className='video-details-title'>
                 {videoDetails.info.title}
             </h2>
