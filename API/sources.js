@@ -113,7 +113,5 @@ module.exports.generate = (htmlString) => {
         }
     });
 
-    console.log(keyPoints);
-
     return keyPoints;
 };

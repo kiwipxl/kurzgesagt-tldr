@@ -91,7 +91,7 @@ module.exports = async (google) => {
     try {
         const videosCursor = database.db().collection('video_info').find({});
         for await (const videoInfo of videosCursor) {
-            await scrape_sources(videoInfo.id);
+            await scrape_sources(videoInfo.id, false);
         }
 
         // await scrape_video_list(google);
