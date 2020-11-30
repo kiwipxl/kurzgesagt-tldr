@@ -42,9 +42,15 @@ sources: [
         url: String, 
         last_scraped: DateTime, 
 
-        links: [
+        keyPoints: [
             {
-                title: String
+                title: String, 
+                content: [
+                    {
+                        type: String, 
+                        data: Any
+                    }
+                ]
             }
         ]
     }
@@ -83,16 +89,21 @@ scrape_info: {
 
 module.exports = async (google) => {
     try {
-        await scrape_video_list(google);
-
         const videosCursor = database.db().collection('video_info').find({});
         for await (const videoInfo of videosCursor) {
-            await scrape_video_info(google, videoInfo.id);
-            // await scrape_sources(videoInfo.id);
-            await scrape_captions(google, videoInfo.id);
+            await scrape_sources(videoInfo.id);
         }
+
+        // await scrape_video_list(google);
+
+        // const videosCursor = database.db().collection('video_info').find({});
+        // for await (const videoInfo of videosCursor) {
+        //     await scrape_video_info(google, videoInfo.id);
+        //     await scrape_sources(videoInfo.id);
+        //     await scrape_captions(google, videoInfo.id);
+        // }
         
-        await scrape_playlists(google);
+        // await scrape_playlists(google);
     }
     catch (err) {
         if (err.errors && err.errors[0].reason == 'quotaExceeded') {

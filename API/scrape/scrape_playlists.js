@@ -4,14 +4,16 @@ const CHANNEL_ID = 'UCsXVk37bltHxD1rDPwtNM8Q';
 
 const SCRAPE_FREQ_MINUTES = 60 * 24;
 
-module.exports = async (google) => {
-    const scrapeInfo = await database.db().collection('scrape_info').findOne();
-    if (scrapeInfo && scrapeInfo.last_scraped_playlists) {
-        const timeSinceLastScrape = Date.now() - scrapeInfo.last_scraped_playlists;
-        if (timeSinceLastScrape < (SCRAPE_FREQ_MINUTES * 60 * 1000)) {
-            const cooldownMinutes = Math.round(SCRAPE_FREQ_MINUTES - (timeSinceLastScrape / 60 / 1000));
-            console.log('skipping playlist scraping. can try again in ' + cooldownMinutes + 'm');
-            return;
+module.exports = async (google, useCooldown = true) => {
+    if (useCooldown) {
+        const scrapeInfo = await database.db().collection('scrape_info').findOne();
+        if (scrapeInfo && scrapeInfo.last_scraped_playlists) {
+            const timeSinceLastScrape = Date.now() - scrapeInfo.last_scraped_playlists;
+            if (timeSinceLastScrape < (SCRAPE_FREQ_MINUTES * 60 * 1000)) {
+                const cooldownMinutes = Math.round(SCRAPE_FREQ_MINUTES - (timeSinceLastScrape / 60 / 1000));
+                console.log('skipping playlist scraping. can try again in ' + cooldownMinutes + 'm');
+                return;
+            }
         }
     }
 

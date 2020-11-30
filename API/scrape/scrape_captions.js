@@ -27,10 +27,12 @@ const SCRAPE_FREQ_INFO = [
     }
 ];
 
-module.exports = async (google, videoId) => {
-    const dbVideoInfo = await database.db().collection('video_info').findOne({ id: videoId });
-    if (!dbVideoInfo) {
-        throw new Error('failed to find video id', videoId);
+module.exports = async (google, videoId, useCooldown = true) => {
+    if (useCooldown) {
+        const dbVideoInfo = await database.db().collection('video_info').findOne({ id: videoId });
+        if (!dbVideoInfo) {
+            throw new Error('failed to find video id', videoId);
+        }
     }
     
     const dbCaptions = await database.db().collection('captions').findOne({ id: videoId });

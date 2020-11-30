@@ -25,19 +25,21 @@ const SCRAPE_FREQ_INFO = [
     }
 ];
 
-module.exports = async (google, videoId) => {
-    const dbVideoInfo = await database.db().collection('video_info').findOne({id: videoId});
-    if (!dbVideoInfo) {
-        throw new Error('failed to find video id', videoId);
-    }
+module.exports = async (google, videoId, useCooldown = true) => {
+    if (useCooldown) {
+        const dbVideoInfo = await database.db().collection('video_info').findOne({id: videoId});
+        if (!dbVideoInfo) {
+            throw new Error('failed to find video id', videoId);
+        }
 
-    if (dbVideoInfo.last_scraped) {
-        const daysAgoPublished = moment().diff(moment(dbVideoInfo.publishedAt), 'days');
-        const remainingHoursUntilScrape = util.getRemainingHoursUntilScrape(SCRAPE_FREQ_INFO, daysAgoPublished, dbVideoInfo.last_scraped);
-        
-        if (remainingHoursUntilScrape > 0) {
-            console.log('skipping video info scrape for ' + videoId + '. try again ' + moment().add(remainingHoursUntilScrape, 'hours').fromNow());
-            return;
+        if (dbVideoInfo.last_scraped) {
+            const daysAgoPublished = moment().diff(moment(dbVideoInfo.publishedAt), 'days');
+            const remainingHoursUntilScrape = util.getRemainingHoursUntilScrape(SCRAPE_FREQ_INFO, daysAgoPublished, dbVideoInfo.last_scraped);
+            
+            if (remainingHoursUntilScrape > 0) {
+                console.log('skipping video info scrape for ' + videoId + '. try again ' + moment().add(remainingHoursUntilScrape, 'hours').fromNow());
+                return;
+            }
         }
     }
 
