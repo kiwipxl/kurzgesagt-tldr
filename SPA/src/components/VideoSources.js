@@ -3,22 +3,25 @@ import Card from 'react-bootstrap/Card';
 export default (props) => {
     let renderContent = [];
     for (const keyPoint of props.sources.keyPoints) {
-        renderContent.push(<h4>{keyPoint.title}</h4>);
+        let renderKeyPointContent = [];
+        renderKeyPointContent.push(<h4>{keyPoint.title}</h4>);
 
         for (const content of keyPoint.content) {
             switch (content.type) {
                 case 'text':
-                    renderContent.push(<p>{content.data}</p>);
+                    renderKeyPointContent.push(<p>{content.data}</p>);
                     break;
 
                 case 'citation':
-                    renderContent.push(<a href={content.data.url}>{content.data.title}</a>);
-                    renderContent.push(<br/>);
-                    renderContent.push(<em><span>{content.data.quote}</span></em>);
-                    renderContent.push(<p/>);
+                    renderKeyPointContent.push(<a href={content.data.url}>{content.data.title}</a>);
+                    renderKeyPointContent.push(<br/>);
+                    renderKeyPointContent.push(<em><span>{content.data.quote}</span></em>);
+                    renderKeyPointContent.push(<p/>);
                     break;
             }
         }
+
+        renderContent.push(<div className='sources-key-point'>{renderKeyPointContent}</div>);
     }
 
     return (

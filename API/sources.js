@@ -36,7 +36,7 @@ module.exports.generate = (htmlString) => {
             let text = removeWhitespace($(cursorEl).text());
 
             if (text.startsWith('Quote')) {
-                text = text.replace(/Quote:[ ]*/g, '');
+                text = text.replace(/Quote[:\.][ ]*/g, '');
                 text = text.replace(/["“”]/g, '');
                 citation['quote'] = text;
                 continue;
