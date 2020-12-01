@@ -1,6 +1,5 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import Card from 'react-bootstrap/Card';
 import Spinner from 'react-bootstrap/Spinner';
 import VideoDetailsNav from '../components/VideoDetailsNav';
 import VideoTranscript from '../components/VideoTranscript';
@@ -43,9 +42,11 @@ export default () => {
     if (isFetching) {
         return (
             <div className="content-container">
-                <Spinner animation="border" role="status" className='center'>
-                    <span className="sr-only">Loading...</span>
-                </Spinner>
+                <div className='center'>
+                    <Spinner animation="border" role="status">
+                        <span className="sr-only">Loading...</span>
+                    </Spinner>
+                </div>
             </div>
         );
     }

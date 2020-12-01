@@ -4,7 +4,7 @@ import parse from 'html-react-parser';
 import ReactPlayer from 'react-player/youtube';
 import LastUpdatedTimestamp from './LastUpdatedTimestamp';
 
-// Convert description to HTML elements
+// Quick and easy way to convert description to HTML elements
 function parseDescription(desc) {
     desc = desc.replaceAll("\n", '\n');
     desc = desc.replaceAll(/(.+)/g, (match, paragraph) => {
@@ -13,7 +13,7 @@ function parseDescription(desc) {
 
     const urlRegex = /(http[s]?:\/\/[a-zA-Z0-9\-\*\?\=\&\.\/]+)([ \\n]?)/g;
     desc = desc.replaceAll(urlRegex, (match, url, endChar) => {
-        return `<a href="${url}">${url}</a>` + endChar;
+        return `<a href="${url}" target="_blank">${url}</a>` + endChar;
     });
 
     desc = desc.replaceAll('\n', "<br/>");

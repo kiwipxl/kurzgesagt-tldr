@@ -60,18 +60,20 @@ export default (props) => {
                         colour = colour.alpha(0.5);
 
                         domainTag = 
-                            <span
+                            <a
                                 className='sources-domain-tag'
+                                href={'http://' + domain}
+                                target='_blank'
                                 style={{backgroundColor: colour.hex(), borderColor: borderColour.hex()}}
                             >
                                 {domain}
-                            </span>;
+                            </a>;
                     }
 
                     renderKeyPointContent.push(
                         <span>
                             <span className='sources-number'>{(citationIndex + 1) + '.'}</span>
-                            <a href={content.data.url}>{content.data.title}</a>
+                            <a href={content.data.url} target='_blank'>{content.data.title}</a>
                             {domainTag}
                         </span>
                     );
@@ -89,7 +91,7 @@ export default (props) => {
 
         ++index;
     }
-    
+
     return (
         <div>
             <Card className='video-details-card'>

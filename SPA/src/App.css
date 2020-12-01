@@ -7,8 +7,11 @@
   margin-bottom: 5%;
 
   padding: 20px;
-  background-color: #eeeeee;
-  border-radius: 20px;
+  background-color: rgb(240, 240, 240);
+  border-radius: 15px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(220, 220, 220);
 }
 
 .video-feed {
@@ -25,6 +28,7 @@
 .video-card {
   width: 100%;
   box-shadow: 0px 0px 10px #dddddd;
+  cursor: pointer;
 }
 
 .video-card-img {
@@ -83,8 +87,12 @@
   margin-right: 5px;
   margin-top: 5px;
   margin-bottom: 5px;
-  background-color: #dddddd;
+
+  background-color: rgb(245, 245, 245);
   border-radius: 20px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(180, 180, 180);
 }
 
 .center {
@@ -99,7 +107,7 @@
 .sources-key-point {
   background-color: rgb(245, 245, 245);
   border-radius: 10px;
-  border-color: black;
+  border-color: rgb(180, 180, 180);
   border-style: solid;
   border-width: 1px;
   padding: 15px;
@@ -125,9 +133,17 @@
   border-radius: 5px;
   border-style: solid;
   border-width: 1px;
+
+  color: black;
+}
+
+.sources-domain-tag:hover {
+  color: black;
+  text-decoration: none;
 }
 
 .sources-number {
+  font-size: 0.8em;
   padding-right: 0.5em;
   font-weight: bold;
 }
