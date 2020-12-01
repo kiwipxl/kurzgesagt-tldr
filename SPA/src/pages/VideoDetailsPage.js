@@ -10,7 +10,7 @@ import VideoSoundTrack from '../components/VideoSoundTrack';
 
 export default () => {
     const { videoId } = useParams();
-    const defaultTab = 'description';
+    const defaultTab = 'video';
 
     const [tab, setTab] = React.useState(defaultTab);
     const [videoDetails, setVideoDetails] = React.useState({});

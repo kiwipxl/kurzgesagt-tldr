@@ -1,4 +1,6 @@
 const cheerio = require('cheerio');
+const request = require('request');
+const database = require('../database');
 
 function removeWhitespace(str) {
     return str.replace(/[\t\n\r]/g, '');
@@ -115,3 +117,48 @@ module.exports.generate = (htmlString) => {
 
     return keyPoints;
 };
+
+// Updates the sources in the database for the given video.
+module.exports.updateDB = async (videoId) => {
+    const dbVideoInfo = await database.db().collection('video_info').findOne({id: videoId});
+    if (!dbVideoInfo) {
+        return false;
+    }
+
+    const pattern = /(http[s]?:\/\/sites\.google[a-zA-Z0-9\-\*\?\=\&\.\/]+)/g;
+    const matches = pattern.exec(dbVideoInfo.description);
+    if (matches == null) {
+        return;
+    }
+
+    const url = matches[0];
+
+    await new Promise((resolve, reject) => {
+        request(url, async (err, res, body) => {
+            if (err) {
+                reject(err);
+                return;
+            }
+
+            const keyPoints = module.exports.generate(body);
+
+            await database.db().collection('sources').updateOne(
+                { id: videoId }, 
+                {
+                    $set: {
+                        url: url, 
+                        keyPoints: keyPoints, 
+                        last_scraped: Date.now()
+                    }
+                }, 
+                { upsert: true }
+            );
+
+            resolve();
+        });
+    });
+
+    console.log(`updated sources for video ${videoId}`);
+
+    return true;
+}

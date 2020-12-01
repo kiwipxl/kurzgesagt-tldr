@@ -1,4 +1,4 @@
-const database = require('../database');
+const database = require('../../database');
 
 const CHANNEL_ID = 'UCsXVk37bltHxD1rDPwtNM8Q';
 
@@ -47,8 +47,8 @@ module.exports = async (google, useCooldown = true) => {
             }, 
             { upsert: true }
         );
-
-        console.log('scraping playlist items for', playlist.id);
+        
+        console.log(`scraped playlist items for ${playlist.id}`);
 
         const playlistItemsRes = await youtube.playlistItems.list({
             part: ['id', 'snippet'], 

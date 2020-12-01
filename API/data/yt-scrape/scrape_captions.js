@@ -1,8 +1,6 @@
-const { parseSync, stringifySync } = require('subtitle');
 const moment = require('moment');
-const database = require('../database');
+const database = require('../../database');
 const util = require('./util');
-const transcript = require('../transcript');
 
 const SCRAPE_FREQ_INFO = [
     {
@@ -46,8 +44,6 @@ module.exports = async (google, videoId, useCooldown = true) => {
         }
     }
 
-    console.log('scraping captions for', videoId);
-
     const youtube = google.youtube('v3');
 
     const captionsListRes = await youtube.captions.list({
@@ -70,9 +66,7 @@ module.exports = async (google, videoId, useCooldown = true) => {
     if (!enSRT) {
         throw new Error('failed to find english .srt captions track for', videoId);
     }
-
-    const generatedTranscript = transcript.generate(enSRT);
-
+    
     await database.db().collection('captions').updateOne(
         { id: videoId }, 
         {
@@ -83,10 +77,12 @@ module.exports = async (google, videoId, useCooldown = true) => {
                         en: enSRT
                     }
                 }, 
-                transcript: generatedTranscript, 
+
                 last_scraped: Date.now()
             }
         }, 
         { upsert: true }
     );
+
+    console.log(`scraped captions for video ${videoId}`);
 };

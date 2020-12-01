@@ -1,5 +1,5 @@
 const { parseSync, stringifySync } = require('subtitle');
-const database = require('./database');
+const database = require('../database');
 
 // NOTE: whenever this function changes, you may want to invoke `regenerateDatabase`
 // so that all database entries will be updated with the new changes
@@ -34,30 +34,24 @@ module.exports.generate = (srt) => {
     return paragraphTranscript;
 }
 
-// Regenerates transcripts for every video in the database.
-// Useful whenever the format of the transcript changes for example.
-module.exports.regenerateDatabase = async () => {
-    console.log('regenerating all transcripts in database...');
-
-    const captionsCursor = await database.db().collection('captions').find({});
-    for await (const entry of captionsCursor) {
-        if (!entry.captions.srt || !entry.captions.srt.en) {
-            console.warn(`caption ${entry.id} does not have an SRT entry`)
-            continue;
-        }
-
-        const newTranscript = module.exports.generate(entry.captions.srt.en);
-
-        await database.db().collection('captions').updateOne(
-            { id: entry.id }, 
-            {
-                $set: {
-                    transcript: newTranscript
-                }
-            }, 
-            { upsert: true }
-        );
+// Updates the transcript in the database for the given video.
+module.exports.updateDB = async (videoId) => {
+    const captions = await database.db().collection('captions').findOne({id: videoId});
+    if (!captions.captions.srt || !captions.captions.srt.en) {
+        return false;
     }
 
-    console.log('finished regenerating all transcripts in database!');
+    const newTranscript = module.exports.generate(captions.captions.srt.en);
+
+    await database.db().collection('captions').updateOne(
+        { id: captions.id }, 
+        {
+            $set: {
+                transcript: newTranscript
+            }
+        }, 
+        { upsert: true }
+    );
+
+    console.log(`updated transcript for video ${videoId}`);
 }

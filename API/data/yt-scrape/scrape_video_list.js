@@ -1,4 +1,4 @@
-const database = require('../database');
+const database = require('../../database');
 
 // This was found by fetching the Channel with 'contentDetails' to find the
 // 'uploads' playlist (channel/contentDetails/relatedPlaylists/uploaded).
@@ -49,7 +49,7 @@ async function scrapeNewVideos(google, useCooldown = true) {
         }
     }
 
-    console.log('scraping new videos list...');
+    console.log('scraping new uploaded videos list...');
 
     await scrapeVideoList(google, undefined, 3);
 
@@ -75,7 +75,7 @@ async function scrapeAllVideos(google, useCooldown = true) {
         }
     }
 
-    console.log('scraping all videos list...');
+    console.log('scraping all uploaded videos list...');
 
     let nextPageToken = await scrapeVideoList(google, undefined, 50);
     while (nextPageToken) {

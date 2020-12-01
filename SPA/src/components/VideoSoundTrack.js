@@ -22,7 +22,7 @@ export default (props) => {
                     <ReactPlayer
                         width='100%'
                         height={playerHeight}
-                        url="https://soundcloud.com/epicmountain/stellar-engine"
+                        url="https://bit.ly/347oNcH"
                     />
                 </div>
             </Card.Body>

@@ -1,8 +1,8 @@
 const database = require('./database');
-const scrape = require('./scrape/scrape');
+const scrape = require('./data/yt-scrape/scrape');
 const auth = require('./auth');
 const endpoints = require('./endpoints');
-const transcript = require('./transcript');
+const update_db = require('./data/update_db');
 
 async function init() {
     try {
@@ -12,13 +12,11 @@ async function init() {
         console.error('failed to connect to database', err);
     }
 
-    // require('./scrape/scrape_sources')('3mnSDifDSxQ', false);
-    // await transcript.regenerateDatabase();
-    
-    endpoints.start();
-
+    await update_db();
     // TODO: set a timer to continuously scrape every few hours or so
     // await scrape(auth.google());
+
+    // endpoints.start();
 }
 
 init();

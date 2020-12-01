@@ -1,5 +1,5 @@
 const moment = require('moment');
-const database = require('../database');
+const database = require('../../database');
 const util = require('./util');
 
 const SCRAPE_FREQ_INFO = [
@@ -45,8 +45,6 @@ module.exports = async (google, videoId, useCooldown = true) => {
 
     const youtube = google.youtube('v3');
 
-    console.log('scraping video info for', videoId);
-
     const videoInfoRes = await youtube.videos.list({
         part: ['snippet', 'contentDetails', 'statistics'], 
         id: videoId
@@ -84,4 +82,6 @@ module.exports = async (google, videoId, useCooldown = true) => {
         }, 
         { upsert: true }
     );
+
+    console.log(`scraped video info for video ${videoId}`);
 };
