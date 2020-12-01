@@ -47,7 +47,10 @@ module.exports.updateDB = async (videoId) => {
         { id: captions.id }, 
         {
             $set: {
-                transcript: newTranscript
+                transcript: {
+                    en: newTranscript, 
+                    last_updated: Date.now()
+                }
             }
         }, 
         { upsert: true }

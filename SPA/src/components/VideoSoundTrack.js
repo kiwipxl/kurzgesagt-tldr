@@ -1,6 +1,7 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
 import ReactPlayer from 'react-player/soundcloud';
+import LastUpdatedTimestamp from './LastUpdatedTimestamp';
 
 export default (props) => {
     const [playerHeight, setPlayerHeight] = React.useState(0);
@@ -16,30 +17,22 @@ export default (props) => {
             resizeObserver.observe(playerRef.current);
         }
     }, []);
-
-    if (!props.url) {
-        return (
+    
+    return (
+        <div>
             <Card className='video-details-card'>
                 <Card.Body>
-                    <div className='missing-details'>
-                        No soundtrack could be found for this video. :(
+                    <div ref={playerRef}>
+                        <ReactPlayer
+                            width='100%'
+                            height={playerHeight}
+                            url={props.url}
+                        />
                     </div>
                 </Card.Body>
             </Card>
-        );
-    }
 
-    return (
-        <Card className='video-details-card'>
-            <Card.Body>
-                <div ref={playerRef}>
-                    <ReactPlayer
-                        width='100%'
-                        height={playerHeight}
-                        url={props.url}
-                    />
-                </div>
-            </Card.Body>
-        </Card>
+            <LastUpdatedTimestamp timestampMillis={props.lastUpdated}/>
+        </div>
     );
 };

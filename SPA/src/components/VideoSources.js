@@ -1,5 +1,6 @@
 import Card from 'react-bootstrap/Card';
 import chroma from 'chroma-js';
+import LastUpdatedTimestamp from './LastUpdatedTimestamp';
 
 const domainTagColours = [chroma('#8dd3c7'),chroma('#ffffb3'),chroma('#bebada'),chroma('#fb8072'),chroma('#80b1d3'),chroma('#fdb462'),chroma('#b3de69'),chroma('#fccde5'),chroma('#d9d9d9'),chroma('#bc80bd'),chroma('#ccebc5'),chroma('#ffed6f')];
 
@@ -88,12 +89,16 @@ export default (props) => {
 
         ++index;
     }
-
+    
     return (
-        <Card className='video-details-card'>
-            <Card.Body>
-                {renderContent}
-            </Card.Body>
-        </Card>
+        <div>
+            <Card className='video-details-card'>
+                <Card.Body>
+                    {renderContent}
+                </Card.Body>
+            </Card>
+
+            <LastUpdatedTimestamp timestampMillis={props.lastUpdated}/>
+        </div>
     );
 };

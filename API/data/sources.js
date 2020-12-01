@@ -148,7 +148,7 @@ module.exports.updateDB = async (videoId) => {
                     $set: {
                         url: url, 
                         keyPoints: keyPoints, 
-                        last_scraped: Date.now()
+                        last_updated: Date.now()
                     }
                 }, 
                 { upsert: true }

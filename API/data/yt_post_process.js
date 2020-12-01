@@ -18,7 +18,7 @@ async function findSoundTrackUrl(description) {
                 reject(err);
                 return;
             }
-            
+
             resolve(res.request.uri.href);
         });
     });
@@ -38,7 +38,10 @@ module.exports.updateDB = async (videoId) => {
         { id: videoId }, 
         {
             $set: {
-                soundTrackUrl: soundTrackUrl
+                soundtrack: {
+                    url: soundTrackUrl, 
+                    last_updated: Date.now()
+                }
             }
         }, 
         { upsert: true }

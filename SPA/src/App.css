@@ -139,3 +139,11 @@
   background-color: rgb(255, 200, 200);
   padding: 5px;
 }
+
+.last-updated {
+  font-size: 0.9em;
+  color: rgb(80, 80, 80);
+  font-style: italic;
+  position: relative;
+  top: 5px;
+}

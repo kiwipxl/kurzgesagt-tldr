@@ -31,7 +31,8 @@ video_info: [
         numLikes: Number, 
         numDislikes: Number, 
         numComments: Number, 
-        
+        last_scraped: DateTime, 
+
         thumbnails: {
             defaultUrl: String, 
             mediumUrl: String, 
@@ -44,7 +45,12 @@ video_info: [
             String, 
             String, 
             ...
-        ]
+        ], 
+
+        soundtrack: {
+            url: String, 
+            last_updated: DateTime
+        }
     }
 ], 
 
@@ -52,7 +58,7 @@ sources: [
     {
         id: String, // video id
         url: String, 
-        last_scraped: DateTime, 
+        last_updated: DateTime, 
 
         keyPoints: [
             {
@@ -83,13 +89,18 @@ playlists: [
 captions: [
     {
         id: String, // video id
+        last_scraped: DateTime
+
         captions: {
             srt: {
                 en: String
             }
         }, 
-        transcript: String
-        last_scraped: DateTime
+
+        transcript: {
+            en: String, 
+            last_updated: DateTime
+        }
     }
 ], 
 

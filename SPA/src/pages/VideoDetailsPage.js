@@ -1,5 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
+import Card from 'react-bootstrap/Card';
 import Spinner from 'react-bootstrap/Spinner';
 import VideoDetailsNav from '../components/VideoDetailsNav';
 import VideoTranscript from '../components/VideoTranscript';
@@ -7,6 +8,7 @@ import VideoSources from '../components/VideoSources';
 import VideoTags from '../components/VideoTags';
 import Video from '../components/Video';
 import VideoSoundTrack from '../components/VideoSoundTrack';
+import MissingDetails from '../components/MissingDetails';
 
 export default () => {
     const { videoId } = useParams();
@@ -48,26 +50,63 @@ export default () => {
         );
     }
 
+    const hasSources = videoDetails.sources != undefined;
+    const hasTranscript = videoDetails.transcript != undefined;
+    const hasSoundTrack = videoDetails.info.soundtrack != undefined;
+
     let detailsEl = null;
     switch (tab) {
         case 'video':
-            detailsEl = <Video id={videoDetails.info.id} description={videoDetails.info.description}></Video>;
+            detailsEl = 
+                <Video
+                    id={videoDetails.info.id}
+                    description={videoDetails.info.description}
+                    lastUpdated={videoDetails.info.last_scraped}
+                />;
             break;
 
         case 'sources':
-            detailsEl = <VideoSources sources={videoDetails.sources}></VideoSources>;
+            if (hasSources) {
+                detailsEl = 
+                    <VideoSources
+                        sources={videoDetails.sources}
+                        lastUpdated={videoDetails.sources.last_updated}
+                    />;
+            }else {
+                detailsEl = <MissingDetails tab={tab}/>;
+            }
             break;
 
         case 'transcript':
-            detailsEl = <VideoTranscript transcript={videoDetails.transcript}></VideoTranscript>;
+            if (hasTranscript) {
+                detailsEl = 
+                    <VideoTranscript
+                        transcript={videoDetails.transcript.en}
+                        lastUpdated={videoDetails.transcript.last_updated}
+                    />;
+            }else {
+                detailsEl = <MissingDetails tab={tab}/>;
+            }
             break;
         
         case 'tags':
-            detailsEl = <VideoTags tags={videoDetails.tags}></VideoTags>;
+            detailsEl = 
+                <VideoTags
+                    tags={videoDetails.tags}
+                    lastUpdated={videoDetails.info.last_scraped}
+                />;
             break;
         
         case 'soundtrack':
-            detailsEl = <VideoSoundTrack url={videoDetails.info.soundTrackUrl}></VideoSoundTrack>;
+            if (hasSoundTrack) {
+                detailsEl = 
+                    <VideoSoundTrack
+                        url={videoDetails.info.soundtrack.url}
+                        lastUpdated={videoDetails.info.soundtrack.last_updated}
+                    />;
+            }else {
+                detailsEl = <MissingDetails tab={tab}/>;
+            }
     }
 
     return (
@@ -81,6 +120,10 @@ export default () => {
                 tab={tab}
                 defaultTab={defaultTab}
                 onClickTab={onClickTab}
+
+                hasSources={hasSources}
+                hasTranscript={hasTranscript}
+                hasSoundTrack={hasSoundTrack}
             >
 
             </VideoDetailsNav>

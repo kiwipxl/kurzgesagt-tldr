@@ -23,6 +23,17 @@ async function getTags(videoId) {
     return videoInfo.tags;
 }
 
+async function getPlaylists() {
+    let playlists = [];
+
+    const cursor = await database.db().collection('playlists').find({});
+    for await (const playlist of cursor) {
+        playlists.push(playlist);
+    }
+
+    return playlists;
+}
+
 module.exports.start = function() {
     app.use(cors());
 
@@ -71,6 +82,10 @@ module.exports.start = function() {
         const videoId = req.params.videoId;
 
         res.send(await getTags(videoId));
+    });
+
+    app.get('/video/playlists', async (req, res) => {
+        res.send(await getPlaylists());
     });
 
     app.listen(port, () => {

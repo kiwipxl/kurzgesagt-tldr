@@ -2,6 +2,7 @@ import React from 'react';
 import Card from 'react-bootstrap/Card';
 import parse from 'html-react-parser';
 import ReactPlayer from 'react-player/youtube';
+import LastUpdatedTimestamp from './LastUpdatedTimestamp';
 
 // Convert description to HTML elements
 function parseDescription(desc) {
@@ -32,20 +33,24 @@ export default (props) => {
     React.useEffect(() => {
         resizeObserver.observe(playerRef.current);
     }, []);
-
+    
     return (
-        <Card className='video-details-card'>
-            <div ref={playerRef} className='youtube-player'>
-                <ReactPlayer
-                    width='100%'
-                    height={playerHeight}
-                    url={`https://www.youtube.com/watch?v=${props.id}`}
-                />
-            </div>
+        <div>
+            <Card className='video-details-card'>
+                <div ref={playerRef} className='youtube-player'>
+                    <ReactPlayer
+                        width='100%'
+                        height={playerHeight}
+                        url={`https://www.youtube.com/watch?v=${props.id}`}
+                    />
+                </div>
 
-            <Card.Body>
-                {parseDescription(props.description)}
-            </Card.Body>
-        </Card>
+                <Card.Body>
+                    {parseDescription(props.description)}
+                </Card.Body>
+            </Card>
+
+            <LastUpdatedTimestamp timestampMillis={props.lastUpdated}/>
+        </div>
     );
 };

@@ -24,11 +24,11 @@ export default (props) => {
             </Nav.Item>
 
             <Nav.Item>
-                <Nav.Link eventKey="sources">Sources</Nav.Link>
+                <Nav.Link eventKey="sources" disabled={!props.hasSources}>Sources</Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
-                <Nav.Link eventKey="transcript">Transcript</Nav.Link>
+                <Nav.Link eventKey="transcript" disabled={!props.hasTranscript}>Transcript</Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
@@ -36,7 +36,7 @@ export default (props) => {
             </Nav.Item>
 
             <Nav.Item>
-                <Nav.Link eventKey="soundtrack">Soundtrack</Nav.Link>
+                <Nav.Link eventKey="soundtrack" disabled={!props.hasSoundTrack}>Soundtrack</Nav.Link>
             </Nav.Item>
         </Nav>
     );
