@@ -96,6 +96,11 @@ export default (props) => {
         <div>
             <Card className='video-details-card'>
                 <Card.Body>
+                    <p className='sources-title'>
+                        This section is the citations and further reading provided by Kurzgesagt at
+                        <a href={props.sources.url} target='_blank'>{' ' + props.sources.url}</a>
+                    </p>
+
                     {renderContent}
                 </Card.Body>
             </Card>

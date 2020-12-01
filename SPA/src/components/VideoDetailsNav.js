@@ -32,7 +32,7 @@ export default (props) => {
             </Nav.Item>
 
             <Nav.Item>
-                <Nav.Link eventKey="tags">Tags</Nav.Link>
+                <Nav.Link eventKey="tags" disabled={!props.hasTags}>Tags</Nav.Link>
             </Nav.Item>
 
             <Nav.Item>

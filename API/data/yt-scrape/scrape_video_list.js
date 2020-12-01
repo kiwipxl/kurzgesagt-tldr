@@ -24,7 +24,8 @@ async function scrapeVideoList(google, pageToken, maxResults) {
             id: videoId
         });
 
-        if (!videoInfo) {
+        // add new video if it doesn't already exist
+        if (!videoInfo || !videoInfo.title) {
             await database.db().collection('video_info').insertOne({
                 id: videoId
             });
@@ -51,7 +52,7 @@ async function scrapeNewVideos(google, useCooldown = true) {
 
     console.log('scraping new uploaded videos list...');
 
-    await scrapeVideoList(google, undefined, 3);
+    await scrapeVideoList(google, undefined, 5);
 
     await database.db().collection('scrape_info').updateOne(
         {}, 

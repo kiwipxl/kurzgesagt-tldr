@@ -8,7 +8,10 @@ module.exports = async (google) => {
     try {
         await scrape_video_list(google);
 
-        const videosCursor = database.db().collection('video_info').find({});
+        const videosCursor = database.db().collection('video_info')
+            .find({})
+            .sort({publishedAt: -1});
+            
         for await (const videoInfo of videosCursor) {
             await scrape_video_info(google, videoInfo.id);
             // await scrape_captions(google, videoInfo.id);

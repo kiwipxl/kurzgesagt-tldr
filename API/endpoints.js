@@ -15,12 +15,12 @@ async function getSources(videoId) {
 
 async function getTranscript(videoId) {
     const captions = await database.db().collection('captions').findOne({id: videoId});
-    return captions.transcript;
+    return captions ? captions.transcript : {};
 }
 
 async function getTags(videoId) {
     const videoInfo = await database.db().collection('video_info').findOne({id: videoId});
-    return videoInfo.tags;
+    return videoInfo ? videoInfo.tags : {};
 }
 
 async function getPlaylists() {
@@ -84,7 +84,7 @@ module.exports.start = function() {
         res.send(await getTags(videoId));
     });
 
-    app.get('/video/playlists', async (req, res) => {
+    app.get('/playlists', async (req, res) => {
         res.send(await getPlaylists());
     });
 

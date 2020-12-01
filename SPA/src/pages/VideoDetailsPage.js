@@ -52,8 +52,9 @@ export default () => {
     }
 
     const hasSources = videoDetails.sources != undefined;
-    const hasTranscript = videoDetails.transcript != undefined;
+    const hasTranscript = videoDetails.transcript != undefined && videoDetails.transcript.en != undefined;
     const hasSoundTrack = videoDetails.info.soundtrack != undefined;
+    const hasTags = videoDetails.tags != undefined;
 
     let detailsEl = null;
     switch (tab) {
@@ -91,11 +92,15 @@ export default () => {
             break;
         
         case 'tags':
-            detailsEl = 
-                <VideoTags
-                    tags={videoDetails.tags}
-                    lastUpdated={videoDetails.info.last_scraped}
-                />;
+            if (hasTags) {
+                detailsEl = 
+                    <VideoTags
+                        tags={videoDetails.tags}
+                        lastUpdated={videoDetails.info.last_scraped}
+                    />;
+            }else {
+                detailsEl = <MissingDetails tab={tab}/>;
+            }
             break;
         
         case 'soundtrack':
@@ -125,6 +130,7 @@ export default () => {
                 hasSources={hasSources}
                 hasTranscript={hasTranscript}
                 hasSoundTrack={hasSoundTrack}
+                hasTags={hasTags}
             >
 
             </VideoDetailsNav>

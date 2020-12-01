@@ -5,15 +5,15 @@ const util = require('./util');
 const SCRAPE_FREQ_INFO = [
     {
         daysAgoPublished: { start: 0, end: 7 }, 
-        freqInHours: { start: 8, end: 12 }
+        freqInHours: { start: 1, end: 10 }
     }, 
     {
         daysAgoPublished: { start: 7, end: 30 }, 
-        freqInHours: { start: 12, end: 48 }
+        freqInHours: { start: 10, end: 30 }
     }, 
     {
         daysAgoPublished: { start: 30, end: 30 * 6 }, 
-        freqInHours: { start: 48, end: 24 * 7 }
+        freqInHours: { start: 30, end: 24 * 7 }
     }, 
     {
         daysAgoPublished: { start: 30 * 6, end: 30 * 24 }, 

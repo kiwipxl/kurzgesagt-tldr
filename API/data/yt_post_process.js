@@ -19,7 +19,16 @@ async function findSoundTrackUrl(description) {
                 return;
             }
 
-            resolve(res.request.uri.href);
+            let soundcloudUrl = res.request.uri.href;
+
+            // Sometimes the url contains an id at the end of it, which breaks our app's
+            // soundcloud player. So, let's remove that.
+            const lastIndex = soundcloudUrl.lastIndexOf('/');
+            if (soundcloudUrl.substr(lastIndex + 1, 2) === 's-') {
+                soundcloudUrl = soundcloudUrl.substr(0, lastIndex);
+            }
+
+            resolve(soundcloudUrl);
         });
     });
 }

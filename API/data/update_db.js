@@ -5,7 +5,10 @@ const yt_post_process = require('./yt_post_process');
 
 module.exports = async () => {
     try {
-        const videosCursor = database.db().collection('video_info').find({});
+        const videosCursor = database.db().collection('video_info')
+            .find({})
+            .sort({publishedAt: -1});
+            
         for await (const videoInfo of videosCursor) {
             await sources.updateDB(videoInfo.id);
             await transcript.updateDB(videoInfo.id);
