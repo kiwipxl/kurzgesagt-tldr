@@ -67,7 +67,7 @@ export default () => {
             break;
         
         case 'soundtrack':
-            detailsEl = <VideoSoundTrack></VideoSoundTrack>;
+            detailsEl = <VideoSoundTrack url={videoDetails.info.soundTrackUrl}></VideoSoundTrack>;
     }
 
     return (

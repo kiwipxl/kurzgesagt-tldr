@@ -109,3 +109,9 @@
   margin-top: 40px;
   margin-bottom: 40px;
 }
+
+.missing-soundtrack {
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+}

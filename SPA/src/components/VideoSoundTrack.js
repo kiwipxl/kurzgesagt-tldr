@@ -12,8 +12,22 @@ export default (props) => {
     });
 
     React.useEffect(() => {
-        resizeObserver.observe(playerRef.current);
+        if (playerRef.current) {
+            resizeObserver.observe(playerRef.current);
+        }
     }, []);
+
+    if (!props.url) {
+        return (
+            <Card className='video-details-card'>
+                <Card.Body>
+                    <div className='missing-soundtrack'>
+                        No SoundTrack could be found for this video.
+                    </div>
+                </Card.Body>
+            </Card>
+        );
+    }
 
     return (
         <Card className='video-details-card'>
@@ -22,7 +36,7 @@ export default (props) => {
                     <ReactPlayer
                         width='100%'
                         height={playerHeight}
-                        url="https://bit.ly/347oNcH"
+                        url={props.url}
                     />
                 </div>
             </Card.Body>
