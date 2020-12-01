@@ -132,8 +132,10 @@
   font-weight: bold;
 }
 
-.missing-soundtrack {
+.missing-details {
   text-align: center;
   font-size: 1.2em;
   font-weight: bold;
+  background-color: rgb(255, 200, 200);
+  padding: 5px;
 }

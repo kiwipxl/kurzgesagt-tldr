@@ -20,6 +20,18 @@ function getDomainTagColour(domain) {
 }
 
 export default (props) => {
+    if (!props.sources || !props.sources.keyPoints) {
+        return (
+            <Card className='video-details-card'>
+                <Card.Body>
+                    <div className='missing-details'>
+                        No video sources could be found for this video. :(
+                    </div>
+                </Card.Body>
+            </Card>
+        );
+    }
+
     let renderContent = [];
     let index = 0;
     let citationIndex = 0;

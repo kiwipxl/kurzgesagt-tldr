@@ -21,8 +21,8 @@ export default (props) => {
         return (
             <Card className='video-details-card'>
                 <Card.Body>
-                    <div className='missing-soundtrack'>
-                        No SoundTrack could be found for this video.
+                    <div className='missing-details'>
+                        No soundtrack could be found for this video. :(
                     </div>
                 </Card.Body>
             </Card>
