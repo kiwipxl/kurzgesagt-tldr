@@ -11,7 +11,7 @@ function parseDescription(desc) {
         return `<span>${paragraph}</span>`;
     });
 
-    const urlRegex = /(http[s]?:\/\/[a-zA-Z0-9\-\*\?\=\&\.\/]+)([ \\n]?)/g;
+    const urlRegex = /(http[s]?:\/\/[a-zA-Z0-9\-\_\*\?\=\&\.\/]+)([ \\n]?)/g;
     desc = desc.replaceAll(urlRegex, (match, url, endChar) => {
         return `<a href="${url}" target="_blank">${url}</a>` + endChar;
     });

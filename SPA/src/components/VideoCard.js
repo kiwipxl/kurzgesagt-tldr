@@ -43,6 +43,11 @@ export default (props) => {
     React.useEffect(() => {
         resizeObserver.observe(imgRef.current);
     }, []);
+
+    let durationPositionY = 100;
+    if (imgHeight > 0) {
+        durationPositionY = imgHeight - 30;
+    }
     
     return (
         <Card className="video-card" onClick={() => {
@@ -57,7 +62,7 @@ export default (props) => {
             And so how do we position our duration at the bottom of the image?
             Here's an odd way - let's calculate the image height and offset it dynamically.
             */}
-            <div className='video-card-duration' style={{top: `calc(${imgHeight}px - 1.5em - 8px)`}}>
+            <div className='video-card-duration' style={{top: durationPositionY}}>
                 {durationString}
             </div>
 

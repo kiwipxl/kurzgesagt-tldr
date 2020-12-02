@@ -1,18 +1,9 @@
-import VideoFeed from '../components/VideoFeed';
-import { useHistory } from 'react-router-dom';
+import React from 'react';
 
-export default () => {
-    const routerHistory = useHistory();
-
-    function onVideoClicked(id) {
-        routerHistory.push(`/video/${id}`);
-    }
-
+export default (props) => {
     return (
       <div className="content-container">
-        <VideoFeed onVideoClick={onVideoClicked}>
-
-        </VideoFeed>
+          {props.children}
       </div>
     );
 };

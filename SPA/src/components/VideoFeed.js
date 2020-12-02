@@ -4,10 +4,13 @@ import queryString from 'query-string';
 import Spinner from 'react-bootstrap/Spinner';
 
 export default (props) => {
-  const [items, setItems] = React.useState([]);
-  const [isFetching, setIsFetching] = React.useState(true);
-
   const rootRef = React.useRef(null);
+  
+  const [items, setItems] = React.useState(props.items || []);
+  // start fetching immediately if we have no items
+  const [isFetching, setIsFetching] = React.useState(items.length == 0);
+
+  window.scrollY = props.scrollY || 0;
 
   React.useEffect(() => {
     if (!isFetching) {
@@ -59,7 +62,7 @@ export default (props) => {
             publishedAt={video.publishedAt}
             thumbnail={video.thumbnails.maxresUrl}
             duration={video.duration}
-            onClick={props.onVideoClick}
+            onClick={() => props.onVideoClick && props.onVideoClick(video.id, items)}
           >
 
           </VideoCard>

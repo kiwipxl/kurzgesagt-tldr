@@ -21,18 +21,6 @@ function getDomainTagColour(domain) {
 }
 
 export default (props) => {
-    if (!props.sources || !props.sources.keyPoints) {
-        return (
-            <Card className='video-details-card'>
-                <Card.Body>
-                    <div className='missing-details'>
-                        No video sources could be found for this video. :(
-                    </div>
-                </Card.Body>
-            </Card>
-        );
-    }
-
     let renderContent = [];
     let index = 0;
     let citationIndex = 0;
@@ -48,6 +36,8 @@ export default (props) => {
                     break;
 
                 case 'citation':
+                    // Find the domain name of the citation url and create a little
+                    // tag from it that the user can click.
                     const pattern = /(http[s]?:\/\/)?(www\.)?([a-zA-Z0-9\.-]+)\//g;
                     const matches = pattern.exec(content.data.url);
                     
@@ -57,6 +47,7 @@ export default (props) => {
                         const domain = matches[3];
                         let colour = getDomainTagColour(domain);
                         const borderColour = chroma(colour).darken();
+                        const textColour = chroma(colour).darken(2);
                         colour = colour.alpha(0.5);
 
                         domainTag = 
@@ -64,16 +55,23 @@ export default (props) => {
                                 className='sources-domain-tag'
                                 href={'http://' + domain}
                                 target='_blank'
-                                style={{backgroundColor: colour.hex(), borderColor: borderColour.hex()}}
+                                style={{
+                                    backgroundColor: colour.hex(), 
+                                    borderColor: borderColour.hex(), 
+                                    color: textColour.hex()
+                                }}
                             >
                                 {domain}
                             </a>;
                     }
 
+                    // Render citation
                     renderKeyPointContent.push(
-                        <span>
+                        <span className='citation-link'>
                             <span className='sources-number'>{(citationIndex + 1) + '.'}</span>
-                            <a href={content.data.url} target='_blank'>{content.data.title}</a>
+                            <a href={content.data.url} target='_blank'>
+                                {content.data.title ? content.data.title : content.data.url}
+                            </a>
                             {domainTag}
                         </span>
                     );
@@ -96,7 +94,7 @@ export default (props) => {
         <div>
             <Card className='video-details-card'>
                 <Card.Body>
-                    <p className='sources-title'>
+                    <p className='info-box'>
                         This section is the citations and further reading provided by Kurzgesagt at
                         <a href={props.sources.url} target='_blank'>{' ' + props.sources.url}</a>
                     </p>

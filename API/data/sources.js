@@ -55,7 +55,7 @@ module.exports.generate = (htmlString) => {
 
     $('strong').each((index, element) => {
         function isKeyPointTitle(str) {
-            return str.startsWith('–') || str.startsWith('–');
+            return str.startsWith('–') || str.startsWith('-');
         }
 
         let title = removeWhitespace($(element).parent().text());
