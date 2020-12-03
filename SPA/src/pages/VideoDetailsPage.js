@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useHistory } from 'react-router-dom';
 import Spinner from 'react-bootstrap/Spinner';
 import VideoDetailsNav from '../components/VideoDetailsNav';
 import VideoTranscript from '../components/VideoTranscript';
@@ -10,6 +10,24 @@ import VideoSoundTrack from '../components/VideoSoundTrack';
 import MissingDetails from '../components/MissingDetails';
 import Endpoint from '../Endpoint';
 import ErrorMessage from '../components/ErrorMessage';
+
+function DetailsContainer(props) {
+    const routerHistory = useHistory();
+
+    function onBackClick() {
+        routerHistory.goBack();
+    }
+
+    return (
+        <div className='content-container'>
+            <a className='go-back' onClick={onBackClick}>Go Back</a>
+            
+            <div className='content'>
+                {props.children}
+            </div>
+        </div>
+    );
+}
 
 export default () => {
     const { videoId } = useParams();
@@ -47,24 +65,24 @@ export default () => {
 
     if (fetchError) {
         return (
-            <div className="content-container">
+            <DetailsContainer>
                 <ErrorMessage
                     title="There was an error while fetching video details!"
                     details={fetchError.message}
                 />
-            </div>
+            </DetailsContainer>
         );
     }
 
     if (isFetching) {
         return (
-            <div className="content-container">
+            <DetailsContainer>
                 <div className='center'>
                     <Spinner animation="border" role="status">
                         <span className="sr-only">Loading...</span>
                     </Spinner>
                 </div>
-            </div>
+            </DetailsContainer>
         );
     }
 
@@ -133,7 +151,7 @@ export default () => {
     }
 
     return (
-        <div className="content-container">
+        <DetailsContainer>
             <h2 className='video-details-title'>
                 {videoDetails.info.title}
             </h2>
@@ -153,6 +171,6 @@ export default () => {
             </VideoDetailsNav>
 
             {detailsEl}
-        </div>
+        </DetailsContainer>
     );
 };

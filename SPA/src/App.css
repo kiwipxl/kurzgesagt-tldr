@@ -5,7 +5,9 @@
 
   margin-top: 5%;
   margin-bottom: 5%;
+}
 
+.content {
   padding: 30px;
   background-color: rgb(240, 240, 240);
   border-radius: 15px;
@@ -156,6 +158,9 @@
   font-weight: bold;
 }
 
+.citation-link {
+}
+
 .info-box {
   background-color: rgb(250, 250, 200);
   color: rgb(100, 100, 30);
@@ -177,13 +182,18 @@
   padding: 5px;
 }
 
+.go-back {
+  cursor: pointer;
+  font-weight: bold;
+  position: relative;
+  bottom: 10px;
+  font-size: 1.25em;
+}
+
 .last-updated {
   font-size: 0.9em;
   color: rgb(80, 80, 80);
   font-style: italic;
   position: relative;
   top: 5px;
-}
-
-.citation-link {
 }
