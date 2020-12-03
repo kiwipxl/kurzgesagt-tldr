@@ -26,7 +26,7 @@ export default (props) => {
     const playerRef = React.useRef(null);
 
     const resizeObserver = new ResizeObserver(entries => {
-        const aspectRatio = window.innerWidth / window.innerHeight;
+        const aspectRatio = 16.0 / 9.0;
         setPlayerHeight(entries[0].target.clientWidth / aspectRatio);
     });
 

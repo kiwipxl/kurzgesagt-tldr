@@ -2,6 +2,7 @@ import React from 'react';
 import VideoCard from './VideoCard';
 import queryString from 'query-string';
 import Spinner from 'react-bootstrap/Spinner';
+import Endpoint from '../Endpoint';
 
 export default (props) => {
   const rootRef = React.useRef(null);
@@ -9,6 +10,7 @@ export default (props) => {
   const [items, setItems] = React.useState(props.items || []);
   // start fetching immediately if we have no items
   const [isFetching, setIsFetching] = React.useState(items.length == 0);
+  const [lastFetchError, setLastFetchError] = React.useState();
 
   window.scrollY = props.scrollY || 0;
 
@@ -22,13 +24,16 @@ export default (props) => {
       maxResults: 12
     };
 
-    fetch(`http://localhost:7800/?${queryString.stringify(params)}`)
+    fetch(`${Endpoint.url}/?${queryString.stringify(params)}`)
       .then(res => res.json())
       .then(newItems => {
         setItems(items.concat(newItems));
         setIsFetching(false);
       })
-      .catch(err => console.error(err));
+      .catch(err => {
+        console.error('video feed fetch error', err);
+        setLastFetchError(err);
+      });
   }, [isFetching]);
 
   function onScroll(ev) {
@@ -51,23 +56,41 @@ export default (props) => {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
+  // If the initial fetch failed, show error
+  if (lastFetchError && items.length == 0) {
+    return (
+      <div className='missing-details'>
+        There was an error while fetching the video feed!
+      </div>
+    );
+  }
+
   return (
     <div ref={rootRef} className="video-feed">
-      {items.map(video => (
-        <div key={video.id} className="video-feed-card-container">
-          <VideoCard
-            id={video.id}
-            title={video.title}
-            numViews={video.numViews}
-            publishedAt={video.publishedAt}
-            thumbnail={video.thumbnails.maxresUrl}
-            duration={video.duration}
-            onClick={() => props.onVideoClick && props.onVideoClick(video.id, items)}
-          >
+      {items.map(video => {
+        const thumbnail = 
+          video.thumbnails.maxresUrl || 
+          video.thumbnails.standardUrl || 
+          video.thumbnails.highUrl || 
+          video.thumbnails.mediumUrl || 
+          video.thumbnails.defaultUrl;
 
-          </VideoCard>
-        </div>
-      ))}
+        return (
+          <div key={video.id} className="video-feed-card-container">
+            <VideoCard
+              id={video.id}
+              title={video.title}
+              numViews={video.numViews}
+              publishedAt={video.publishedAt}
+              thumbnail={thumbnail}
+              duration={video.duration}
+              onClick={() => props.onVideoClick && props.onVideoClick(video.id, items)}
+            >
+
+            </VideoCard>
+          </div>
+        );
+      })}
 
       {isFetching && 
         <div className="video-feed-spinner">

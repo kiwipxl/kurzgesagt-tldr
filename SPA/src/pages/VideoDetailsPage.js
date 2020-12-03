@@ -8,6 +8,7 @@ import VideoTags from '../components/VideoTags';
 import Video from '../components/Video';
 import VideoSoundTrack from '../components/VideoSoundTrack';
 import MissingDetails from '../components/MissingDetails';
+import Endpoint from '../Endpoint';
 
 export default () => {
     const { videoId } = useParams();
@@ -30,7 +31,7 @@ export default () => {
     }
 
     React.useEffect(() => {
-        fetch(`http://localhost:7800/video/${videoId}`)
+        fetch(`${Endpoint.url}/video/${videoId}`)
             .then(res => res.json())
             .then(json => {
                 setVideoDetails(json);

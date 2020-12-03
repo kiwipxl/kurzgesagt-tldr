@@ -8,8 +8,9 @@ export default (props) => {
     const playerRef = React.useRef(null);
 
     const resizeObserver = new ResizeObserver(entries => {
-        const aspectRatio = window.innerWidth / window.innerHeight;
-        setPlayerHeight(entries[0].target.clientWidth / aspectRatio * 0.5);
+        const aspectRatio = 16.0 / 9.0;
+        const maxHeight = 280;
+        setPlayerHeight(Math.min(entries[0].target.clientWidth / aspectRatio, maxHeight));
     });
 
     React.useEffect(() => {
@@ -17,7 +18,7 @@ export default (props) => {
             resizeObserver.observe(playerRef.current);
         }
     }, []);
-    
+
     return (
         <div>
             <Card className='video-details-card'>

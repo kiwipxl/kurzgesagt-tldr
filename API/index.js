@@ -14,7 +14,7 @@ async function init() {
 
     endpoints.start();
     
-    await update_db();
+    // await update_db();
     // TODO: set a timer to continuously scrape every few hours or so
     // await scrape(auth.google());
 }
