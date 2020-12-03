@@ -5,6 +5,29 @@ import HomePage from './pages/HomePage';
 import VideoDetailsPage from './pages/VideoDetailsPage';
 import NotFoundPage from './pages/NotFoundPage';
 import VideoFeed from './components/VideoFeed';
+import Navbar from 'react-bootstrap/Navbar';
+
+function NavigationBar(props) {
+  const routerHistory = useHistory();
+
+  function onBrandClick() {
+    routerHistory.push('/');
+  }
+
+  return (
+    <div>
+      <Navbar className='navbar' bg='dark' variant='dark' sticky='top'>
+        <Navbar.Brand>
+          <a className='navbar-brand' onClick={onBrandClick}>
+            kurzgesagt-tldr
+          </a>
+        </Navbar.Brand>
+      </Navbar>
+
+      {props.children}
+    </div>
+  )
+}
 
 function AppSwitch() {
   const [feedItems, setFeedItems] = React.useState([]);
@@ -13,7 +36,7 @@ function AppSwitch() {
 
   function onFeedVideoClick(id, items) {
     setFeedItems(items);
-    setFeedScrollY(window.scrollY);
+    setFeedScrollY(window.pageYOffset);
     routerHistory.push(`/video/${id}`);
   }
 
@@ -47,7 +70,9 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <AppSwitch/>
+        <NavigationBar>
+          <AppSwitch/>
+        </NavigationBar>
       </BrowserRouter>
     </div>
   );

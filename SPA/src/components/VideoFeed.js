@@ -13,7 +13,7 @@ export default (props) => {
   const [isFetching, setIsFetching] = React.useState(items.length == 0);
   const [lastFetchError, setLastFetchError] = React.useState();
 
-  window.scrollY = props.scrollY || 0;
+  window.scrollTo(0, props.scrollY || 0);
 
   React.useEffect(() => {
     if (!isFetching) {
