@@ -9,6 +9,7 @@ import Video from '../components/Video';
 import VideoSoundTrack from '../components/VideoSoundTrack';
 import MissingDetails from '../components/MissingDetails';
 import Endpoint from '../Endpoint';
+import ErrorMessage from '../components/ErrorMessage';
 
 export default () => {
     const { videoId } = useParams();
@@ -17,6 +18,7 @@ export default () => {
     const [tab, setTab] = React.useState(defaultTab);
     const [videoDetails, setVideoDetails] = React.useState({});
     const [isFetching, setIsFetching] = React.useState(true);
+    const [fetchError, setFetchError] = React.useState();
 
     if (window.location.hash !== '') {
         // Override current tab with hash tab (e.g. /video/3mnSDifDSxQ#transcript)
@@ -37,8 +39,22 @@ export default () => {
                 setVideoDetails(json);
                 setIsFetching(false);
             })
-            .catch(err => console.error(err));
+            .catch(err => {
+                console.error(`failed to fetch video details for ${videoId}`, err);
+                setFetchError(err);
+            });
     }, []);
+
+    if (fetchError) {
+        return (
+            <div className="content-container">
+                <ErrorMessage
+                    title="There was an error while fetching video details!"
+                    details={fetchError.message}
+                />
+            </div>
+        );
+    }
 
     if (isFetching) {
         return (

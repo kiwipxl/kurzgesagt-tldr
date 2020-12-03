@@ -3,6 +3,7 @@ import VideoCard from './VideoCard';
 import queryString from 'query-string';
 import Spinner from 'react-bootstrap/Spinner';
 import Endpoint from '../Endpoint';
+import ErrorMessage from './ErrorMessage';
 
 export default (props) => {
   const rootRef = React.useRef(null);
@@ -59,9 +60,10 @@ export default (props) => {
   // If the initial fetch failed, show error
   if (lastFetchError && items.length == 0) {
     return (
-      <div className='missing-details'>
-        There was an error while fetching the video feed!
-      </div>
+      <ErrorMessage
+        title="There was an error while fetching the video feed!"
+        details={lastFetchError.message}
+      />
     );
   }
 
