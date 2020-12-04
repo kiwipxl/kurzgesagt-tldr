@@ -7,13 +7,17 @@ import ErrorMessage from './ErrorMessage';
 
 export default (props) => {
   const rootRef = React.useRef(null);
+  if (!rootRef || !rootRef.current) {
+    // first time render, let's scroll immediately!
+    // we could put this in useEffect, but that will hapen after render and
+    // there will be a delay as a result.
+    window.scrollTo(0, props.scrollY || 0);
+  }
   
   const [items, setItems] = React.useState(props.items || []);
   // start fetching immediately if we have no items
   const [isFetching, setIsFetching] = React.useState(items.length == 0);
   const [lastFetchError, setLastFetchError] = React.useState();
-
-  window.scrollTo(0, props.scrollY || 0);
 
   React.useEffect(() => {
     if (!isFetching) {

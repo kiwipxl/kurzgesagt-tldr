@@ -5,31 +5,9 @@ import HomePage from './pages/HomePage';
 import VideoDetailsPage from './pages/VideoDetailsPage';
 import NotFoundPage from './pages/NotFoundPage';
 import VideoFeed from './components/VideoFeed';
-import Navbar from 'react-bootstrap/Navbar';
+import Header from './components/Header';
 
-function NavigationBar(props) {
-  const routerHistory = useHistory();
-
-  function onBrandClick() {
-    routerHistory.push('/');
-  }
-
-  return (
-    <div>
-      <Navbar className='navbar' bg='dark' variant='dark' sticky='top'>
-        <Navbar.Brand>
-          <a className='navbar-brand' onClick={onBrandClick}>
-            kurzgesagt-tldr
-          </a>
-        </Navbar.Brand>
-      </Navbar>
-
-      {props.children}
-    </div>
-  )
-}
-
-function AppSwitch() {
+function AppSwitch(props) {
   const [feedItems, setFeedItems] = React.useState([]);
   const [feedScrollY, setFeedScrollY] = React.useState(0);
   const routerHistory = useHistory();
@@ -43,7 +21,7 @@ function AppSwitch() {
   return (
     <Switch>
       <Route exact path="/">
-        <HomePage>
+        <HomePage setHeaderOptions={props.setHeaderOptions}>
           <VideoFeed
             items={feedItems}
             scrollY={feedScrollY}
@@ -54,11 +32,11 @@ function AppSwitch() {
       </Route>
 
       <Route path="/video/:videoId">
-        <VideoDetailsPage></VideoDetailsPage>
+        <VideoDetailsPage setHeaderOptions={props.setHeaderOptions}></VideoDetailsPage>
       </Route>
 
       <Route path="/404">
-        <NotFoundPage></NotFoundPage>
+        <NotFoundPage setHeaderOptions={props.setHeaderOptions}></NotFoundPage>
       </Route>
 
       <Redirect from='*' to='/404'></Redirect>
@@ -67,12 +45,18 @@ function AppSwitch() {
 }
 
 function App() {
+  const [showBackButton, setShowBackButton] = React.useState(false);
+
+  function setHeaderOptions(showBack) {
+    setShowBackButton(showBack);
+  }
+
   return (
     <div className="App">
       <BrowserRouter>
-        <NavigationBar>
-          <AppSwitch/>
-        </NavigationBar>
+        <Header showBack={showBackButton}>
+          <AppSwitch setHeaderOptions={setHeaderOptions}/>
+        </Header>
       </BrowserRouter>
     </div>
   );

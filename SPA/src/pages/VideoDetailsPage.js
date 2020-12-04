@@ -14,22 +14,24 @@ import ErrorMessage from '../components/ErrorMessage';
 function DetailsContainer(props) {
     const routerHistory = useHistory();
 
-    function onBackClick() {
-        routerHistory.goBack();
-    }
-
     return (
         <div className='content-container'>
-            <a className='go-back' onClick={onBackClick}>Go Back</a>
-            
-            <div className='content'>
-                {props.children}
-            </div>
+            {!props.noContentBox &&
+                <div className='content'>
+                    {props.children}
+                </div>
+            }
+
+            {props.noContentBox && 
+                <div>
+                    {props.children}
+                </div>
+            }
         </div>
     );
 }
 
-export default () => {
+export default (props) => {
     const { videoId } = useParams();
     const defaultTab = 'video';
 
@@ -37,6 +39,8 @@ export default () => {
     const [videoDetails, setVideoDetails] = React.useState({});
     const [isFetching, setIsFetching] = React.useState(true);
     const [fetchError, setFetchError] = React.useState();
+
+    props.setHeaderOptions(true);
 
     if (window.location.hash !== '') {
         // Override current tab with hash tab (e.g. /video/3mnSDifDSxQ#transcript)
@@ -65,7 +69,7 @@ export default () => {
 
     if (fetchError) {
         return (
-            <DetailsContainer>
+            <DetailsContainer noContentBox>
                 <ErrorMessage
                     title="There was an error while fetching video details!"
                     details={fetchError.message}
