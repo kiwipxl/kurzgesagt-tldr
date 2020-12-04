@@ -26,27 +26,27 @@ export default (props) => {
 
   return (
     <div>
-        <div className='header'>
-            {props.showBack &&
-              <a onClick={onClickBack} className='header-back'>
-                <IoArrowBack />
-              </a>
-            }
-
-            <a href='/' className='header-brand'>
-                <img
-                    className='header-logo'
-                    src={logo}
-                    alt='logo'
-                />
-
-                <span className='header-logo-text'>kurzgesagt-tldr</span>
+      <div className='header' style={{marginTop: expanded ? 0 : -70}}>
+          {props.showBack &&
+            <a onClick={onClickBack} className='header-back'>
+              <IoArrowBack className='header-back-icon' />
             </a>
+          }
 
-            <a href='https://github.com/kiwipxl/kurzgesagt-tldr' target='_blank' className='header-github'>
-                <VscGithubInverted />
-            </a>
-        </div>
+          <a href='/' className='header-brand'>
+              <img
+                  className='header-logo'
+                  src={logo}
+                  alt='logo'
+              />
+
+              <span className='header-logo-text'>kurzgesagt-tldr</span>
+          </a>
+
+          <a href='https://github.com/kiwipxl/kurzgesagt-tldr' target='_blank' className='header-github'>
+              <VscGithubInverted className='header-github-icon' />
+          </a>
+      </div>
 
       {props.children}
     </div>
