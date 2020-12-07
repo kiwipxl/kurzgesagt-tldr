@@ -53,7 +53,7 @@ function App() {
 
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename='/kurzgesagt-tldr'>
         <Header showBack={showBackButton}>
           <AppSwitch setHeaderOptions={setHeaderOptions}/>
         </Header>
