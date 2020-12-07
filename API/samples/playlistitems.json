@@ -1,0 +1,1000 @@
+{
+  "kind": "youtube#playlistItemListResponse",
+  "etag": "8VnwKeLuIzORFIYZ37pTaJda2Qw",
+  "items": [
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "eYFGnOIM6zvNPHzBLgPonEMjkKM",
+      "id": "UExGczR2aXJfV3NUeVNpOUY4djVwdkNpNnpRajdDd25ldS4zRjM0MkVCRTg0MkYyQTM0",
+      "snippet": {
+        "publishedAt": "2019-05-22T16:04:25Z",
+        "channelId": "UCsXVk37bltHxD1rDPwtNM8Q",
+        "title": "Loneliness",
+        "description": "Everybody feels lonely sometimes. But only few of us are aware how important this feeling was for our ancestors - and that our modern world can turn it into something that really hurts us. Why do we feel this way and what can we do about it?\n\nSources:\nhttps://sites.google.com/view/sourcesloneliness/startseite\n\nBooks mentioned in the endcard:\n'Emotional First Aid' by Guy Winch\nhttps://www.amazon.com/Emotional-First-Aid-Rejection-Everyday/dp/0142181072/\n'Loneliness' by John Cacioppo & William Patrick\nhttps://www.amazon.com/Loneliness-Human-Nature-Social-Connection/dp/0393335283/\n\n\nOUR CHANNELS\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nGerman Channel: https://kgs.link/youtubeDE \nSpanish Channel: https://kgs.link/youtubeES \n\n\nHOW CAN YOU SUPPORT US?\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nThis is how we make our living and it would be a pleasure if you support us!\n\nGet Merch designed with ❤ from https://kgs.link/shop  \nJoin the Patreon Bird Army 🐧 https://kgs.link/patreon  \n\n\nDISCUSSIONS & SOCIAL MEDIA\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nReddit:            https://kgs.link/reddit\nInstagram:     https://kgs.link/instagram\nTwitter:           https://kgs.link/twitter\nFacebook:      https://kgs.link/facebook\nDiscord:          https://kgs.link/discord\nNewsletter:    https://kgs.link/newsletter\n\n\nOUR VOICE\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nThe Kurzgesagt voice is from \nSteve Taylor:  https://kgs.link/youtube-voice\n\n\nOUR MUSIC ♬♪\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\n700+ minutes of Kurzgesagt Soundtracks by Epic Mountain:\n\nSpotify:            https://kgs.link/music-spotify\nSoundcloud:   https://kgs.link/music-soundcloud\nBandcamp:     https://kgs.link/music-bandcamp\nYoutube:          https://kgs.link/music-youtube\nFacebook:       https://kgs.link/music-facebook\n\nThe Soundtrack of this video:\n\nSoundcloud: https://bit.ly/2X3Qezs\nBandcamp: https://bit.ly/2tlrWU3\nYoutube: https://bit.ly/2CZ6PeN\nFacebook: http://bit.ly/2qW6bY4\n\n\n🐦🐧🐤 PATREON BIRD ARMY 🐤🐧🐦\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nMany Thanks to our wonderful Patreons from http://kgs.link/patreon who support us every month and made this video possible:\n\nAleksandra Przytuła, Jemma, Will, 士誠 劉, Vincent Boucart, Tea4ever, Thomas Hogdahl, Gaurav Mathur, Andy Matthews, Tom Ingleby, Phil Crawford, Dannythetwo, Carl Canova, Martin Anderson, Mathieu Langis, tineeetim, Jeongmin Bae, Jarno Verhoofstad, Thomas Auberson, Ethan DeKelver, Enis Zeyrek, Dennis Værum, Matt Miller, Sasha Mamzelev, Dunkel, kartacha, Daniel Miller, Joshua Brost, Kyle Ivin, Erich Onzik, Allison McCarthy, Dejan Cencelj, Bogdan DANCU, Peter Cornell, Francesco Rossetto, Michael Mutarelli, Edward DeCook, Yashasvi Singh, Austin Gilstrap-Turner, Josie Xu, NorgTheSupporter, Carmine D'Amico, Ann Poplick, Ingrid Wong, Andrés\n\nHelp us caption & translate this video!\nhttps://www.youtube.com/timedtext_cs_panel?c=UCsXVk37bltHxD1rDPwtNM8Q&tab=2",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/n3Xv_g3g-mA/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/n3Xv_g3g-mA/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/n3Xv_g3g-mA/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/n3Xv_g3g-mA/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/n3Xv_g3g-mA/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Kurzgesagt – In a Nutshell",
+        "playlistId": "PLFs4vir_WsTySi9F8v5pvCi6zQj7Cwneu",
+        "position": 0,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "n3Xv_g3g-mA"
+        }
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "xjSHhiFFtgfj3Tsp3rwKYCyWDlQ",
+      "id": "UExGczR2aXJfV3NUeVNpOUY4djVwdkNpNnpRajdDd25ldS45NzUwQkI1M0UxNThBMkU0",
+      "snippet": {
+        "publishedAt": "2019-05-22T16:04:25Z",
+        "channelId": "UCsXVk37bltHxD1rDPwtNM8Q",
+        "title": "The Origin of Consciousness – How Unaware Things Became Aware",
+        "description": "Sources and link to book by Rupert Glasgow:\nhttps://sites.google.com/view/sources-consciousness\n\nConsciousness is perhaps the biggest riddle in nature. In the first part of this three part video series, we explore the origins of consciousness and take a closer look on how unaware things became aware.\n\nThis video was made possible by a grant from the Templeton World Charity Foundation.\n\n\nOUR CHANNELS\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nGerman Channel: https://kgs.link/youtubeDE \nSpanish Channel: https://kgs.link/youtubeES \n\n\nHOW CAN YOU SUPPORT US?\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nThis is how we make our living and it would be a pleasure if you support us!\n\nGet Merch designed with ❤ from https://kgs.link/shop  \nJoin the Patreon Bird Army 🐧 https://kgs.link/patreon  \n\n\nDISCUSSIONS & SOCIAL MEDIA\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nReddit:            https://kgs.link/reddit\nInstagram:     https://kgs.link/instagram\nTwitter:           https://kgs.link/twitter\nFacebook:      https://kgs.link/facebook\nDiscord:          https://kgs.link/discord\nNewsletter:    https://kgs.link/newsletter\n\n\nOUR VOICE\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nThe Kurzgesagt voice is from \nSteve Taylor:  https://kgs.link/youtube-voice\n\n\nOUR MUSIC ♬♪\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\n700+ minutes of Kurzgesagt Soundtracks by Epic Mountain:\n\nSpotify:            https://kgs.link/music-spotify\nSoundcloud:   https://kgs.link/music-soundcloud\nBandcamp:     https://kgs.link/music-bandcamp\nYoutube:          https://kgs.link/music-youtube\nFacebook:       https://kgs.link/music-facebook\n\nThe Soundtrack of this video:\n\nSoundcloud: https://bit.ly/2Fbcxwz\nBandcamp: https://bit.ly/2u8Wrx3\nYoutube: https://bit.ly/2CZ6PeN\nFacebook: http://bit.ly/2qW6bY4\n\n\n🐦🐧🐤 PATREON BIRD ARMY 🐤🐧🐦\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nMany Thanks to our wonderful Patreons from http://kgs.link/patreon who support us every month and made this video possible:\n\nBogdan Oleksyshyn, Andrew Zur, Nicholas Kenwrick-Piercy, MossBro333, Harry Turner, Car Bureator, David Hauweele, Austin Travis, Eric Grießbach, Daan Scholten, Charalampos Koundourakis, Artur Herdt, Will Zheng, Bernie Anderson, Martin Laflamme, Wolf Gratz, Daniel Lambert, Edward Salt, Ryder Carroll, Tyler Hamm, Justin Nichol, Adam, Samuel Cahyawijaya, Steffani Silva, Tobias Endrigkeit, Nic Penry, Lansing DeLong, Lei Lei, Zombieff,Alek Grzegorzek, Adam Mata, Ricardo Moreno, Bender Yang, Michael Maroske, Sam Lutfi, Paul Sabatini, James Eugene, Liya Gambaryan, Matt, Rufflik, Jonathan Calhoun, Arminé Saghatelyan, Russel Fausnight, Marek Alexa, Andrew Greenberg, Torje Eriksen, Miklós Molnár, Ahmad, George, Steelheart, Pierre Bengtsson, Alex Zoellner, Jungoh Lu, Ben Claussen, Jeff Fillmore, Fritz Solares, Edgar Kaizawa, Patrik Pärkinen, Luci Morin, Trevor, Erik Johnson, Cameron Ivany, greg z, Sami Seal, Julia Casal, Dan Vicarel, William Fishwick, Karlis Jerins, Alex H., Austin Nader, Alex Willisson, Victor Mercado, Ryan Kist, Andrew Whitley, Maxime Fuchs, Sean, Artem Korenev, Luke Welton, Imre Farkas, Jonas Strube\n\nHelp us caption & translate this video!https://www.youtube.com/timedtext_cs_panel?c=UCsXVk37bltHxD1rDPwtNM8Q&tab=2",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/H6u0VBqNBQ8/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/H6u0VBqNBQ8/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/H6u0VBqNBQ8/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/H6u0VBqNBQ8/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/H6u0VBqNBQ8/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Kurzgesagt – In a Nutshell",
+        "playlistId": "PLFs4vir_WsTySi9F8v5pvCi6zQj7Cwneu",
+        "position": 1,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "H6u0VBqNBQ8"
+        }
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "DJ5Y4xpQ5J-bOwPTzxyINqOMjpc",
+      "id": "UExGczR2aXJfV3NUeVNpOUY4djVwdkNpNnpRajdDd25ldS4yMDhBMkNBNjRDMjQxQTg1",
+      "snippet": {
+        "publishedAt": "2019-05-22T16:04:25Z",
+        "channelId": "UCsXVk37bltHxD1rDPwtNM8Q",
+        "title": "Why Beautiful Things Make us Happy – Beauty Explained",
+        "description": "It’s hard to define what makes something beautiful, but we seem to know beauty when we see it. Why is that and how does beauty affect our subconscious?\n\nThis video was a collaboration with the creative agency Sagmeister & Walsh as a contribution to their upcoming Beauty exhibition at the MAK Vienna from October 23rd onwards. If you want to learn more about the impact of beauty and see tons of gorgeous installations and multi-media objects, go check it out on https://www.mak.at/en_sagmeister_walsh\nThe Beauty exhibition will also be shown in the Museum Angewandte Kunst Frankfurt from May 11th till September 15th.\n\nSources:\nhttps://sites.google.com/view/kgssourcesbeauty/startseite\n\nOUR CHANNELS\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nGerman Channel: https://kgs.link/youtubeDE \nSpanish Channel: https://kgs.link/youtubeES \n\n\nHOW CAN YOU SUPPORT US?\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nThis is how we make our living and it would be a pleasure if you support us!\n\nGet Merch designed with ❤ from https://kgs.link/shop  \nJoin the Patreon Bird Army 🐧 https://kgs.link/patreon  \n\n\nDISCUSSIONS & SOCIAL MEDIA\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nReddit:            https://kgs.link/reddit\nInstagram:     https://kgs.link/instagram\nTwitter:           https://kgs.link/twitter\nFacebook:      https://kgs.link/facebook\nDiscord:          https://kgs.link/discord\nNewsletter:    https://kgs.link/newsletter\n\n\nOUR VOICE\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nThe Kurzgesagt voice is from \nSteve Taylor:  https://kgs.link/youtube-voice\n\n\nOUR MUSIC ♬♪\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\n700+ minutes of Kurzgesagt Soundtracks by Epic Mountain:\n\nSpotify:            https://kgs.link/music-spotify\nSoundcloud:   https://kgs.link/music-soundcloud\nBandcamp:     https://kgs.link/music-bandcamp\nYoutube:          https://kgs.link/music-youtube\nFacebook:       https://kgs.link/music-facebook\n\nThe Soundtrack of this video:\n\nSoundcloud: https://bit.ly/2ytFTlY\nBandcamp: https://bit.ly/2PM9H3N\nFacebook: https://bit.ly/2GIoZlH\n\n\n🐦🐧🐤 PATREON BIRD ARMY 🐤🐧🐦\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nMany Thanks to our wonderful Patreons from http://kgs.link/patreon who support us every month and made this video possible:\n\nColm Foley, Simulation, AndreasEngl, JenDorris, VladFaust, IvanAracki, JackLaw-Warschaw, agadmators_bitch, SamuelBryan, TristanBurgener, CharlotteRobinson, CristiánMéndez, jasonrini, HamishMcDonald, RyanJudy, Quintthekid, MayteeChinavanichkit, GerardoVeltri, EthanCussatt, TheBoomguy64, TillKrüss, MouscadetBenjamin, BalázsSuhajda, GuyStrauss, NathanFish, ArtemChubaryan, HetalSagar, LaurenAtkins, TheBestPessimist, ZdeněkSklář, AxelEssbaum, GeorgeEilender, RohinrajAravindakshan, JackGado, Nicholas, ValentinDuval, LukášHána, IvanHarasymchuk, MarcHadel, OhadRavid, NathanielShafou, TomBristol, MariusTîrcă, MinhHiếu, MisterWow, AlexisHevia, MichaelRootare, SörenPeters, IlkkaSavilampi, Crypton, MassimoFrieri, RyanBrown, johannestoale, WilliamPham, JosephFraser, Dave, ThomasBraud, NevenPintarić, Josiah, Enderchangling, Semnodime, IanHecht, LexSteers, IMysteryI, AndrewBoyer, RyanMcDaniel, LewisZiebarth, Chirag, RamseyElbasheer, DaichuanWu\n\n\nHelp us caption & translate this video!\n\nhttps://www.youtube.com/timedtext_cs_panel?c=UCsXVk37bltHxD1rDPwtNM8Q&tab=2",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/-O5kNPlUV7w/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/-O5kNPlUV7w/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/-O5kNPlUV7w/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/-O5kNPlUV7w/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/-O5kNPlUV7w/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Kurzgesagt – In a Nutshell",
+        "playlistId": "PLFs4vir_WsTySi9F8v5pvCi6zQj7Cwneu",
+        "position": 2,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "-O5kNPlUV7w"
+        }
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "47cvOUQYeEXsuBXbONvO27Z9HEg",
+      "id": "UExGczR2aXJfV3NUeVNpOUY4djVwdkNpNnpRajdDd25ldS4yMUQyQTQzMjRDNzMyQTMy",
+      "snippet": {
+        "publishedAt": "2019-05-22T16:04:25Z",
+        "channelId": "UCsXVk37bltHxD1rDPwtNM8Q",
+        "title": "Plastic Pollution: How Humans are Turning the World into Plastic",
+        "description": "Modern life would be impossible without plastic – but we have long since lost control over our invention. Why has plastic turned into a problem and what do we know about its dangers? \n\nThis video is a collaboration with UN Environment and their Clean Seas campaign, If you want to take action to turn the tide on plastics, go to http://www.cleanseas.org and make your pledge.\n\nWe also partnered with askscience on reddit – on https://bit.ly/2tVU68d you can talk to experts and ask questions about about plastic pollution today!\n\nSources used in the video: https://sites.google.com/view/sourcesplasticpollution/startseite\n\n\nOUR CHANNELS\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nGerman Channel: https://kgs.link/youtubeDE \nSpanish Channel: https://kgs.link/youtubeES \n\n\nHOW CAN YOU SUPPORT US?\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nThis is how we make our living and it would be a pleasure if you support us!\n\nGet Merch designed with ❤ from https://kgs.link/shop  \nJoin the Patreon Bird Army 🐧 https://kgs.link/patreon  \n\n\nDISCUSSIONS & SOCIAL MEDIA\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nReddit:            https://kgs.link/reddit\nInstagram:     https://kgs.link/instagram\nTwitter:           https://kgs.link/twitter\nFacebook:      https://kgs.link/facebook\nDiscord:          https://kgs.link/discord\nNewsletter:    https://kgs.link/newsletter\n\n\nOUR VOICE\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nThe Kurzgesagt voice is from \nSteve Taylor:  https://kgs.link/youtube-voice\n\n\nOUR MUSIC ♬♪\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\n700+ minutes of Kurzgesagt Soundtracks by Epic Mountain:\n\nSpotify:            https://kgs.link/music-spotify\nSoundcloud:   https://kgs.link/music-soundcloud\nBandcamp:     https://kgs.link/music-bandcamp\nYoutube:          https://kgs.link/music-youtube\nFacebook:       https://kgs.link/music-facebook\n\nThe Soundtrack of this video:\n\nSoundcloud: https://bit.ly/2lImPJY\nBandcamp: https://bit.ly/2KFW97C\nFacebook: https://bit.ly/2GIoZlH\n\n\n🐦🐧🐤 PATREON BIRD ARMY 🐤🐧🐦\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nMany Thanks to our wonderful Patreons from http://kgs.link/patreon who support us every month and made this video possible:\n\nJérémy Carrara, Jeffrey Hearn, israel , Brian Yim, Gregory Tripp, Charanjit Singh, Meris Williams, wls rainfarm, Eusden Shing, Rick Bijkerk, Ash Joy, Derek Farder, Lisa Wright, Collin Bruce, Anatoly Zabelin, Renars Liepins, Josh Blumhagen, Gregory Crawley, Stephen, James Beaumont, Oisin Hurley, John M, Serial88, Simone Zecchi, José Hernández, David Medellin, Tarish Kadam, Christian Tigges, Gavin Stenhouse, Elliot Bailey, Wuggletoes, Josef Citrine, Herman Karlsson, André Beaudoin, Busterdrag, Jhiro Molina, Talynn Gray, Zach, David Epstein, Mark Sierra, Xellos, Daniel Prater, Jacky Kheang, Wesley Gardner, Giovanni Casarini, Cameron MacDonald, Brendan Ashton-Collins, Aramayis Grigoryan, Kevin, Deraek, Michael Vowles, Guinevere Fullerton, Douglas Pennant, David Blinder, Ethan Bloxham, Luud Janssen, Evan Stevenson, Dylan Pidcock, Michael Brice, Sir Bigglesworth, Martin Esser, Alvarin_IL, Adam Lewis, Amy Robinson, Philipp Wenzelburger, Trevor Netzer, Bruno Dellavega, Shawn Mullins, Diego Laboy, Pablo Pasquin, David Ha, Tiger, Jonathan Davies, Niklas Gehlen, Cauri Jaye, Simon Que, Rodney Chupp, Tate Demaray, Jonathan Lindgren, Stanislav S., Michael Rauh, Bryn Sedlacek, Hayden Vandenbrink, Nathan Cox, patricia stewart, Tanya Degurechaff, Whangam, Justin Bull\n\nHelp us caption & translate this video!\n\nhttp://www.youtube.com/timedtext_cs_p...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/RS7IzU2VJIQ/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/RS7IzU2VJIQ/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/RS7IzU2VJIQ/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/RS7IzU2VJIQ/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/RS7IzU2VJIQ/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Kurzgesagt – In a Nutshell",
+        "playlistId": "PLFs4vir_WsTySi9F8v5pvCi6zQj7Cwneu",
+        "position": 3,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "RS7IzU2VJIQ"
+        }
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "xLpaeDmJE5bbY6gn_M8dL1ttJHU",
+      "id": "UExGczR2aXJfV3NUeVNpOUY4djVwdkNpNnpRajdDd25ldS5DNzE1RjZEMUZCMjA0RDBB",
+      "snippet": {
+        "publishedAt": "2019-05-22T16:04:25Z",
+        "channelId": "UCsXVk37bltHxD1rDPwtNM8Q",
+        "title": "The Side Effects of Vaccines - How High is the Risk?",
+        "description": "Sources: https://sites.google.com/view/sources-vaccines\n\nVaccines are one of our best tools to prevent dangerous diseases, but they come with side effects. So would it be safer not to vaccinate?\n\nThis video has been supported by a grant from the Bill & Melinda Gates Foundation. \n\nIf you are interested how much sponsorships influence our videos, we wrote about that in detail here: https://medium.com/@Kurzgesagt/kurzgesagt-sponsorships-on-youtube-3121a45b0fe9\n\n\nOUR CHANNELS\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nGerman Channel: https://kgs.link/youtubeDE \nSpanish Channel: https://kgs.link/youtubeES \n\n\nHOW CAN YOU SUPPORT US?\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nThis is how we make our living and it would be a pleasure if you support us!\n\nGet Merch designed with ❤ from https://kgs.link/shop  \nJoin the Patreon Bird Army 🐧 https://kgs.link/patreon  \n\n\nDISCUSSIONS & SOCIAL MEDIA\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nReddit:            https://kgs.link/reddit\nInstagram:     https://kgs.link/instagram\nTwitter:           https://kgs.link/twitter\nFacebook:      https://kgs.link/facebook\nDiscord:          https://kgs.link/discord\nNewsletter:    https://kgs.link/newsletter\n\n\nOUR VOICE\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nThe Kurzgesagt voice is from \nSteve Taylor:  https://kgs.link/youtube-voice\n\n\nOUR MUSIC ♬♪\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\n700+ minutes of Kurzgesagt Soundtracks by Epic Mountain:\n\nSpotify:            https://kgs.link/music-spotify\nSoundcloud:   https://kgs.link/music-soundcloud\nBandcamp:     https://kgs.link/music-bandcamp\nYoutube:          https://kgs.link/music-youtube\nFacebook:       https://kgs.link/music-facebook\n\nThe Soundtrack of this video:\n\nSoundcloud: https://bit.ly/2DZO6kr\nBandcamp: https://bit.ly/2VXep55\nYoutube: https://bit.ly/2CZ6PeN\nFacebook: http://bit.ly/2qW6bY4\n\n\n🐦🐧🐤 PATREON BIRD ARMY 🐤🐧🐦\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nMany Thanks to our wonderful Patreons from http://kgs.link/patreon who support us every month and made this video possible:\n\nMarsha Sohn, Henri Holler, Michelle, Dan Crowley, Alex Hackman, Sammy Mikhael, Marcus Thorén, Kevin Harris, Jayami, Andreas Poletti, David Coates, Omar Galvis, Denny Zavada, Don Knowlton, Sebastian, Jay Ruthnam, Shakira Graham, MatBu, Mikhail, Sinan Taifour, Knowledge Unlimited, Odilia Krause, Anri Digholm, Dominykas, James Gaglio, Alice Jones, Narciso Jaramillo, Qaalid Hashi, Nate Bender, Gulyás Gergely, Michael Bloch, Rick Merced, Etienne Huguenot, Jonathan Lopez, Kai Smith, Benjamin Arndt, Philip Potvin, Amy Halter, Dylan polin, Zach Evans, Karan Chawla, Michael Casey, Francis Bouchard, William Gu, peck neck, Dien Buwono, Patrick Pruitt, Alexander Isayenko, Connor Doherty, Kierr Suñega, Kongpak Phupa, Lewis Foret, Daniel Ingegneri, David Saitta, Soeren Pollerhof, Ravi Shankar, Nico Kooyman, Anna Liceva, Dan Long, ADAM M., Cruz Godar, Pedro Caetano, Jean-Pierre Girard, Jonathan Piedrasanta, Jak SP, Jim Renney, Danielle Mitchell, Giorgio Valli, Ben Evans, Bill Cohen, Gitle Mikkelsen, Gemini00, Benjamin Mahoney, Christopher DiBattista, Mandy Reid, Gary Reckard, Sataporn Chaochonpun, Bigolf, Moses Malone, Kyle Merryman, Dante Bencivenga, Zeus Laser, Jake Wise, Jade, Fontaine Liu, Manav parmar, ethnicolor\n\nHelp us caption & translate this video!https://www.youtube.com/timedtext_cs_panel?c=UCsXVk37bltHxD1rDPwtNM8Q&tab=2",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/zBkVCpbNnkU/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/zBkVCpbNnkU/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/zBkVCpbNnkU/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/zBkVCpbNnkU/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/zBkVCpbNnkU/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Kurzgesagt – In a Nutshell",
+        "playlistId": "PLFs4vir_WsTySi9F8v5pvCi6zQj7Cwneu",
+        "position": 4,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "zBkVCpbNnkU"
+        }
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "PtIIPWpp8kp415jyKnTya-DGfHs",
+      "id": "UExGczR2aXJfV3NUeVNpOUY4djVwdkNpNnpRajdDd25ldS5GM0Q3M0MzMzY5NTJFNTdE",
+      "snippet": {
+        "publishedAt": "2019-05-22T16:04:25Z",
+        "channelId": "UCsXVk37bltHxD1rDPwtNM8Q",
+        "title": "Is Organic Really Better? Healthy Food or Trendy Scam?",
+        "description": "The first 1000 people to use this link will get a 2 month free trial of skillshare: https://skl.sh/kurzgesagt5\n\nOrganic food is a huge trend: it promises a healthier and better life. But can Organic food really live up to the expectations or is it just baloney?\n\nSources:\nhttps://sites.google.com/view/sourcesorganic/\n\n\nOUR CHANNELS\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nGerman Channel: https://kgs.link/youtubeDE \nSpanish Channel: https://kgs.link/youtubeES \n\n\nHOW CAN YOU SUPPORT US?\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nThis is how we make our living and it would be a pleasure if you support us!\n\nGet Merch designed with ❤ from https://kgs.link/shop  \nJoin the Patreon Bird Army 🐧 https://kgs.link/patreon  \n\n\nDISCUSSIONS & SOCIAL MEDIA\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nReddit:            https://kgs.link/reddit\nInstagram:     https://kgs.link/instagram\nTwitter:           https://kgs.link/twitter\nFacebook:      https://kgs.link/facebook\nDiscord:          https://kgs.link/discord\nNewsletter:    https://kgs.link/newsletter\n\n\nOUR VOICE\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nThe Kurzgesagt voice is from \nSteve Taylor:  https://kgs.link/youtube-voice\n\n\nOUR MUSIC ♬♪\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\n700+ minutes of Kurzgesagt Soundtracks by Epic Mountain:\n\nSpotify:            https://kgs.link/music-spotify\nSoundcloud:   https://kgs.link/music-soundcloud\nBandcamp:     https://kgs.link/music-bandcamp\nYoutube:          https://kgs.link/music-youtube\nFacebook:       https://kgs.link/music-facebook\n\nThe Soundtrack of this video:\n\nSoundcloud: http://bit.ly/2kqh1a8\nBandcamp: http://bit.ly/2y2YLbW\nFacebook: http://bit.ly/2qW6bY4\n\n\n🐦🐧🐤 PATREON BIRD ARMY 🐤🐧🐦\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nMany Thanks to our wonderful Patreons from http://kgs.link/patreon who support us every month and made this video possible:\n\nAlberto, Rain Babauta, michael mckinnie, Zabeer Hossain, Patrick Belfry, GeF, Jaden Lem, Cathulhu, Clement Kuo, Kinga Stroińska, Guido Jossels, Damon Bradley, Filip Cerny, Sebastian Kroll, Foxyboxes, Karsten Müller-Bier, Geoff French, Solara570, Aaron Massey, Lee Pomelie, Joel TJ, Maurice Nilles, Joseph Hutchins, Jaski, Ben Lutz, Lukas Zivny, Joonas Javanainen, Will Watts, Gardan, Jorge Pérez, MadByte, Stephen Grose, Nikolas Heberer, Kirby Glover, xhantus404, Benjamin Chalker, ParallaxCore, Turtle, Tom Hutton, Nico Meyer, Anthony Pardini-Bielecki, Laura Starkey, Jai Fox, Victor Hernandez, Ainsley, Revan Tair, Maciej Brzyski, Teemu Leisti, Miguel Diaz, Xierumeng, berk ozdilek, Damien Cassan-Barnel, Michael Kretzschmar, Angelos Manousaridis, Nicolas Molin, Christiaan Magre, onno424, bugcaptor, Aidan Rooney, Marcos Garcia, Chris Thompson, Colm Foley, Ramsey Elbasheer\n\nHelp us caption & translate this video!https://www.youtube.com/timedtext_cs_panel?c=UCsXVk37bltHxD1rDPwtNM8Q&tab=2",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/8PmM6SUn7Es/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/8PmM6SUn7Es/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/8PmM6SUn7Es/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/8PmM6SUn7Es/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/8PmM6SUn7Es/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Kurzgesagt – In a Nutshell",
+        "playlistId": "PLFs4vir_WsTySi9F8v5pvCi6zQj7Cwneu",
+        "position": 5,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "8PmM6SUn7Es"
+        }
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "vCWITO0bZkAPJrIkkiPOTvXjiRw",
+      "id": "UExGczR2aXJfV3NUeVNpOUY4djVwdkNpNnpRajdDd25ldS5ENDU4Q0M4RDExNzM1Mjcy",
+      "snippet": {
+        "publishedAt": "2019-05-22T16:04:25Z",
+        "channelId": "UCsXVk37bltHxD1rDPwtNM8Q",
+        "title": "Why Meat is the Best Worst Thing in the World 🍔",
+        "description": "The first 1000 people to use this link will get a 2 month free trial of skillshare: \nhttp://skl.sh/kurzgesagt3 \n\nMeat is a complicated issue. But also a delicious one. Let's talk about it.\n\nSources:\nhttps://sites.google.com/view/kgssourcesmeat/startseite\n\n\nOUR CHANNELS\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nGerman Channel: https://kgs.link/youtubeDE \nSpanish Channel: https://kgs.link/youtubeES \n\n\nHOW CAN YOU SUPPORT US?\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nThis is how we make our living and it would be a pleasure if you support us!\n\nGet Merch designed with ❤ from https://kgs.link/shop  \nJoin the Patreon Bird Army 🐧 https://kgs.link/patreon  \n\n\nDISCUSSIONS & SOCIAL MEDIA\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nReddit:            https://kgs.link/reddit\nInstagram:     https://kgs.link/instagram\nTwitter:           https://kgs.link/twitter\nFacebook:      https://kgs.link/facebook\nDiscord:          https://kgs.link/discord\nNewsletter:    https://kgs.link/newsletter\n\n\nOUR VOICE\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nThe Kurzgesagt voice is from \nSteve Taylor:  https://kgs.link/youtube-voice\n\n\nOUR MUSIC ♬♪\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\n700+ minutes of Kurzgesagt Soundtracks by Epic Mountain:\n\nSpotify:            https://kgs.link/music-spotify\nSoundcloud:   https://kgs.link/music-soundcloud\nBandcamp:     https://kgs.link/music-bandcamp\nYoutube:          https://kgs.link/music-youtube\nFacebook:       https://kgs.link/music-facebook\n\nThe Soundtrack of this video:\n\nSoundcloud: https://bit.ly/2IoHiOz \nBandcamp: https://bit.ly/2OW6s9H \nFacebook: https://bit.ly/2qW6bY4 \n\n\n🐦🐧🐤 PATREON BIRD ARMY 🐤🐧🐦\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nMany Thanks to our wonderful Patreons from http://kgs.link/patreon who support us every month and made this video possible:\n\njake, Juliane Fajta, Dominik Kröll, Michael Loughran, Graham Stockhausen, Tim Freitag, jaycornonthecob, Riley Ings, Bennet Kammel, Jennifer Baily, Jan Böhm, Chris Corella, Ryan Hanley, Eryn, Frédéric Lessard, Markus Delves, Christopher Kitcher, Austin Harsh, Kai Kent, David Krauss, Chris Portela, Carlos Ocasio, Sebastian Kalix, Brian Long, Tunnelgram, Matt McKellar-Spence, Rick Mayne, Brant Nielsen, Ahmad, Maria, Oskari Kettunen, Stephen DeCataldo, Dylan H, Alexandre, Astrid Eldhuset, Simon Tobar, sciencejunkie, Antonio Juarez, Devon Bernard, Adrian Thomas-Prestemon, Herve, Eric Julius, Reno Lam, Jonathan Sit, Arun Sathiyamurthy, Alex Molyneux, Vladimir Kravtsov, Nick Smith, Théo PEDROSA, PB, Stan Hartley, Michaela Maerkel, Chris Beal, Kacper Kwiatkowski, Nik Alston, Kris Herrick, l.h. riley, Bálint Péter, Bored Studios, Lu Oo, Mario Alexander, Sravan Kumar, Pentalis, Baptiste Parravicini, Oscar, Jan Prokop, Vincent Larouche, Krannex, Antti Nylund, Stefan Raab, Roman Ring, Luke Donabauer, Tim Walsh, Robert LaRosa, Matt DeWolfe, Ben Bromley, Null, Steve Goyne, hongseop Kim, Leif Henning, Tim Sheard, Aleksandr Asirian, chris, Aditya Veer, DrStrangepork, Randy, Daniel Mardale, Krzysztof Krypczyk, Sebastian Regez, Joe Magnabosco\n\n\nHelp us caption & translate this video!\n\nhttps://www.youtube.com/timedtext_cs_panel?c=UCsXVk37bltHxD1rDPwtNM8Q&tab=2 \n\nWhy Meat is the Best Worst Thing in the World",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/NxvQPzrg2Wg/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/NxvQPzrg2Wg/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/NxvQPzrg2Wg/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/NxvQPzrg2Wg/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/NxvQPzrg2Wg/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Kurzgesagt – In a Nutshell",
+        "playlistId": "PLFs4vir_WsTySi9F8v5pvCi6zQj7Cwneu",
+        "position": 6,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "NxvQPzrg2Wg"
+        }
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "w2Np6RP9DdCtcUH66P9zAx6l51k",
+      "id": "UExGczR2aXJfV3NUeVNpOUY4djVwdkNpNnpRajdDd25ldS45RTgxNDRBMzUwRjQ0MDhC",
+      "snippet": {
+        "publishedAt": "2019-05-22T16:04:25Z",
+        "channelId": "UCsXVk37bltHxD1rDPwtNM8Q",
+        "title": "3 Arguments Why Marijuana Should Stay Illegal Reviewed",
+        "description": "We take a fair look at some of the best counter arguments for legalization and see how they hold up in review. \n\n\nOUR CHANNELS\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nGerman Channel: https://kgs.link/youtubeDE \nSpanish Channel: https://kgs.link/youtubeES \n\n\nHOW CAN YOU SUPPORT US?\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nThis is how we make our living and it would be a pleasure if you support us!\n\nGet Merch designed with ❤ from https://kgs.link/shop  \nJoin the Patreon Bird Army 🐧 https://kgs.link/patreon  \n\n\nDISCUSSIONS & SOCIAL MEDIA\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nReddit:            https://kgs.link/reddit\nInstagram:     https://kgs.link/instagram\nTwitter:           https://kgs.link/twitter\nFacebook:      https://kgs.link/facebook\nDiscord:          https://kgs.link/discord\nNewsletter:    https://kgs.link/newsletter\n\n\nOUR VOICE\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nThe Kurzgesagt voice is from \nSteve Taylor:  https://kgs.link/youtube-voice\n\n\nOUR MUSIC ♬♪\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\n700+ minutes of Kurzgesagt Soundtracks by Epic Mountain:\n\nSpotify:            https://kgs.link/music-spotify\nSoundcloud:   https://kgs.link/music-soundcloud\nBandcamp:     https://kgs.link/music-bandcamp\nYoutube:          https://kgs.link/music-youtube\nFacebook:       https://kgs.link/music-facebook\n\nThe Soundtrack of this video:\n\nSoundcloud: https://bit.ly/2y046CE\nBandcamp: https://bit.ly/2l1XEBI\nFacebook: https://bit.ly/2GIoZlH\n\n\n🐦🐧🐤 PATREON BIRD ARMY 🐤🐧🐦\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nMany Thanks to our wonderful Patreons from http://kgs.link/patreon who support us every month and made this video possible:\n\nJérémy Carrara, Jeffrey Hearn, israel , Brian Yim, Gregory Tripp, Charanjit Singh, Meris Williams, wls rainfarm, Eusden Shing, Rick Bijkerk, Ash Joy, Derek Farder, Lisa Wright, Collin Bruce, Anatoly Zabelin, Renars Liepins, Josh Blumhagen, Gregory Crawley, Stephen, James Beaumont, Oisin Hurley, John M, Serial88, Simone Zecchi, José Hernández, David Medellin, Tarish Kadam, Christian Tigges, Gavin Stenhouse, Elliot Bailey, Wuggletoes, Josef Citrine, Herman Karlsson, André Beaudoin, Busterdrag, Jhiro Molina, Talynn Gray, Zach, David Epstein, Mark Sierra, Xellos, Daniel Prater, Jacky Kheang, Wesley Gardner, Giovanni Casarini, Cameron MacDonald, Brendan Ashton-Collins, Aramayis Grigoryan, Kevin, Deraek, Michael Vowles, Guinevere Fullerton, Douglas Pennant, David Blinder, Ethan Bloxham, Luud Janssen, Evan Stevenson, Dylan Pidcock, Michael Brice, Sir Bigglesworth, Martin Esser, Alvarin_IL, Adam Lewis, Amy Robinson, Philipp Wenzelburger, Trevor Netzer, Bruno Dellavega, Shawn Mullins, Diego Laboy, Pablo Pasquin, David Ha, Tiger, Jonathan Davies, Niklas Gehlen, Cauri Jaye, Simon Que, Rodney Chupp, Tate Demaray, Jonathan Lindgren, Stanislav S., Michael Rauh, Bryn Sedlacek, Hayden Vandenbrink, Nathan Cox, patricia stewart, Tanya Degurechaff, Whangam, Justin Bull\n\nHelp us caption & translate this video!\n\nhttp://www.youtube.com/timedtext_cs_panel?c=UCsXVk37bltHxD1rDPwtNM8Q&tab=2",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/kP15q815Saw/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/kP15q815Saw/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/kP15q815Saw/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/kP15q815Saw/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/kP15q815Saw/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Kurzgesagt – In a Nutshell",
+        "playlistId": "PLFs4vir_WsTySi9F8v5pvCi6zQj7Cwneu",
+        "position": 7,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "kP15q815Saw"
+        }
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "DNWOHhm7HOAABKbULs_jsXJ-opQ",
+      "id": "UExGczR2aXJfV3NUeVNpOUY4djVwdkNpNnpRajdDd25ldS41QTY1Q0UxMTVCODczNThE",
+      "snippet": {
+        "publishedAt": "2019-05-22T16:04:25Z",
+        "channelId": "UCsXVk37bltHxD1rDPwtNM8Q",
+        "title": "Time: The History & Future of Everything – Remastered",
+        "description": "The first 1000 people to use this link will get their first 2 months of skillshare for free: http://skl.sh/kurzgesagt2\n\nThanks a lot to Skillshare for supporting this channel.\n\n\nOUR CHANNELS\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nGerman Channel: https://kgs.link/youtubeDE \nSpanish Channel: https://kgs.link/youtubeES \n\n\nHOW CAN YOU SUPPORT US?\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nThis is how we make our living and it would be a pleasure if you support us!\n\nGet Merch designed with ❤ from https://kgs.link/shop  \nJoin the Patreon Bird Army 🐧 https://kgs.link/patreon  \n\n\nDISCUSSIONS & SOCIAL MEDIA\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nReddit:            https://kgs.link/reddit\nInstagram:     https://kgs.link/instagram\nTwitter:           https://kgs.link/twitter\nFacebook:      https://kgs.link/facebook\nDiscord:          https://kgs.link/discord\nNewsletter:    https://kgs.link/newsletter\n\n\nOUR VOICE\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nThe Kurzgesagt voice is from \nSteve Taylor:  https://kgs.link/youtube-voice\n\n\nOUR MUSIC ♬♪\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\n700+ minutes of Kurzgesagt Soundtracks by Epic Mountain:\n\nSpotify:            https://kgs.link/music-spotify\nSoundcloud:   https://kgs.link/music-soundcloud\nBandcamp:     https://kgs.link/music-bandcamp\nYoutube:          https://kgs.link/music-youtube\nFacebook:       https://kgs.link/music-facebook\n\nThe Soundtrack of this video:\n\nSoundcloud: https://bit.ly/2qc5OJV\nBandcamp: https://bit.ly/2qcrMMN\nFacebook: https://bit.ly/2GIoZlH\n\n\n🐦🐧🐤 PATREON BIRD ARMY 🐤🐧🐦\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nMany Thanks to our wonderful Patreons from http://kgs.link/patreon who support us every month and made this video possible:\n\nMichael Watson, Christos Kantas, master994, Patrick Norman, Ajay Panicker, Ali B, khl4us, Eduardo Ornelas, David Mendez, Ozaiy, Devin Bray, Jimmy Jimenez, Bryant Gabriel, Warp Institute, Ezgi Ceylan, Kaliam, Corcoran Smith, Grzegorz Matczak, Scott Enand, Martin Westphal, cagedmoney, Tanner Wildauer, Alex Hamil, hbarsquared, NetherLynx, Max Hermann, Drouhet, Grace McFarland, David Engel, Simone Ramello, Kevin Luther, Jacob Johnson, Jeffrey Mathis, Jeffrey Blatt, Robert R., Conner Martin, John J., Colin O, Marco Ehrler, Kevin Tavarez, Dolphin, Andrew Gozzard, Ivan Galinskiy, Alexis Osipenco, Kerstin Bo, Moonyoung Lee, Oliver Clark, Alex Gorstan, Mehmed Mutapcic, Ben Stewart, Alexander Frase, Zain, junsuim, Nikita Kulakov, Benjamin Ulseth, Daniel Rapp, Benjamin Hibbert, Mingyi Cisar, Ginomari Rallos, William Corrigan, Jerremy Goris, Greg Levy, Jan Dvořák, Ian Dejong, Jas Sun, Matthew Caruso, Ed Barmettler, Ben Ray, Tom Trval, Aliouch, bryce Kolton, Dallas Nolen, Rashmi Mallik, 804R, Avi Botbol, Дмитрий Созинов, FOXFYRE, Hamza, Martin Hult\n\nHelp us caption & translate this video!\n\nhttp://www.youtube.com/timedtext_cs_panel?c=UCsXVk37bltHxD1rDPwtNM8Q&tab=2\n\nTime: The History & Future of Everything – Remastered",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/5TbUxGZtwGI/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/5TbUxGZtwGI/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/5TbUxGZtwGI/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/5TbUxGZtwGI/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/5TbUxGZtwGI/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Kurzgesagt – In a Nutshell",
+        "playlistId": "PLFs4vir_WsTySi9F8v5pvCi6zQj7Cwneu",
+        "position": 8,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "5TbUxGZtwGI"
+        }
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "zqYOkwvaf6UhMhPSKlSOLECbkwQ",
+      "id": "UExGczR2aXJfV3NUeVNpOUY4djVwdkNpNnpRajdDd25ldS5EQUE1NTFDRjcwMDg0NEMz",
+      "snippet": {
+        "publishedAt": "2019-05-22T16:04:25Z",
+        "channelId": "UCsXVk37bltHxD1rDPwtNM8Q",
+        "title": "A Selfish Argument for Making the World a Better Place – Egoistic Altruism",
+        "description": "Why should you care about the well-being of people half a globe away?\n\n\nOUR CHANNELS\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nGerman Channel: https://kgs.link/youtubeDE \nSpanish Channel: https://kgs.link/youtubeES \n\n\nHOW CAN YOU SUPPORT US?\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nThis is how we make our living and it would be a pleasure if you support us!\n\nGet Merch designed with ❤ from https://kgs.link/shop  \nJoin the Patreon Bird Army 🐧 https://kgs.link/patreon  \n\n\nDISCUSSIONS & SOCIAL MEDIA\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nReddit:            https://kgs.link/reddit\nInstagram:     https://kgs.link/instagram\nTwitter:           https://kgs.link/twitter\nFacebook:      https://kgs.link/facebook\nDiscord:          https://kgs.link/discord\nNewsletter:    https://kgs.link/newsletter\n\n\nOUR VOICE\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nThe Kurzgesagt voice is from \nSteve Taylor:  https://kgs.link/youtube-voice\n\n\nOUR MUSIC ♬♪\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\n700+ minutes of Kurzgesagt Soundtracks by Epic Mountain:\n\nSpotify:            https://kgs.link/music-spotify\nSoundcloud:   https://kgs.link/music-soundcloud\nBandcamp:     https://kgs.link/music-bandcamp\nYoutube:          https://kgs.link/music-youtube\nFacebook:       https://kgs.link/music-facebook\n\nThe Soundtrack of this video:\n\nSoundcloud: http://bit.ly/2G3hGb2\nBandcamp: http://bit.ly/2FSMKac\nFacebook: http://bit.ly/2qW6bY4\n\n\n🐦🐧🐤 PATREON BIRD ARMY 🐤🐧🐦\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nMany Thanks to our wonderful Patreons from http://kgs.link/patreon who support us every month and made this video possible:\n\nFlavio Storino, Alice Balcon, Hari Krishnan, Warren Wiscombe, Sara Zeglin, Asiryan Alexander, maarten sprengers, William Northern, Kerem Mimaroglu, Yana Kultysheva, Josh, Keaton Anderson, Croconaw, Peter Steinberger, Jonathan Diamond, Troy McConaghy, Paddy, Darko Sperac, Peter Burkhalter, Chris Amaris, Tyler Lovell, John Ruble, Chase Henson, Arpita Singh, Edward C.P., Andreas Edlund, Ryan Bubinski, Paul Greyson, Jerry Ding, Austin Sundquist, Daniel Link, Tim Johnson, kayleigh dreste, Johan Sjöblom, Max Stuart, Mush Rain, Andor Baranyi, Eduardas Afanasjevas, Bill Clem, Jake Smith, Stephen Woerner, Jeff Sorensen, Christopher Damsgaard, Eduardo AV, Michael Gawenka, Florian Hoedt, Lucas Nyman, Nathanael Baker, Martin Wierzyk, Mauricio Streb, Karl, Rameet Chawla, Joachim Andersen, Avinash, Erik Golden, Glenn Stoltz, Elliott Nelson, Andrew Averett, Ben Wei\n\nHelp us caption & translate this video!\n\nhttp://www.youtube.com/timedtext_cs_panel?c=UCsXVk37bltHxD1rDPwtNM8Q&tab=2\n\n\nA Selfish Argument for Making the World a Better Place",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/rvskMHn0sqQ/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/rvskMHn0sqQ/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/rvskMHn0sqQ/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/rvskMHn0sqQ/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/rvskMHn0sqQ/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Kurzgesagt – In a Nutshell",
+        "playlistId": "PLFs4vir_WsTySi9F8v5pvCi6zQj7Cwneu",
+        "position": 9,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "rvskMHn0sqQ"
+        }
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "NIEaH9EzG6dFCLCegNLgiWuDabs",
+      "id": "UExGczR2aXJfV3NUeVNpOUY4djVwdkNpNnpRajdDd25ldS41Mzk2QTAxMTkzNDk4MDhF",
+      "snippet": {
+        "publishedAt": "2019-05-22T16:04:25Z",
+        "channelId": "UCsXVk37bltHxD1rDPwtNM8Q",
+        "title": "Homeopathy Explained – Gentle Healing or Reckless Fraud?",
+        "description": "What are the principles behind Homeopathy and does it work?\n\nSources & further reading:\nhttps://sites.google.com/view/sourceshomeopathy/\n\n\nOUR CHANNELS\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nGerman Channel: https://kgs.link/youtubeDE \nSpanish Channel: https://kgs.link/youtubeES \n\n\nHOW CAN YOU SUPPORT US?\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nThis is how we make our living and it would be a pleasure if you support us!\n\nGet Merch designed with ❤ from https://kgs.link/shop  \nJoin the Patreon Bird Army 🐧 https://kgs.link/patreon  \n\n\nDISCUSSIONS & SOCIAL MEDIA\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nReddit:            https://kgs.link/reddit\nInstagram:     https://kgs.link/instagram\nTwitter:           https://kgs.link/twitter\nFacebook:      https://kgs.link/facebook\nDiscord:          https://kgs.link/discord\nNewsletter:    https://kgs.link/newsletter\n\n\nOUR VOICE\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nThe Kurzgesagt voice is from \nSteve Taylor:  https://kgs.link/youtube-voice\n\n\nOUR MUSIC ♬♪\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\n700+ minutes of Kurzgesagt Soundtracks by Epic Mountain:\n\nSpotify:            https://kgs.link/music-spotify\nSoundcloud:   https://kgs.link/music-soundcloud\nBandcamp:     https://kgs.link/music-bandcamp\nYoutube:          https://kgs.link/music-youtube\nFacebook:       https://kgs.link/music-facebook\n\nThe Soundtrack of this video:\n\nSoundcloud: http://bit.ly/2BI1Wb5\nBandcamp: http://bit.ly/2sJaEmh\nFacebook: http://bit.ly/2qW6bY4\n\n\nWe would like to thank Dr. Natalie Grams, Dr.-Ing. Norbert Aust and Udo Endruscheit as well as Dr. Robin Fears and Professor Paul Glasziou for supporting us with our research.\nwww.natalie-grams.de\nwww.netzwerk-homoeopathie.eu\nwww.gwup.org\n\n\n🐦🐧🐤 PATREON BIRD ARMY 🐤🐧🐦\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nMany Thanks to our wonderful Patreons from http://kgs.link/patreon who support us every month and made this video possible:\n\nFlavio Storino, Alice Balcon, Hari Krishnan, Warren Wiscombe, Sara Zeglin, Asiryan Alexander, maarten sprengers, William Northern, Kerem Mimaroglu, Yana Kultysheva, Josh, Keaton Anderson, Croconaw, Peter Steinberger, Jonathan Diamond, Troy McConaghy, Paddy, Darko Sperac, Peter Burkhalter, Chris Amaris, Tyler Lovell, John Ruble, Chase Henson, Arpita Singh, Edward C.P., Andreas Edlund, Ryan Bubinski, Paul Greyson, Jerry Ding, Austin Sundquist, Daniel Link, Tim Johnson, kayleigh dreste, Johan Sjöblom, Max Stuart, Mush Rain, Andor Baranyi, Eduardas Afanasjevas, Bill Clem, Jake Smith, Stephen Woerner, Jeff Sorensen, Christopher Damsgaard, Eduardo AV, Michael Gawenka, Florian Hoedt, Lucas Nyman, Nathanael Baker, Martin Wierzyk, Mauricio Streb, Karl, Rameet Chawla, Joachim Andersen, Avinash, Erik Golden, Glenn Stoltz, Elliott Nelson, Andrew Averett, Ben Wei",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/8HslUzw35mc/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/8HslUzw35mc/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/8HslUzw35mc/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/8HslUzw35mc/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/8HslUzw35mc/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Kurzgesagt – In a Nutshell",
+        "playlistId": "PLFs4vir_WsTySi9F8v5pvCi6zQj7Cwneu",
+        "position": 10,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "8HslUzw35mc"
+        }
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "iFYCHMH7Ow-Nzy5XmSI-peTztwc",
+      "id": "UExGczR2aXJfV3NUeVNpOUY4djVwdkNpNnpRajdDd25ldS4zMDg5MkQ5MEVDMEM1NTg2",
+      "snippet": {
+        "publishedAt": "2019-05-22T16:04:25Z",
+        "channelId": "UCsXVk37bltHxD1rDPwtNM8Q",
+        "title": "Universal Basic Income Explained – Free Money for Everybody? UBI",
+        "description": "What is UBI? How would free money change our lives.\n\n\nOUR CHANNELS\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nGerman Channel: https://kgs.link/youtubeDE \nSpanish Channel: https://kgs.link/youtubeES \n\n\nHOW CAN YOU SUPPORT US?\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nThis is how we make our living and it would be a pleasure if you support us!\n\nGet Merch designed with ❤ from https://kgs.link/shop  \nJoin the Patreon Bird Army 🐧 https://kgs.link/patreon  \n\n\nDISCUSSIONS & SOCIAL MEDIA\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nReddit:            https://kgs.link/reddit\nInstagram:     https://kgs.link/instagram\nTwitter:           https://kgs.link/twitter\nFacebook:      https://kgs.link/facebook\nDiscord:          https://kgs.link/discord\nNewsletter:    https://kgs.link/newsletter\n\n\nOUR VOICE\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nThe Kurzgesagt voice is from \nSteve Taylor:  https://kgs.link/youtube-voice\n\n\nOUR MUSIC ♬♪\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\n700+ minutes of Kurzgesagt Soundtracks by Epic Mountain:\n\nSpotify:            https://kgs.link/music-spotify\nSoundcloud:   https://kgs.link/music-soundcloud\nBandcamp:     https://kgs.link/music-bandcamp\nYoutube:          https://kgs.link/music-youtube\nFacebook:       https://kgs.link/music-facebook\n\nThe Soundtrack of this video:\n\nSoundcloud: http://bit.ly/2BHihcO\nBandcamp: http://bit.ly/2AY8lPf\nFacebook: http://bit.ly/2qW6bY4\n\nA few sources:\n\nCash Transfers and Temptation Goods\nhttp://bit.ly/2gfkwsN\n\nDebunking the Stereotype of the Lazy Welfare Recipient: Evidence from Cash Transfer Programs Worldwide\nhttp://bit.ly/1lFeO5Y\n\nThe Poverty Trap\nhttp://bit.ly/2iCv9cK\n\nThe short-term impact of unconditional cash transfers to the poor: experimental evidence from Kenya\nhttp://bit.ly/2ixSbEn\n\nOpinion: Our Broken Economy, in One Simple Chart\nhttp://nyti.ms/2vzE1be\n\nModeling the Macroeconomic Effects of a Universal Basic Income\nhttp://bit.ly/2xLWUFi\n\nOn the Economics of a Universal Basic Income\nhttp://bit.ly/2BdHoaX\n\nWhat Would Happen If We Just Gave People Money?\nhttp://53eig.ht/230Td6X\n\nCash Transfers and Temptation Goods  –\nA Review of Global Evidence\nhttp://bit.ly/2cXUTyY\n\nCash transfers: what does the evidence say? A rigorous review of impacts and the role of design and implementation features\nhttp://bit.ly/2av62Ya\n\nCash as Capital\nhttp://bit.ly/2rGvlgZ\n\n\n🐦🐧🐤 PATREON BIRD ARMY 🐤🐧🐦\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nMany Thanks to our wonderful Patreons from http://kgs.link/patreon who support us every month and made this video possible:\n\nKelly-Anne B, Kevin Perot, Ehsan Kia, Larry Peterson, Verteiron, Kristofer Sokk, Lily Lau, Fabian Keller, Hrvoje Stojanović, Chris K, Rebecca Lawson, Jonah Larsen, Tombfyre, Carlos Fuentealba, Logan Spalding, Richard Williams, Sylvain Gibouret, Paul Cowan, François Agier, Tristin, Matthias Monnereau, Qiiii Wang, Hendrik Ewe, Jenny Wang, Steve Root, Erickson Dias, Daniel Dod, Peggy Snow, fxenergy, Stephan Wölcher, Christian Strømnes, Michael, Dave, Anders Mærøe, Peter Sodke, Mathis Rehfeld, Obedient Gamer, Mersija Maglajlic, Christian Kleinferchner, Luke Stowers, Macrieum, Joanna Iwańska, Eli Mahler, Kevin Stamps, K., Mike Danielson, Harethh aljagbir, Panayot Todorov, TechyTF77 , Jacob Hilliard, Paul Flynn, Raymond Carter, Luke Welton, Ryan Kratt, robert oseveno, Hugo Chuang, Seggev Shoresh, Mechanically Cryptic, Niklas Widmann, Moshe Simantov, Sebastian Link, Leezdorfer, Andrei Robu, Karla Brilman, Jason Lopez, n0mir3k, Daniel Mardale\n\nHelp us caption & translate this video!\n\nhttp://www.youtube.com/timedtext_cs_panel?c=UCsXVk37bltHxD1rDPwtNM8Q&tab=2\n\nUniversal Basic Income Explained – Free Money for Everybody? UBI",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/kl39KHS07Xc/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/kl39KHS07Xc/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/kl39KHS07Xc/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/kl39KHS07Xc/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/kl39KHS07Xc/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Kurzgesagt – In a Nutshell",
+        "playlistId": "PLFs4vir_WsTySi9F8v5pvCi6zQj7Cwneu",
+        "position": 11,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "kl39KHS07Xc"
+        }
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "US7-oIq3LA3Fwt5N3E0N3Jv2uNw",
+      "id": "UExGczR2aXJfV3NUeVNpOUY4djVwdkNpNnpRajdDd25ldS45ODRDNTg0QjA4NkFBNkQy",
+      "snippet": {
+        "publishedAt": "2019-05-22T16:04:25Z",
+        "channelId": "UCsXVk37bltHxD1rDPwtNM8Q",
+        "title": "How to Cure Aging – During Your Lifetime?",
+        "description": "What if we could stop aging forever?\n\nThanks so much for help with the video to Lifespan.io. Check them out and learn how you can get active here: \n\nLifespan.io \nfacebook.com/LifespanIO\nhttps://www.leafscience.org/blog/\n\nSources and further reading:\nhttps://sites.google.com/view/sources-aging-part-ii/startseite\n\n\nOUR CHANNELS\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nGerman Channel: https://kgs.link/youtubeDE \nSpanish Channel: https://kgs.link/youtubeES \n\n\nHOW CAN YOU SUPPORT US?\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nThis is how we make our living and it would be a pleasure if you support us!\n\nGet Merch designed with ❤ from https://kgs.link/shop  \nJoin the Patreon Bird Army 🐧 https://kgs.link/patreon  \n\n\nDISCUSSIONS & SOCIAL MEDIA\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nReddit:            https://kgs.link/reddit\nInstagram:     https://kgs.link/instagram\nTwitter:           https://kgs.link/twitter\nFacebook:      https://kgs.link/facebook\nDiscord:          https://kgs.link/discord\nNewsletter:    https://kgs.link/newsletter\n\n\nOUR VOICE\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nThe Kurzgesagt voice is from \nSteve Taylor:  https://kgs.link/youtube-voice\n\n\nOUR MUSIC ♬♪\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\n700+ minutes of Kurzgesagt Soundtracks by Epic Mountain:\n\nSpotify:            https://kgs.link/music-spotify\nSoundcloud:   https://kgs.link/music-soundcloud\nBandcamp:     https://kgs.link/music-bandcamp\nYoutube:          https://kgs.link/music-youtube\nFacebook:       https://kgs.link/music-facebook\n\nThe Soundtrack of this video:\n\nSoundcloud: http://bit.ly/2gZBGNB\nBandcamp: http://bit.ly/2lKjJYF\nFacebook: http://bit.ly/2qW6bY4\n\n\n🐦🐧🐤 PATREON BIRD ARMY 🐤🐧🐦\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nMany Thanks to our wonderful Patreons from http://kgs.link/patreon who support us every month and made this video possible:\n\nPhil Winterleitner, David Blayney, Stuart Dunlop, Jordi Riera, James Lamberg, Alexander Fortin, Philipp Hiestand, Shalyn Thong, Elizabeth Meisterling, Tyler Graybill, Felix Diercks, Carson Hynes, Julian Maurel, Jacek Złydach, Paul Lenoue, Stephen Murillo, Justin Fowler, Michael Andregg, Justin Stocking, Andrew, Michael Altarriba, Andy Holaday, Karel Hulec, CJ Canton, Cédric Coulombe, Radomir Kaleta, J K, Rada199, Claudio Fan, etti, Zen, Alen Kecic, Patrick Preuss, deMat01, Erickson Phoenix, iamBadgers, Tom Motto, William Asheshov, Chris O'Hara, Lobo Olsson, Zachary Hall, Donis A., Ismael, The_CJ, Michal Janček, Lars Midgaard, ElRichMC, Mariann Nagy\n\nHelp us caption & translate this video!\n\nhttp://www.youtube.com/timedtext_cs_panel?c=UCsXVk37bltHxD1rDPwtNM8Q&tab=2\n\nHow to Cure Aging – During Your Lifetime?",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/MjdpR-TY6QU/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/MjdpR-TY6QU/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/MjdpR-TY6QU/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/MjdpR-TY6QU/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/MjdpR-TY6QU/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Kurzgesagt – In a Nutshell",
+        "playlistId": "PLFs4vir_WsTySi9F8v5pvCi6zQj7Cwneu",
+        "position": 12,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "MjdpR-TY6QU"
+        }
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "Loj6WAHC4hhjZ0ED6y9vkL5WRUA",
+      "id": "UExGczR2aXJfV3NUeVNpOUY4djVwdkNpNnpRajdDd25ldS5EMEEwRUY5M0RDRTU3NDJC",
+      "snippet": {
+        "publishedAt": "2019-05-22T16:04:25Z",
+        "channelId": "UCsXVk37bltHxD1rDPwtNM8Q",
+        "title": "Why Age? Should We End Aging Forever?",
+        "description": "Watch part 2 by CGPGrey: https://www.youtube.com/watch?v=C25qzDhGLx8\n\nIf you could decide today... how long do you want to live?\n\nThanks so much for help with the video to  https://www.lifespan.io/hero – they are working to cure age-related diseases. Check them out! \n\nSources and further reading:\nhttps://sites.google.com/view/sources-aging-part-i/\n\n\nOUR CHANNELS\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nGerman Channel: https://kgs.link/youtubeDE \nSpanish Channel: https://kgs.link/youtubeES \n\n\nHOW CAN YOU SUPPORT US?\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nThis is how we make our living and it would be a pleasure if you support us!\n\nGet Merch designed with ❤ from https://kgs.link/shop  \nJoin the Patreon Bird Army 🐧 https://kgs.link/patreon  \n\n\nDISCUSSIONS & SOCIAL MEDIA\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nReddit:            https://kgs.link/reddit\nInstagram:     https://kgs.link/instagram\nTwitter:           https://kgs.link/twitter\nFacebook:      https://kgs.link/facebook\nDiscord:          https://kgs.link/discord\nNewsletter:    https://kgs.link/newsletter\n\n\nOUR VOICE\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nThe Kurzgesagt voice is from \nSteve Taylor:  https://kgs.link/youtube-voice\n\n\nOUR MUSIC ♬♪\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\n700+ minutes of Kurzgesagt Soundtracks by Epic Mountain:\n\nSpotify:            https://kgs.link/music-spotify\nSoundcloud:   https://kgs.link/music-soundcloud\nBandcamp:     https://kgs.link/music-bandcamp\nYoutube:          https://kgs.link/music-youtube\nFacebook:       https://kgs.link/music-facebook\n\nThe Soundtrack of this video:\n\nSoundcloud: http://bit.ly/2xSQ4gN\nBandcamp: http://bit.ly/2zCNjlP\nFacebook: http://bit.ly/2qW6bY4\n\n\n🐦🐧🐤 PATREON BIRD ARMY 🐤🐧🐦\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nMany Thanks to our wonderful Patreons from http://kgs.link/patreon who support us every month and made this video possible:\n\nBrittany Mackinnon, Frank Ziems, Rami Rahal, Dinler Amaral Antunes, Janet Rothers, David Metzger, Luke Zehrung, Malcolm Bruce, Sebastián Schiavinato, MikeSkowron, Justin Benavides, Jayant Sahewal, Marty Otzenberger, Lor (aka FigmentForms on Tumblr), Nicu Farmache, Stan Mertens, Haakon T Nordli, Jacob, Shpend A. Mustafa, John Clendenin, Issam Rachidi, Rafael Pereira, carey armstrong, marscmd, Alexander Edlin, Andrew Walker, Jeffrey Pugh, Daniel Cecil, Ayur Pulle, Floyd T Pollard, Wesley De Cocq van Delwijnen, Georgios Zacharopoulos, thylakoide, AG HAbraken, Marc Bartscht, Tarald Sponnich, Nicole Matthews, Adam Simons, Nicole Hobday, Jack Macqueen, Maximilian Fink, Henoch Argaw, Joshua Phoenix, Peter Fintl, Hoang Viet, Richard Emerson, Nick Hofmeister, Zotin, Heron  Cortizo, Hannah Beth, John, Aleksa Bjelogrlic, Fabio Palamedi, Jessica\u00adKim Danh, James Vilcek, Igor Vaisman, ilia, Flatag, Alex Leighton, Rebecca Percz, Fatima Chairez, James Buchanan, Sarah Spath, Hugo James Ludlow Brooks,Bulbul A Rajon\n\nHelp us caption & translate this video!\n\nhttp://www.youtube.com/timedtext_cs_panel?c=UCsXVk37bltHxD1rDPwtNM8Q&tab=2\n\nWhy Age? Should We Try To End Aging and Live Forever?",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/GoJsr4IwCm4/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/GoJsr4IwCm4/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/GoJsr4IwCm4/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/GoJsr4IwCm4/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/GoJsr4IwCm4/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Kurzgesagt – In a Nutshell",
+        "playlistId": "PLFs4vir_WsTySi9F8v5pvCi6zQj7Cwneu",
+        "position": 13,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "GoJsr4IwCm4"
+        }
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "FDLqILnf3W_eqXsznVgkZgQp7xY",
+      "id": "UExGczR2aXJfV3NUeVNpOUY4djVwdkNpNnpRajdDd25ldS40NzZCMERDMjVEN0RFRThB",
+      "snippet": {
+        "publishedAt": "2019-05-22T16:04:25Z",
+        "channelId": "UCsXVk37bltHxD1rDPwtNM8Q",
+        "title": "Optimistic Nihilism",
+        "description": "The philosophy of Kurzgesagt.\n\n\nOUR CHANNELS\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nGerman Channel: https://kgs.link/youtubeDE \nSpanish Channel: https://kgs.link/youtubeES \n\n\nHOW CAN YOU SUPPORT US?\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nThis is how we make our living and it would be a pleasure if you support us!\n\nGet Merch designed with ❤ from https://kgs.link/shop  \nJoin the Patreon Bird Army 🐧 https://kgs.link/patreon  \n\n\nDISCUSSIONS & SOCIAL MEDIA\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nReddit:            https://kgs.link/reddit\nInstagram:     https://kgs.link/instagram\nTwitter:           https://kgs.link/twitter\nFacebook:      https://kgs.link/facebook\nDiscord:          https://kgs.link/discord\nNewsletter:    https://kgs.link/newsletter\n\n\nOUR VOICE\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nThe Kurzgesagt voice is from \nSteve Taylor:  https://kgs.link/youtube-voice\n\n\nOUR MUSIC ♬♪\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\n700+ minutes of Kurzgesagt Soundtracks by Epic Mountain:\n\nSpotify:            https://kgs.link/music-spotify\nSoundcloud:   https://kgs.link/music-soundcloud\nBandcamp:     https://kgs.link/music-bandcamp\nYoutube:          https://kgs.link/music-youtube\nFacebook:       https://kgs.link/music-facebook\n\nThe Soundtrack of this video:\nSoundcloud: http://bit.ly/2vZRSnI\nBandcamp: http://bit.ly/2tYuKUY\nFacebook: http://bit.ly/2qW6bY4\n\n\nHelp us caption & translate this video!\n\nhttp://www.youtube.com/timedtext_cs_panel?c=UCsXVk37bltHxD1rDPwtNM8Q&tab=2\n\nOptimistic Nihilism",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/MBRqu0YOH14/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/MBRqu0YOH14/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/MBRqu0YOH14/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/MBRqu0YOH14/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/MBRqu0YOH14/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Kurzgesagt – In a Nutshell",
+        "playlistId": "PLFs4vir_WsTySi9F8v5pvCi6zQj7Cwneu",
+        "position": 14,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "MBRqu0YOH14"
+        }
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "NmSJlL8YPCDD1eg6vJIC-laETVc",
+      "id": "UExGczR2aXJfV3NUeVNpOUY4djVwdkNpNnpRajdDd25ldS5DQUNERDQ2NkIzRUQxNTY1",
+      "snippet": {
+        "publishedAt": "2017-08-27T06:27:11Z",
+        "channelId": "UCsXVk37bltHxD1rDPwtNM8Q",
+        "title": "Is the European Union Worth It Or Should We End It?",
+        "description": "Should we double down or give up and go our separate ways?\n\n\nOUR CHANNELS\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nGerman Channel: https://kgs.link/youtubeDE \nSpanish Channel: https://kgs.link/youtubeES \n\n\nHOW CAN YOU SUPPORT US?\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nThis is how we make our living and it would be a pleasure if you support us!\n\nGet Merch designed with ❤ from https://kgs.link/shop  \nJoin the Patreon Bird Army 🐧 https://kgs.link/patreon  \n\n\nDISCUSSIONS & SOCIAL MEDIA\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nReddit:            https://kgs.link/reddit\nInstagram:     https://kgs.link/instagram\nTwitter:           https://kgs.link/twitter\nFacebook:      https://kgs.link/facebook\nDiscord:          https://kgs.link/discord\nNewsletter:    https://kgs.link/newsletter\n\n\nOUR VOICE\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nThe Kurzgesagt voice is from \nSteve Taylor:  https://kgs.link/youtube-voice\n\n\nOUR MUSIC ♬♪\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\n700+ minutes of Kurzgesagt Soundtracks by Epic Mountain:\n\nSpotify:            https://kgs.link/music-spotify\nSoundcloud:   https://kgs.link/music-soundcloud\nBandcamp:     https://kgs.link/music-bandcamp\nYoutube:          https://kgs.link/music-youtube\nFacebook:       https://kgs.link/music-facebook\n\nThe Soundtrack of this video:\n\nSoundcloud: http://bit.ly/2o940iA\nBandcamp: http://bit.ly/2p9SSFR\nFacebook: http://bit.ly/2o96Yn9\n\n\nSOURCES\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nPopulation EU:\nhttp://bit.ly/2mMm4Cy\n\nGDP EU:\nhttp://bit.ly/2ouh1mL\n\nlargest Market EU:\nhttp://bit.ly/1FhL3jv\n\ncreation of the European Union:\nhttp://bit.ly/2cnX6Dg\n\nFranco-German Rivalry:\nhttp://bit.ly/2nw7uxC\n\neasy travel:\nhttp://bit.ly/2neE9oT\n\ncheap telecommunications:\nhttp://bit.ly/1MfZsRZ\nhttp://bit.ly/2nUsOKj\n\nEU vs. Apple:\nhttp://bit.ly/2bOwMln\nhttp://reut.rs/2cafPTv\n\nEU vs. Microsoft:\nhttp://bit.ly/2nwfYVr\nhttp://econ.st/2oTo0d1\n\nEU vs. Facebook:\nhttp://bit.ly/1FUc1iu\nhttp://bit.ly/2olVXA2\n\nNumber of scientists and research output:\nhttp://bit.ly/2nqHkek\nhttp://bit.ly/2neJEnD\nhttp://go.nature.com/1d1HQWc\nhttp://bit.ly/2mMfcFc\n\nElection turnouts:\nhttp://bit.ly/1OK06oG\nhttp://bit.ly/2oXzQTi\n\nTransparency:\nhttp://bit.ly/2ouxsPR\nhttp://bit.ly/2o1SicC\n\nCivil Society Europe:\nhttp://bit.ly/2oTW4pA\n\nrefugee crisis:\nhttp://bit.ly/2bOZCn4\nhttp://bit.ly/1Nkj485\n\nOxford Refugee Studies Centre:\nhttp://bit.ly/2nA1INa\n\nWhy Muslims fail to integrate in christian heritage societies:\nhttp://amzn.to/2o96mhB\n\nThe Failure of Multiculturalism:\nhttp://fam.ag/1R3ibj1\n\nFrance and its Muslims:\nhttp://fam.ag/1jBLUCm\n\nDon't Fear Muslim Immigrants:\nhttp://fam.ag/2kHbjfb\n\nImmigration and the Challenges of Integration\nhttp://bit.ly/1RqJot8\n\nNews deeply:\nhttp://bit.ly/2ij4j8n\n\nEconomist:\nhttp://econ.st/2nULVnD\n\nsome countries have accepted more refugees:\nhttp://bit.ly/1A4Ljx8\n\nDiscrimination of immigrants:\nEU Agency for Fundamental Human Rights:\nhttp://bit.ly/1Mj4A7F\n\nPrinceton:\nhttp://bit.ly/2o2JGiY\n\nChallenges for the EU\nEU development beyond NATO:\nhttp://bit.ly/2kvZ73G\n\nThird largest military in the world:\nhttp://bit.ly/2neTaXP\nhttp://bit.ly/2o2122s\n\nTrade boost:\nhttp://bit.ly/2nIbnQv\nhttp://bit.ly/1TNJ5dn\n\n12% higher GDP: \nhttp://bit.ly/2nwzGAE\n\nEurostat/ Economy:\nhttp://bit.ly/23kKY7L\n\ncost of labour:\nhttp://bit.ly/1PPLTU2\n\nshares in economy for production:\nhttp://bit.ly/2o2fxn9\n\nshares in economy for tourism:\nhttp://bit.ly/2nwFav1\n\nshares in economy for fishing:\nhttp://bit.ly/2ouKFbq\n\nforestry in the EU:\nhttp://bit.ly/2nIbPOV\n\nEurozone crisis:\nhttp://bit.ly/2ouGJY5\n\nExplanation of the debt crisis by The Balance, a financial advice website:\nhttp://bit.ly/2o7kbjW\n\nEurocrisis Monitor:\nhttp://bit.ly/2oUaXYH\n\nFuture of Europe:\nhttp://bit.ly/2mKCPJV\n\n\nHelp us caption & translate this video!\n\nhttp://www.youtube.com/timedtext_cs_panel?c=UCsXVk37bltHxD1rDPwtNM8Q&tab=2\n\nIs the European Union Worth It Or Should We End It?",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/XxutY7ss1v4/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/XxutY7ss1v4/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/XxutY7ss1v4/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/XxutY7ss1v4/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/XxutY7ss1v4/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Kurzgesagt – In a Nutshell",
+        "playlistId": "PLFs4vir_WsTySi9F8v5pvCi6zQj7Cwneu",
+        "position": 15,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "XxutY7ss1v4"
+        }
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "-z4hUj-gSi6wMyB2WcSCjOqUvg0",
+      "id": "UExGczR2aXJfV3NUeVNpOUY4djVwdkNpNnpRajdDd25ldS5GNjNDRDREMDQxOThCMDQ2",
+      "snippet": {
+        "publishedAt": "2017-08-27T06:27:11Z",
+        "channelId": "UCsXVk37bltHxD1rDPwtNM8Q",
+        "title": "Overpopulation – The Human Explosion Explained",
+        "description": "In a very short amount of time the human population exploded and is still growing very fast. Will this lead to the end of our civilization? \n\nCheck out https://ourworldindata.org by Max Roser! \n\n\nOUR CHANNELS\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nGerman Channel: https://kgs.link/youtubeDE \nSpanish Channel: https://kgs.link/youtubeES \n\n\nHOW CAN YOU SUPPORT US?\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nThis is how we make our living and it would be a pleasure if you support us!\n\nGet Merch designed with ❤ from https://kgs.link/shop  \nJoin the Patreon Bird Army 🐧 https://kgs.link/patreon  \n\n\nDISCUSSIONS & SOCIAL MEDIA\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nReddit:            https://kgs.link/reddit\nInstagram:     https://kgs.link/instagram\nTwitter:           https://kgs.link/twitter\nFacebook:      https://kgs.link/facebook\nDiscord:          https://kgs.link/discord\nNewsletter:    https://kgs.link/newsletter\n\n\nOUR VOICE\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nThe Kurzgesagt voice is from \nSteve Taylor:  https://kgs.link/youtube-voice\n\n\nOUR MUSIC ♬♪\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\n700+ minutes of Kurzgesagt Soundtracks by Epic Mountain:\n\nSpotify:            https://kgs.link/music-spotify\nSoundcloud:   https://kgs.link/music-soundcloud\nBandcamp:     https://kgs.link/music-bandcamp\nYoutube:          https://kgs.link/music-youtube\nFacebook:       https://kgs.link/music-facebook\n\nThe Soundtrack of this video:\n\nSoundcloud: http://bit.ly/2hKx3Zu\nBandcamp: http://bit.ly/2hfSqTf\nFacebook: https://www.facebook.com/epic-mountain-music\n \n\n🐦🐧🐤 PATREON BIRD ARMY 🐤🐧🐦\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nMany Thanks to our wonderful Patreons from http://kgs.link/patreon who support us every month and made this video possible:\n\nStuart Alldritt, Tasia Pele, Stan Serebryakov, Mike Janzen, Jason Heddle, August, Daniel Smith, Jonathan Herman, Rahul Rachuri, Piotr Gorzelany, Lisa Allcott, Горан Гулески, Eric Ziegast, Kean Drake, Friendly Stranger, NicoH, Adrian Rutkiewicz, Markus Klemm, Leandro Nascimento, Gary Chan, Shawhin Layeghi, Oscar Hernandez, Dale Prinsse, Vaclav Vyskocil, Sup3rW00t, Ryan Coonan, Tam Lerner, Dewi Cadat, Luis Aguirre, Andy McVey, Vexorum, Boris, Adam Wisniewski, Yannic Schreiber, Erik Lilly, Ellis, Dmitry Starostin, Akshay Joshi, Peter Tinti, kayle Clark, Mortimer Brewster, Marc Legault, Sumita Pal, Tarje Hellebust Jr., streetdragon95, Taratsamura, Sam Dickson, Bogdan Firicel, Saul Vera, Aaron Jacobs, Ben Arts, R B Dean, Kevin Beedon, Patrik Pärkinen, Duncan Graham, Johan Thomsen, Emily Tran, Adam Flanc, Adam Jermyn, Ali Uluyol\n\nHelp us caption & translate this video!\n\nhttp://www.youtube.com/timedtext_cs_panel?c=UCsXVk37bltHxD1rDPwtNM8Q&tab=2\n\nOverpopulation – The Human Explosion Explained",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/QsBT5EQt348/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/QsBT5EQt348/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/QsBT5EQt348/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/QsBT5EQt348/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/QsBT5EQt348/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Kurzgesagt – In a Nutshell",
+        "playlistId": "PLFs4vir_WsTySi9F8v5pvCi6zQj7Cwneu",
+        "position": 16,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "QsBT5EQt348"
+        }
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "VC37fUKXHFk6NrJSs4kiaI5ITxI",
+      "id": "UExGczR2aXJfV3NUeVNpOUY4djVwdkNpNnpRajdDd25ldS45NDk1REZENzhEMzU5MDQz",
+      "snippet": {
+        "publishedAt": "2017-08-27T06:27:11Z",
+        "channelId": "UCsXVk37bltHxD1rDPwtNM8Q",
+        "title": "A New History for Humanity – The Human Era",
+        "description": "OUR CHANNELS\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nGerman Channel: https://kgs.link/youtubeDE \nSpanish Channel: https://kgs.link/youtubeES \n\n\nHOW CAN YOU SUPPORT US?\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nThis is how we make our living and it would be a pleasure if you support us!\n\nGet Merch designed with ❤ from https://kgs.link/shop  \nJoin the Patreon Bird Army 🐧 https://kgs.link/patreon  \n\n\nDISCUSSIONS & SOCIAL MEDIA\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nReddit:            https://kgs.link/reddit\nInstagram:     https://kgs.link/instagram\nTwitter:           https://kgs.link/twitter\nFacebook:      https://kgs.link/facebook\nDiscord:          https://kgs.link/discord\nNewsletter:    https://kgs.link/newsletter\n\n\nOUR VOICE\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nThe Kurzgesagt voice is from \nSteve Taylor:  https://kgs.link/youtube-voice\n\n\nOUR MUSIC ♬♪\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\n700+ minutes of Kurzgesagt Soundtracks by Epic Mountain:\n\nSpotify:            https://kgs.link/music-spotify\nSoundcloud:   https://kgs.link/music-soundcloud\nBandcamp:     https://kgs.link/music-bandcamp\nYoutube:          https://kgs.link/music-youtube\nFacebook:       https://kgs.link/music-facebook\n\nThe Soundtrack of this video:\n\nSoundcloud: http://bit.ly/2hgxSty\nBandcamp: http://bit.ly/2h5Ogdo\nFacebook: https://www.facebook.com/epic-mountain-music\n\nThanks a lot to Matthew Lloyd for fact checking help with the video!\n \n\n🐦🐧🐤 PATREON BIRD ARMY 🐤🐧🐦\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nMany Thanks to our wonderful Patreons from http://kgs.link/patreon who support us every month and made this video possible:\n\nStuart Alldritt, Tasia Pele, Stan Serebryakov, Mike Janzen, Jason Heddle, August, Daniel Smith, Jonathan Herman, Rahul Rachuri, Piotr Gorzelany, Lisa Allcott, Горан Гулески, Eric Ziegast, Kean Drake, Friendly Stranger, NicoH, Adrian Rutkiewicz, Markus Klemm, Leandro Nascimento, Gary Chan, Shawhin Layeghi, Oscar Hernandez, Dale Prinsse, Vaclav Vyskocil, Sup3rW00t, Ryan Coonan, Tam Lerner, Dewi Cadat, Luis Aguirre, Andy McVey, Vexorum, Boris, Adam Wisniewski, Yannic Schreiber, Erik Lilly, Ellis, Dmitry Starostin, Akshay Joshi, Peter Tinti, kayle Clark, Mortimer Brewster, Marc Legault, Sumita Pal, Tarje Hellebust Jr., streetdragon95, Taratsamura, Sam Dickson, Bogdan Firicel, Saul Vera, Aaron Jacobs, Ben Arts, R B Dean, Kevin Beedon, Patrik Pärkinen, Duncan Graham, Johan Thomsen, Emily Tran, Adam Flanc, Adam Jermyn, Ali Uluyol\n\nHelp us caption & translate this video!\n\nhttp://www.youtube.com/timedtext_cs_panel?c=UCsXVk37bltHxD1rDPwtNM8Q&tab=2\n\nA New History for Humanity – The Human Era",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/czgOWmtGVGs/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/czgOWmtGVGs/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/czgOWmtGVGs/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/czgOWmtGVGs/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/czgOWmtGVGs/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Kurzgesagt – In a Nutshell",
+        "playlistId": "PLFs4vir_WsTySi9F8v5pvCi6zQj7Cwneu",
+        "position": 17,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "czgOWmtGVGs"
+        }
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "eJ1xsUKn1OAS4k1PavohwSn1VMI",
+      "id": "UExGczR2aXJfV3NUeVNpOUY4djVwdkNpNnpRajdDd25ldS4xMkVGQjNCMUM1N0RFNEUx",
+      "snippet": {
+        "publishedAt": "2016-09-25T09:26:56Z",
+        "channelId": "UCsXVk37bltHxD1rDPwtNM8Q",
+        "title": "What Happened Before History? Human Origins",
+        "description": "Use the URL:  http://www.audible.com/nutshell to get a free audiobook and 30 days free trial and support this channel. Thanks a lot to Audible for supporting us! \n\nHumans. We have been around for a while now. When we think about our past we think about ancient civilizations, the pyramids, stuff like that. But this is only a tiny, tiny part of our history. \n\n\nOUR CHANNELS\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nGerman Channel: https://kgs.link/youtubeDE \nSpanish Channel: https://kgs.link/youtubeES \n\n\nHOW CAN YOU SUPPORT US?\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nThis is how we make our living and it would be a pleasure if you support us!\n\nGet Merch designed with ❤ from https://kgs.link/shop  \nJoin the Patreon Bird Army 🐧 https://kgs.link/patreon  \n\n\nDISCUSSIONS & SOCIAL MEDIA\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nReddit:            https://kgs.link/reddit\nInstagram:     https://kgs.link/instagram\nTwitter:           https://kgs.link/twitter\nFacebook:      https://kgs.link/facebook\nDiscord:          https://kgs.link/discord\nNewsletter:    https://kgs.link/newsletter\n\n\nOUR VOICE\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nThe Kurzgesagt voice is from \nSteve Taylor:  https://kgs.link/youtube-voice\n\n\nOUR MUSIC ♬♪\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\n700+ minutes of Kurzgesagt Soundtracks by Epic Mountain:\n\nSpotify:            https://kgs.link/music-spotify\nSoundcloud:   https://kgs.link/music-soundcloud\nBandcamp:     https://kgs.link/music-bandcamp\nYoutube:          https://kgs.link/music-youtube\nFacebook:       https://kgs.link/music-facebook\n\nThe Soundtrack of this video:\n\nSoundcloud: http://bit.ly/28Ze6Ni\nBandcamp: http://bit.ly/28NPJSb\n \n\n🐦🐧🐤 PATREON BIRD ARMY 🐤🐧🐦\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nMany Thanks to our wonderful Patreons from http://kgs.link/patreon who support us every month and made this video possible:\n\nWilliam Kerr, Sean Beier, Donal Botkin, Hugo NAJBERG, Harley Faggetter, robert walsh, Amir Shahar, Corey Hinds, Vegard Bellika, Dasha, Charles LaVene, Wesley Kleeman, jeremy avnet, Zachary Dickson, Timothy Basanov, Richard Stambaugh, Hamish Wilson, John Smith, Tyler Lainer, Yalın Günayer, Drew DeVault, Nicholas Bethencourt, Mike Wiley, Stefan Schnitzer, Brian Coule, John Markus, Sergey Sirotenko, Alex Howe, Angel Ivan Luna Parra, Liam Wade, Hannah Montovani, Noah Harris, David Durant, Hans-Jörg Peter, Daniel McCartney, Marcus Lee, Martin Atanasov, Plyrde Rayos, Emin Arslan ,Sam, Adam, TheVerySeriousLewis, Sam, Shermaine Chew, Sathepine, Manraj Dhaliwal, César Mendonça, Corne Kruger, Andrew Peachey,  Thomas, Müller, Daniel, Forssten, Matthew Tse, Matthias S., Azila Azman, Fras Samarit, Jake Wood\n\n\nWhat Happened Before History? Human Origins\n\nHelp us caption & translate this video!\n\nhttp://www.youtube.com/timedtext_cs_panel?c=UCsXVk37bltHxD1rDPwtNM8Q&tab=2",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/dGiQaabX3_o/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/dGiQaabX3_o/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/dGiQaabX3_o/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/dGiQaabX3_o/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/dGiQaabX3_o/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Kurzgesagt – In a Nutshell",
+        "playlistId": "PLFs4vir_WsTySi9F8v5pvCi6zQj7Cwneu",
+        "position": 18,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "dGiQaabX3_o"
+        }
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "sFaMU1Tq43ZAjrly9qljS8ZAmnI",
+      "id": "UExGczR2aXJfV3NUeVNpOUY4djVwdkNpNnpRajdDd25ldS41NkI0NEY2RDEwNTU3Q0M2",
+      "snippet": {
+        "publishedAt": "2016-04-19T23:01:14Z",
+        "channelId": "UCsXVk37bltHxD1rDPwtNM8Q",
+        "title": "Safe and Sorry – Terrorism & Mass Surveillance",
+        "description": "OUR CHANNELS\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nGerman Channel: https://kgs.link/youtubeDE \nSpanish Channel: https://kgs.link/youtubeES \n\n\nHOW CAN YOU SUPPORT US?\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nThis is how we make our living and it would be a pleasure if you support us!\n\nGet Merch designed with ❤ from https://kgs.link/shop  \nJoin the Patreon Bird Army 🐧 https://kgs.link/patreon  \n\n\nDISCUSSIONS & SOCIAL MEDIA\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nReddit:            https://kgs.link/reddit\nInstagram:     https://kgs.link/instagram\nTwitter:           https://kgs.link/twitter\nFacebook:      https://kgs.link/facebook\nDiscord:          https://kgs.link/discord\nNewsletter:    https://kgs.link/newsletter\n\n\nOUR VOICE\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nThe Kurzgesagt voice is from \nSteve Taylor:  https://kgs.link/youtube-voice\n\n\nOUR MUSIC ♬♪\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\n700+ minutes of Kurzgesagt Soundtracks by Epic Mountain:\n\nSpotify:            https://kgs.link/music-spotify\nSoundcloud:   https://kgs.link/music-soundcloud\nBandcamp:     https://kgs.link/music-bandcamp\nYoutube:          https://kgs.link/music-youtube\nFacebook:       https://kgs.link/music-facebook\n\n\nSOURCES\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\n\nTerrorist surveillance program:\nOriginal press release:\nhttp://1.usa.gov/1p0lZXT\n\nAssessment of potential effect of surveillance measures if implemented before 9/11:\nInterview with FBI director Robert Mueller:\nhttp://bit.ly/1MvHNpB\n\n\nFBI investigations of immigrants:\n\"NSEERS effect\" report:\nhttp://bit.ly/1qU8Wcu\n\nQuote on aggressive racial profiling:\nArticle \"Are we safer?\" by David Cole, Professor of Law at Georgetown University Law Center:\nhttp://bit.ly/1Sc8tLo\n\n\nExtent of NSA surveillance:\nNSA power point slides on collecting buddy lists, obtained by Washington Post:\nhttp://wapo.st/1cWi0SM\n\nNSA slides on prism data collection, obtained by The Guardian:\nhttp://bit.ly/1qmj46r\n\n\nNSA results from mass surveillance vs. target surveillance:\n\nReport from the Presidents NSA Review group 2013 (recommending to stop mass data mining because of lack of results):\nhttp://1.usa.gov/1bK0q7x\n\nArticle from ProPublica:\nhttp://bit.ly/1PAusfR\n\nAnalysis from the New America Foundation:\nhttp://bit.ly/1SSq8ea\n\nData and Goliath: The Hidden Battles to Collect Your Data and Control Your World by Bruce Schneier\n\n\nSurveillance program didn`t stop any major attacks:\n\nFull video of court hearing with NSA director Keith B. Alexander on surveillance:\nhttp://cs.pn/1Yv1G0N\n\nOfficial report on results of phone surveillance policy:\nhttp://1.usa.gov/1bK0q7x\n\nArticle on debunked claims:\nhttp://bit.ly/1p0n2ae\n\nOfficial judge ruling on matter points to no evidence:\nhttps://www.propublica.org/documents/item/902454-judge-leon-ruling#document/p62\n\nReport by the legal affairs and human rights committee of the parliamentary assembly of the Council of Europe:\nhttp://bit.ly/1qr9aXC\n\n\nBoston marathon bomber was known to FBI:\nOfficial press release: \nhttp://1.usa.gov/1Vrw4vI\n\nFBI asked Apple for help:\nOfficial court order: \nhttp://bit.ly/24auFf6\n\n\nApple`s refusal to crack iPhone:\nOfficial public statement: \nhttp://apple.co/1Lt7ReW\n\nObjections against FBI demands from cryptographers:\nBrad Smith keynote at the RSA information security conference:\nhttp://bit.ly/1Vrwd1Y\n(especially relevant from minute 7 on)\n\nStatement by Information Technology Industry Council:\nhttp://bit.ly/1Q9cg7N\n\nAmicus briefs supporting Apple:\nhttp://apple.co/1OSBypU\n\n\nFBI changing their story about needing Apple`s help:\nInitial article on Washington Post:\nhttp://wapo.st/1KqHIT7\n\nInitial story on Reutersblog:\nhttp://reut.rs/1SCl73o\n\nUpdate on Reuters:\nhttp://reut.rs/1NdTJae\n\nArticle on ACLU about possible work-around:\nhttp://bit.ly/1OZ2nZL\n\nBlogpost on another possible workaround:\nhttp://bit.ly/1Vrwv98\n\nNSA can turn on iPhone remotely:\n\nBBC interview with Edward Snowden:\nhttp://bit.ly/1Nab09Q\n\nArticle on Wired:\nhttp://bit.ly/1hvZMNn\n\n\nAbuse of anti-terrorism laws:\nProof of Patriot Act laws used for investigating other crimes, especially drugs:\nhttp://bit.ly/1LXBu9X\n\n„Sneak and Peak“ report:\nhttp://bit.ly/1RVGhgM\n\nEnforcement of French anti-terrorism laws:\nDetailed explanation of new powers given by extended laws:\nhttp://bit.ly/1OYBpSl\n\nOriginal law text (in french):\nhttp://bit.ly/1qraiKQ\n\n\nAbuse of french anti-terrorism laws:\nHuman rights watch reports cases:\nhttp://bit.ly/1SZmwpH\n\nClimate change protesters placed under house arrest:\nhttp://reut.rs/20DYZfa\n\nCensorship in Hungary, Poland and Spain:\nhttp://bit.ly/20DZ3eS\nhttp://bit.ly/1Qgc7lX\n\nhttp://bit.ly/1WtmIyv\nhttp://bit.ly/1MvJ8N7\n\nJail time for government critics in Turkey:\nhttp://bit.ly/1oXBctf\n\nEffects of surveillance on our society:\nList of issues of power abuse since 9/11 by American Civil liberties union:\nhttp://bit.ly/1U6Rux4\n\n\nGeneral overview over the topic:\nhttp://bit.ly/1Pyj8uR\nhttp://bit.ly/1RVH2GF\nhttp://bit.ly/MZe4qY\n\nSafe and Sorry– Terrorism & Mass Surveillance",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/V9_PjdU3Mpo/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/V9_PjdU3Mpo/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/V9_PjdU3Mpo/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/V9_PjdU3Mpo/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/V9_PjdU3Mpo/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Kurzgesagt – In a Nutshell",
+        "playlistId": "PLFs4vir_WsTySi9F8v5pvCi6zQj7Cwneu",
+        "position": 19,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "V9_PjdU3Mpo"
+        }
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "xY-HKoseGZO4UvwN7nIBcoPaZVA",
+      "id": "UExGczR2aXJfV3NUeVNpOUY4djVwdkNpNnpRajdDd25ldS4yODlGNEE0NkRGMEEzMEQy",
+      "snippet": {
+        "publishedAt": "2016-04-19T23:01:14Z",
+        "channelId": "UCsXVk37bltHxD1rDPwtNM8Q",
+        "title": "Why The War on Drugs Is a Huge Failure",
+        "description": "The war against drugs has been a terrible disaster for everybody involved. Why? And can we do something differently?\n\nCheck out the Stop The Harm campaign: https://stoptheharm.org\n\n\nOUR CHANNELS\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nGerman Channel: https://kgs.link/youtubeDE \nSpanish Channel: https://kgs.link/youtubeES \n\n\nHOW CAN YOU SUPPORT US?\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nThis is how we make our living and it would be a pleasure if you support us!\n\nGet Merch designed with ❤ from https://kgs.link/shop  \nJoin the Patreon Bird Army 🐧 https://kgs.link/patreon  \n\n\nDISCUSSIONS & SOCIAL MEDIA\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nReddit:            https://kgs.link/reddit\nInstagram:     https://kgs.link/instagram\nTwitter:           https://kgs.link/twitter\nFacebook:      https://kgs.link/facebook\nDiscord:          https://kgs.link/discord\nNewsletter:    https://kgs.link/newsletter\n\n\nOUR VOICE\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nThe Kurzgesagt voice is from \nSteve Taylor:  https://kgs.link/youtube-voice\n\n\nOUR MUSIC ♬♪\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\n700+ minutes of Kurzgesagt Soundtracks by Epic Mountain:\n\nSpotify:            https://kgs.link/music-spotify\nSoundcloud:   https://kgs.link/music-soundcloud\nBandcamp:     https://kgs.link/music-bandcamp\nYoutube:          https://kgs.link/music-youtube\nFacebook:       https://kgs.link/music-facebook\n\nThe Soundtrack of this video:\n\nhttps://soundcloud.com/epicmountain/w...\nhttps://epicmountainmusic.bandcamp.co...\nhttp://epic-mountain.com\n \n\nThe war against drugs has been a terrible disaster for everybody involved. Why? And can we do something differently?\n\nCheck out the Stop The Harm campaign: https://stoptheharm.org\n\n\nOUR CHANNELS\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nGerman Channel: https://kgs.link/youtubeDE \nSpanish Channel: https://kgs.link/youtubeES \n\n\nHOW CAN YOU SUPPORT US?\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nThis is how we make our living and it would be a pleasure if you support us!\n\nGet Merch designed with ❤ from https://kgs.link/shop  \nJoin the Patreon Bird Army 🐧 https://kgs.link/patreon  \n\n\nDISCUSSIONS & SOCIAL MEDIA\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nReddit:            https://kgs.link/reddit\nInstagram:     https://kgs.link/instagram\nTwitter:           https://kgs.link/twitter\nFacebook:      https://kgs.link/facebook\nDiscord:          https://kgs.link/discord\nNewsletter:    https://kgs.link/newsletter\n\n\nSOURCES AND FURTHER READING\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\n\nNixon on the war on drugs: http://bit.ly/1QRJcZ7\n\nThe Balloon Effect explained: http://bit.ly/1SfnP3b\n\nThe Economics Behind War on Drugs: http://bit.ly/1VOJiPk\n\nBlack Kids get more often arrested for drug offenses: http://brook.gs/1ppiPH6 & http://bit.ly/1kJs83H\n\nWorld Drug Report: http://bit.ly/1QY97NU\n\nGlobal supply of drugs: http://bit.ly/1OLXq6u\n\nFour pillars drug strategy: http://bit.ly/1Qkhh0y\n\n\n🐦🐧🐤 PATREON BIRD ARMY 🐤🐧🐦\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nMany Thanks to our wonderful Patreons from http://kgs.link/patreon who support us every month and made this video possible:\n\nSara Priselac, Eric, José Díez, Antonie Coetzee, Julien Dubois, Mert Tekin, Reno, Ran Moneta, Terry Breen-Smith, Azri Rostam, Guy Nicholson, DeAdrean Martin, Ty Cook, Wes Blind, Marc Stein, Mathias Højbjerg, Rustan Curman, Christopher Homs, Selene Kwan, Nikita, Jamie Buch, Yong-Bi Jo, Charles Cartwrighte, Steven Ferrari, Logan Kent, Danimal, Matthias Gyllenvarg, Kieran Keegan, Jai Kowalik, Chad Mellor, Karla Brilman, Daniel Dchuette, Lindsey Skouras, Allan Lehamnn Kristensen, Michael DeFreitas, James Wiles, Brian Lathrop, Kyle Sayers, Zack, Touki Wawa Wang, David Campos, Conner Fissell, Atlas Moon, Trevor Kam, Anon, Jan Sundgaard Schultz, Andrew Wissam Chidiac Cherian\n\nWhy The War on Drugs Is a Huge Failure\n\nHelp us caption & translate this video!\n\nhttp://www.youtube.com/timedtext_cs_panel?c=UCsXVk37bltHxD1rDPwtNM8Q&tab=2",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/wJUXLqNHCaI/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/wJUXLqNHCaI/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/wJUXLqNHCaI/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/wJUXLqNHCaI/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/wJUXLqNHCaI/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Kurzgesagt – In a Nutshell",
+        "playlistId": "PLFs4vir_WsTySi9F8v5pvCi6zQj7Cwneu",
+        "position": 20,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "wJUXLqNHCaI"
+        }
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "IYBbdUiRxbi9RDystKZ4yQDLRKI",
+      "id": "UExGczR2aXJfV3NUeVNpOUY4djVwdkNpNnpRajdDd25ldS43MTI1NDIwOTMwQjIxMzNG",
+      "snippet": {
+        "publishedAt": "2020-06-21T12:29:45Z",
+        "channelId": "UCsXVk37bltHxD1rDPwtNM8Q",
+        "title": "Who Is Responsible For Climate Change? – Who Needs To Fix It?",
+        "description": "This video is part of a series about climate change supported by Breakthrough Energy – a coalition founded by Bill Gates, that is working to expand clean-energy investment and support the innovations that will lead the world to net-zero carbon emissions. \nhttps://www.gatesnotes.com/Climate-and-energy?WT.mc_id=20200625100000_ClimateCtr2020_CTRKurt-YT_&WT.tsrc=CTRKurtYT\n\nAlso a special thanks to the team at Our World for helping us out with data and research!\nhttps://ourworldindata.org/\n\nSources & further reading:\nhttps://sites.google.com/view/sourcesclimateresponsibility/ \n\nSince the Industrial Revolution, humans have released over 1.5 trillion tonnes of carbon dioxide or CO2 into the earth's atmosphere.  In the year 2019  we were still pumping out  around 37 billion more.  That’s 50% more than the year 2000 and almost three times as much as 50 years ago. And it’s not just CO2. We’re also pumping out growing volumes  of  other greenhouse gases such as methane and nitrous oxide. Combining all of our greenhouse gases, we’re emitting 51 billion tonnes of carbon dioxide equivalents each year. \nAnd emissions keep rising – but they need to get down to 0!\n\nOUR CHANNELS\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nGerman Channel: https://kgs.link/youtubeDE \nSpanish Channel: https://kgs.link/youtubeES \n\n\nHOW CAN YOU SUPPORT US?\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nThis is how we make our living and it would be a pleasure if you support us!\n\nGet Merch designed with ❤ from https://kgs.link/shop  \nJoin the Patreon Bird Army 🐧 https://kgs.link/patreon  \n\n\nDISCUSSIONS & SOCIAL MEDIA\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nReddit:            https://kgs.link/reddit\nInstagram:     https://kgs.link/instagram\nTwitter:           https://kgs.link/twitter\nFacebook:      https://kgs.link/facebook\nDiscord:          https://kgs.link/discord\nNewsletter:    https://kgs.link/newsletter\n\n\nOUR VOICE\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nThe Kurzgesagt voice is from \nSteve Taylor:  https://kgs.link/youtube-voice\n\n\nOUR MUSIC ♬♪\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\n700+ minutes of Kurzgesagt Soundtracks by Epic Mountain:\n\nSpotify:            https://kgs.link/music-spotify\nSoundcloud:   https://kgs.link/music-soundcloud\nBandcamp:     https://kgs.link/music-bandcamp\nYoutube:          https://kgs.link/music-youtube\nFacebook:       https://kgs.link/music-facebook\n\nThe Soundtrack of this video:\n\nSoundcloud:   https://bit.ly/3djcOuY\nBandcamp:     https://bit.ly/2VjGjH9\n\n\n🐦🐧🐤 PATREON BIRD ARMY 🐤🐧🐦\n▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\nMany Thanks to our wonderful Patreons from http://kgs.link/patreon who support us every month and made this video possible:\n\nClaire Kim, בועז ברקוביץ, Jordan Kowal, Philip Lightstone, Josh, Henry Thomas, Peer Fromme, Daniel Something-in-chinese, Joerg Fluegge, Mathieu Haverkamp, Pierre-Antoine, Filipe, Sam, Steven wu, Adam Leos, Biniam Jacob, Autumn, TURRONERO, 메타, 4Felix_HB, Bronwen Dickenson, McLen, Gabi Adler, AZHY ROBERTSON, Mikhail Levchenko, Richard Tran, Cooper Nagengast, Alberto Mina, Michele, Jarrod Brodel, Jeff Cooper, Keith McComb, Bryan Lin, FuzzyLogic, Kaden Archibald, Zeeger Scholten, Adam Górecki-Gomoła, Forrest Henry, Sam Starzynski, Ross Anderson, Mark Neal, Sivda, Anatoly Polinsky, Tony Black, Komala Chenna, Lieberson Pang, henry Defelice, Michael Coors, Ben Wallace, Matt McKee, Mikael Muszynski, Franziska Diez, Marius G, Sona, Xander, Walter_Ego, john dietrich, Arian Feigl-Berger, Alejandro Godinez, Lou, Justin Oliver, Chris, Valentin Jay, Andy Miller, Sabrina Wrobel, Jion Wattimury, Peter Neubauer, Rico Oess, Kai, jp888, Coral Amayi, Todd J., Patrick Havercroft, Joshua Milus, Sudipto Bhattacharya, Pius Ladenburger, Gina Curler, Flemming Lauritzen, Ben, Ezio Auditore, Christopher Hines, Elena Kovakina, Shahaf Milshtein, Oliver Sheldon, Liam Clarke, Mette, Adam Kovalovszki, Patrick Zeymer, Adam Wells, aslfhjdfkjlha, Faustus, Virgile Kuhn, Lua ., Markus, Alan, Andrew McKendry, RexL300, Jakub, Paula Patzova, Jan Kropidlowski, liza_worth, Josef Simonson, Andreas Heller, Griffin vlachos, Albert Diserholt, Kirils Bondars, Asahi Ishikawa, Jan Jaeken, Sanat Deshpande, Lambda3, 竹鴻 柯, Jacob Robbins, David Habada, flickers, JusRus, Nicholas Wolf, Zachariah Jackson, Leon Suhm, Marco Johne, Eren Tatar",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/ipVxxxqwBQw/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/ipVxxxqwBQw/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/ipVxxxqwBQw/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/ipVxxxqwBQw/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/ipVxxxqwBQw/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Kurzgesagt – In a Nutshell",
+        "playlistId": "PLFs4vir_WsTySi9F8v5pvCi6zQj7Cwneu",
+        "position": 21,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "ipVxxxqwBQw"
+        }
+      }
+    }
+  ],
+  "pageInfo": {
+    "totalResults": 22,
+    "resultsPerPage": 50
+  }
+}

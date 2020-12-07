@@ -1,0 +1,294 @@
+
+.content-container {
+  margin-left: 5%;
+  margin-right: 5%;
+
+  padding-top: 90px;
+  margin-bottom: 5%;
+}
+
+.content {
+  padding: 30px;
+  background-color: rgb(250, 250, 250);
+  border-radius: 15px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(220, 220, 220);
+}
+
+.video-feed {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-row-gap: 35px;
+  grid-column-gap: 20px;
+}
+
+.video-feed-card-container {
+
+}
+
+.video-card {
+  width: 100%;
+  box-shadow: 0px 0px 10px rgb(225, 225, 225);
+
+  transition: transform 0.3s;
+}
+
+.video-card:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transform-origin: center;
+}
+
+.video-card-img {
+  /* clip-path: inset(30px 0px 30px 0px);
+  margin-bottom: -30px;
+  margin-top: -30px; */
+}
+
+.video-card-duration {
+  position: absolute;
+  color: white;
+  background-color: #000000cc;
+  border-radius: 7px;
+  right: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.video-card-title {
+
+}
+
+.video-card-info {
+  color: #777777;
+}
+
+.video-feed-spinner {
+  display: flex;
+  justify-content: center;
+
+  /* The video feed uses a grid, so we want to our spinner to span
+  across ALL rows of the grid so we can center it. */
+  grid-column: 1 / -1;
+}
+
+.video-details-title {
+  margin-bottom: 20px;
+}
+
+.video-details-card {
+  margin-top: 20px;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.chip-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.chip {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+
+  color: rgb(100, 100, 100);
+  background-color: rgb(245, 245, 245);
+  border-radius: 20px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(180, 180, 180);
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.youtube-player {
+  padding: 5px;
+  box-shadow: 0px 10px 10px #dddddd;
+}
+
+.error-toggle-details {
+  cursor: pointer;
+}
+
+.sources-key-point {
+  background-color: rgb(245, 245, 245);
+  border-radius: 10px;
+  border-color: rgb(180, 180, 180);
+  border-style: solid;
+  border-width: 1px;
+  padding: 15px;
+  padding-bottom: 0px;
+  margin-left: -5px;
+  margin-right: -5px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.sources-quote {
+  font-size: 0.7em;
+  font-style: italic;
+}
+
+.sources-domain-tag {
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  margin: 10px;
+
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+
+  color: black;
+}
+
+.sources-domain-tag:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.sources-number {
+  font-size: 0.8em;
+  padding-right: 0.5em;
+  font-weight: bold;
+}
+
+.citation-link {
+}
+
+.info-box {
+  background-color: rgb(250, 250, 200);
+  color: rgb(100, 100, 30);
+  padding: 15px;
+  margin: -10px;
+  font-size: 0.9em;
+  margin-top: 10px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(230, 230, 170);
+  text-align :center;
+}
+
+.missing-details {
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+  background-color: rgb(255, 200, 200);
+  padding: 5px;
+}
+
+.go-back {
+  cursor: pointer;
+  font-weight: bold;
+  position: relative;
+  bottom: 10px;
+  font-size: 1.25em;
+}
+
+.last-updated {
+  font-size: 0.9em;
+  color: rgb(80, 80, 80);
+  font-style: italic;
+  position: relative;
+  top: 5px;
+}
+
+.header {
+  position: fixed;
+  z-index: 100;
+
+  display: grid;
+  grid-template-columns: 2fr 10fr 2fr;
+  
+  width: 100%;
+  height: 55px;
+  background-color: rgb(45, 45, 45);
+
+  transition: margin-top, 0.5s;
+}
+
+.header-brand {
+  grid-column: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: transform 0.3s;
+}
+
+.header-brand:hover {
+  text-decoration: none;
+  transform: scale(1.1);
+}
+
+.header-github {
+  grid-column: 4;
+  transform: scale(2);
+  transform-origin: center;
+  position: relative;
+  top: 18px;
+  right: 25px;
+  width: 20px;
+  height: 20px;
+
+  transition: transform 0.3s;
+}
+
+.header-github-icon {
+  color: white;
+  position: relative;
+  left: 2px;
+  bottom: 5px;
+}
+
+.header-github:hover {
+  transform: scale(2.5);
+}
+
+.header-back {
+  grid-column: 1;
+  transform: scale(2);
+  transform-origin: center;
+  position: relative;
+  top: 18px;
+  left: 30px;
+  width: 20px;
+  height: 20px;
+
+  transition: transform 0.3s;
+}
+
+.header-back-icon {
+  color: white;
+  position: relative;
+  left: 2px;
+  bottom: 5px;
+}
+
+.header-back:hover {
+  cursor: pointer;
+  transform: scale(2.5);
+}
+
+.header-logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.header-logo-text {
+  color: white;
+  font-size: 20px;
+}
