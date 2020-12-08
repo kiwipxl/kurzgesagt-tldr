@@ -11,7 +11,10 @@ export default (props) => {
     // first time render, let's scroll immediately!
     // we could put this in useEffect, but that will hapen after render and
     // there will be a delay as a result.
-    window.scrollTo(0, props.scrollY || 0);
+
+    if (typeof window !== 'undefined') {
+      window.scrollTo(0, props.scrollY || 0);
+    }
   }
   
   const [items, setItems] = React.useState(props.items || []);

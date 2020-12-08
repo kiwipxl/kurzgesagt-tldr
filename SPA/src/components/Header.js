@@ -1,8 +1,10 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
-import logo from '../assets/logo.png';
+// import logo from '../assets/logo.png';
 import { VscGithubInverted } from 'react-icons/vsc';
 import { IoArrowBack } from 'react-icons/io5';
+
+const logo = '';
 
 export default (props) => {
     const [expanded, setExpanded] = React.useState(true);

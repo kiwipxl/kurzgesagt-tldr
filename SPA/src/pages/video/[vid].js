@@ -1,19 +1,17 @@
 import React from 'react';
-import { useParams, useHistory } from 'react-router-dom';
+import { useRouter } from 'next/router';
 import Spinner from 'react-bootstrap/Spinner';
-import VideoDetailsNav from '../components/VideoDetailsNav';
-import VideoTranscript from '../components/VideoTranscript';
-import VideoSources from '../components/VideoSources';
-import VideoTags from '../components/VideoTags';
-import Video from '../components/Video';
-import VideoSoundTrack from '../components/VideoSoundTrack';
-import MissingDetails from '../components/MissingDetails';
-import Endpoint from '../Endpoint';
-import ErrorMessage from '../components/ErrorMessage';
+import VideoDetailsNav from '../../components/VideoDetailsNav';
+import VideoTranscript from '../../components/VideoTranscript';
+import VideoSources from '../../components/VideoSources';
+import VideoTags from '../../components/VideoTags';
+import Video from '../../components/Video';
+import VideoSoundTrack from '../../components/VideoSoundTrack';
+import MissingDetails from '../../components/MissingDetails';
+import Endpoint from '../../Endpoint';
+import ErrorMessage from '../../components/ErrorMessage';
 
 function DetailsContainer(props) {
-    const routerHistory = useHistory();
-
     return (
         <div className='content-container'>
             {!props.noContentBox &&
@@ -32,7 +30,9 @@ function DetailsContainer(props) {
 }
 
 export default (props) => {
-    const { videoId } = useParams();
+    const router = useRouter();
+    const { vid } = router.query;
+
     const defaultTab = 'video';
 
     const [tab, setTab] = React.useState(defaultTab);
@@ -40,29 +40,29 @@ export default (props) => {
     const [isFetching, setIsFetching] = React.useState(true);
     const [fetchError, setFetchError] = React.useState();
 
-    props.setHeaderOptions(true);
+    // props.setHeaderOptions(true);
 
-    if (window.location.hash !== '') {
-        // Override current tab with hash tab (e.g. /video/3mnSDifDSxQ#transcript)
-        const hashTab = window.location.hash.replace('#', '');
-        if (hashTab !== tab) {
-            setTab(hashTab);
-        }
-    }
+    // if (window.location.hash !== '') {
+    //     // Override current tab with hash tab (e.g. /video/3mnSDifDSxQ#transcript)
+    //     const hashTab = window.location.hash.replace('#', '');
+    //     if (hashTab !== tab) {
+    //         setTab(hashTab);
+    //     }
+    // }
 
     function onClickTab(newTab) {
         setTab(newTab);
     }
 
     React.useEffect(() => {
-        fetch(`${Endpoint.url}/video/${videoId}`)
+        fetch(`${Endpoint.url}/video/${vid}`)
             .then(res => res.json())
             .then(json => {
                 setVideoDetails(json);
                 setIsFetching(false);
             })
             .catch(err => {
-                console.error(`failed to fetch video details for ${videoId}`, err);
+                console.error(`failed to fetch video details for ${vid}`, err);
                 setFetchError(err);
             });
     }, []);
@@ -161,7 +161,7 @@ export default (props) => {
             </h2>
 
             <VideoDetailsNav
-                videoId={videoId}
+                videoId={vid}
                 tab={tab}
                 defaultTab={defaultTab}
                 onClickTab={onClickTab}
