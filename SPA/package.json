@@ -1,6 +1,6 @@
 {
   "name": "kurzgesagt-tldr",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "homepage": "https://kiwipxl.github.io/kurzgesagt-tldr",
   "dependencies": {
@@ -13,6 +13,7 @@
     "gh-pages": "^3.1.0",
     "html-react-parser": "^0.14.2",
     "luxon": "^1.25.0",
+    "next": "^10.0.3",
     "query-string": "^6.13.7",
     "react": "^17.0.1",
     "react-bootstrap": "^1.4.0",
@@ -23,8 +24,9 @@
     "react-scripts": "4.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "dev": "next dev",
+    "start": "next start",
+    "build": "next build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "deploy": "gh-pages -d build"
