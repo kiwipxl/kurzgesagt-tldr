@@ -28,7 +28,7 @@ export default (props) => {
       return;
     }
 
-    fetch(`/feed/page${page + 1}.json`)
+    fetch(`/kurzgesagt-tldr/feed/page${page + 1}.json`)
       .then(res => {
         if (res.status == 404) {
           // We've reached the end of the feed as there are no more pages left.
