@@ -1,11 +1,11 @@
 import React from 'react';
-import VideoCard from './VideoCard';
-import queryString from 'query-string';
+import { useRouter } from 'next/router';
 import Spinner from 'react-bootstrap/Spinner';
-import Endpoint from '../Endpoint';
+import VideoCard from './VideoCard';
 import ErrorMessage from './ErrorMessage';
 
 export default (props) => {
+  const router = useRouter();
   const rootRef = React.useRef(null);
   if (!rootRef || !rootRef.current) {
     // first time render, let's scroll immediately!
@@ -16,31 +16,43 @@ export default (props) => {
       window.scrollTo(0, props.scrollY || 0);
     }
   }
-  
+
+  const [page, setPage] = React.useState(1);
   const [items, setItems] = React.useState(props.items || []);
-  // start fetching immediately if we have no items
-  const [isFetching, setIsFetching] = React.useState(items.length == 0);
-  const [lastFetchError, setLastFetchError] = React.useState();
+  const [isFetching, setIsFetching] = React.useState(false);
+  const [stopFetching, setStopFetching] = React.useState(false);
+  const [fetchError, setFetchError] = React.useState();
 
   React.useEffect(() => {
-    if (!isFetching) {
+    if (!isFetching || stopFetching) {
       return;
     }
 
-    const params = {
-      startAt: items.length, 
-      maxResults: 12
-    };
+    fetch(`/feed/page${page + 1}.json`)
+      .then(res => {
+        if (res.status == 404) {
+          // We've reached the end of the feed as there are no more pages left.
+          // So stop fetching, we're done!
+          setStopFetching(true);
+          return;
+        }
 
-    fetch(`${Endpoint.url}/?${queryString.stringify(params)}`)
-      .then(res => res.json())
+        return res.json();
+      })
       .then(newItems => {
+        if (!newItems) {
+          return;
+        }
+
+        setPage(page + 1);
         setItems(items.concat(newItems));
         setIsFetching(false);
       })
       .catch(err => {
         console.error('video feed fetch error', err);
-        setLastFetchError(err);
+
+        setStopFetching(true);
+        setFetchError(err);
       });
   }, [isFetching]);
 
@@ -63,16 +75,6 @@ export default (props) => {
 
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
-
-  // If the initial fetch failed, show error
-  if (lastFetchError && items.length == 0) {
-    return (
-      <ErrorMessage
-        title="There was an error while fetching the video feed!"
-        details={lastFetchError.message}
-      />
-    );
-  }
 
   return (
     <div ref={rootRef} className="video-feed">
@@ -101,12 +103,20 @@ export default (props) => {
         );
       })}
 
-      {isFetching && 
+      {isFetching && !stopFetching && 
         <div className="video-feed-spinner">
           <Spinner animation="border" role="status">
             <span className="sr-only">Loading...</span>
           </Spinner>
         </div>
+      }
+
+      {fetchError && 
+        <ErrorMessage
+          className='video-feed-error'
+          title="Error when loading feed"
+          message={fetchError.message}
+        />
       }
     </div>
   )

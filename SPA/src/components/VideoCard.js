@@ -33,14 +33,14 @@ export default (props) => {
             durationString += char;
         }
     }
-
-    // We need to watch when the image height changes (e.g. everytime the window size changes)
-    // so that we can offset our duration based on it.
-    const resizeObserver = new ResizeObserver(entries => {
-        setImgHeight(entries[0].target.clientHeight);
-    });
-
+    
     React.useEffect(() => {
+        // We need to watch when the image height changes (e.g. everytime the window size changes)
+        // so that we can offset our duration based on it.
+        const resizeObserver = new ResizeObserver(entries => {
+            setImgHeight(entries[0].target.clientHeight);
+        });
+
         resizeObserver.observe(imgRef.current);
     }, []);
 

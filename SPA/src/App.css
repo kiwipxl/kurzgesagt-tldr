@@ -87,6 +87,12 @@ code {
   grid-column: 1 / -1;
 }
 
+.video-feed-error {
+  /* The video feed uses a grid, so we want to our spinner to span
+  across ALL rows of the grid so we can center it. */
+  grid-column: 1 / -1;
+}
+
 .video-details-title {
   margin-bottom: 20px;
 }

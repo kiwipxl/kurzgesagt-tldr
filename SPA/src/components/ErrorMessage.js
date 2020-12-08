@@ -5,7 +5,7 @@ export default (props) => {
     const [showingMoreDetails, setShowingMoreDetails] = React.useState(false);
 
     return (
-        <Alert variant='danger'>
+        <Alert variant='danger' className={props.className}>
             {props.title && 
                 <Alert.Heading>
                     {props.title}
