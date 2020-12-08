@@ -2,7 +2,6 @@
   "name": "kurzgesagt-tldr",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://kiwipxl.github.io/kurzgesagt-tldr",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
@@ -25,10 +24,10 @@
   "scripts": {
     "dev": "next dev",
     "start": "next start",
-    "build": "next build",
+    "build": "next build && next export",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "gh-pages -d build"
+    "deploy": "node deploy.js"
   },
   "eslintConfig": {
     "extends": "react-app"

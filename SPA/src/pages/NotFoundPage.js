@@ -2,7 +2,7 @@ import React from 'react';
 import Alert from 'react-bootstrap/Alert';
 
 export default (props) => {
-    props.setHeaderOptions(false);
+    // props.setHeaderOptions(false);
 
     return (
         <div className='content-container'>

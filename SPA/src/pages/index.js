@@ -31,6 +31,11 @@ export async function getStaticProps(context) {
     const res = await fetch(`${Endpoint.url}/?${queryString.stringify(params)}`);
     const items = await res.json();
 
+    for (const item of items) {
+      // description is not used in the feed and increases size significantly
+      delete item.description;
+    }
+
     return items;
   }
 
