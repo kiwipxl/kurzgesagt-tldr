@@ -6,7 +6,7 @@ import path from 'path';
 import Endpoint from '../Endpoint';
 import VideoFeed from '../components/VideoFeed';
 
-export default (props) => {
+const Component = (props) => {
   const router = useRouter();
 
   function onVideoClick(vid) {
@@ -25,6 +25,8 @@ export default (props) => {
       </div>
     );
 };
+
+export default Component;
 
 export async function getStaticProps(context) {
   async function fetchItems(startAt, maxResults) {

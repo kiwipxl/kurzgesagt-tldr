@@ -6,7 +6,7 @@ import { IoArrowBack } from 'react-icons/io5';
 
 const logo = '';
 
-export default (props) => {
+const Component = (props) => {
     const [expanded, setExpanded] = React.useState(true);
     const router = useRouter();
 
@@ -58,3 +58,5 @@ export default (props) => {
     </div>
   )
 };
+
+export default Component;

@@ -6,7 +6,7 @@ import Endpoint from '../../../Endpoint';
 import VideoDetailsContainer from '../../../components/VideoDetailsContainer';
 import { fetchVideoDetailsStaticPaths } from '../../../PageUtil';
 
-export default (props) => {
+const Component = (props) => {
     const [playerHeight, setPlayerHeight] = React.useState(0);
     const playerRef = React.useRef(null);
 
@@ -40,6 +40,8 @@ export default (props) => {
         </VideoDetailsContainer>
     );
 };
+
+export default Component;
 
 export async function getStaticProps({ params }) {
     const res = await fetch(`${Endpoint.url}/video/info/${params.vid}`);

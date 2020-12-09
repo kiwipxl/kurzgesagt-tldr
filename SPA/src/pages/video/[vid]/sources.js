@@ -24,7 +24,7 @@ function getDomainTagColour(domain) {
     return domainTagColours[Math.abs(hash) % domainTagColours.length];
 }
 
-export default (props) => {
+const Component = (props) => {
     let renderContent = [];
     let index = 0;
     let citationIndex = 0;
@@ -111,6 +111,8 @@ export default (props) => {
         </VideoDetailsContainer>
     );
 };
+
+export default Component;
 
 export async function getStaticProps({ params }) {
     const res = await fetch(`${Endpoint.url}/video/sources/${params.vid}`);

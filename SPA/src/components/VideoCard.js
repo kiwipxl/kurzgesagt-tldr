@@ -2,7 +2,7 @@ import React from 'react';
 import Card from 'react-bootstrap/Card';
 import { DateTime, Duration } from 'luxon';
 
-export default (props) => {
+const Component = (props) => {
     const [imgHeight, setImgHeight] = React.useState(0);
     const imgRef = React.useRef(null);
 
@@ -33,7 +33,7 @@ export default (props) => {
             durationString += char;
         }
     }
-    
+
     React.useEffect(() => {
         // We need to watch when the image height changes (e.g. everytime the window size changes)
         // so that we can offset our duration based on it.
@@ -76,3 +76,5 @@ export default (props) => {
         </Card>
     );
 }
+
+export default Component;

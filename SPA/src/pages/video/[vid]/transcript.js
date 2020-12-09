@@ -6,7 +6,7 @@ import Endpoint from '../../../Endpoint';
 import VideoDetailsContainer from '../../../components/VideoDetailsContainer';
 import { fetchVideoDetailsStaticPaths } from '../../../PageUtil';
 
-export default (props) => {
+const Component = (props) => {
     return (
         <VideoDetailsContainer vid={props.vid} tab='transcript' details={props.containerDetails}>
             <Card className='video-details-card'>
@@ -21,6 +21,8 @@ export default (props) => {
         </VideoDetailsContainer>
     );
 };
+
+export default Component;
 
 export async function getStaticProps({ params }) {
     const res = await fetch(`${Endpoint.url}/video/transcript/${params.vid}`);

@@ -1,6 +1,6 @@
 import { DateTime } from 'luxon';
 
-export default (props) => {
+const Component = (props) => {
     if (!props.timestampMillis) {
         return null;
     }
@@ -11,3 +11,5 @@ export default (props) => {
         <span className='last-updated'>{'Last updated ' + lastUpdateTime}</span>
     );
 };
+
+export default Component;

@@ -1,7 +1,7 @@
 import React from 'react';
 import Alert from 'react-bootstrap/Alert';
 
-export default (props) => {
+const Component = (props) => {
     const [showingMoreDetails, setShowingMoreDetails] = React.useState(false);
 
     return (
@@ -40,3 +40,5 @@ export default (props) => {
         </Alert>
     );
 };
+
+export default Component;

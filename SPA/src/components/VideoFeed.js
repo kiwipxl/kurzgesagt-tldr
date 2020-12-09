@@ -4,7 +4,7 @@ import Spinner from 'react-bootstrap/Spinner';
 import VideoCard from './VideoCard';
 import ErrorMessage from './ErrorMessage';
 
-export default (props) => {
+const Component = (props) => {
   const router = useRouter();
   const rootRef = React.useRef(null);
   if (!rootRef || !rootRef.current) {
@@ -121,3 +121,5 @@ export default (props) => {
     </div>
   )
 }
+
+export default Component;
