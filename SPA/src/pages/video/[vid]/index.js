@@ -1,11 +1,11 @@
 import React from 'react';
+import queryString from 'query-string';
 import Card from 'react-bootstrap/Card';
 import parse from 'html-react-parser';
 import ReactPlayer from 'react-player/youtube';
 import LastUpdatedTimestamp from '../../../components/LastUpdatedTimestamp';
 import Endpoint from '../../../Endpoint';
 import VideoDetailsContainer from '../../../components/VideoDetailsContainer';
-import { fetchVideoDetailsStaticPaths } from '../../../PageUtil';
 
 // Quick and easy way to convert description to HTML elements
 function parseDescription(desc) {
@@ -83,5 +83,20 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
-    return await fetchVideoDetailsStaticPaths();
+    const params = {
+      startAt: 0, 
+      maxResults: 1000
+    };
+
+    const res = await fetch(`${Endpoint.url}/?${queryString.stringify(params)}`);
+    const items = await res.json();
+
+    const paths = items.map(item => (
+        { params: { vid: item.id }}
+    ));
+
+    return {
+        paths, 
+        fallback: false
+    }
 }

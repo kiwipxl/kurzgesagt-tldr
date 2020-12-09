@@ -1,9 +1,9 @@
 import React from 'react';
+import queryString from 'query-string';
 import Card from 'react-bootstrap/Card';
 import LastUpdatedTimestamp from '../../../components/LastUpdatedTimestamp';
 import Endpoint from '../../../Endpoint';
 import VideoDetailsContainer from '../../../components/VideoDetailsContainer';
-import { fetchVideoDetailsStaticPaths } from '../../../PageUtil';
 
 const Component = (props) => {
     return (
@@ -50,5 +50,24 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
-    return await fetchVideoDetailsStaticPaths();
+    const params = {
+      startAt: 0, 
+      maxResults: 1000
+    };
+
+    const res = await fetch(`${Endpoint.url}/?${queryString.stringify(params)}`);
+    const items = await res.json();
+
+    let paths = [];
+    for (const item of items) {
+        const res = await fetch(`${Endpoint.url}/video/tags/${item.id}`);
+        if (res.status == 200) {
+            paths.push({ params: { vid: item.id }});
+        }
+    }
+    
+    return {
+        paths, 
+        fallback: false
+    }
 }

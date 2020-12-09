@@ -15,18 +15,21 @@ async function getSources(videoId) {
 
 async function getTranscript(videoId) {
     const captions = await database.db().collection('captions').findOne({id: videoId});
-    return captions ? captions.transcript : {};
+    if (captions && captions.transcript) {
+        return captions.transcript;
+    }
+    return null;
 }
 
 async function getTags(videoId) {
     const videoInfo = await database.db().collection('video_info').findOne({id: videoId});
-    if (videoInfo) {
+    if (videoInfo && videoInfo.tags) {
         return {
             tags: videoInfo.tags, 
             last_scraped: videoInfo.last_scraped
         };
     }
-    return {};
+    return null;
 }
 
 async function getPlaylists() {
@@ -64,28 +67,68 @@ module.exports.start = function() {
     app.get('/video/:videoId', async (req, res) => {
         const videoId = req.params.videoId;
 
-        res.send({
-            info: await getInfo(videoId), 
-            sources: await getSources(videoId), 
-            transcript: await getTranscript(videoId), 
-            tags: await getTags(videoId)
-        });
+        let result = {};
+
+        const info = await getInfo(videoId);
+        if (info) {
+            result.info = info;
+        }else {
+            res.status(404).send('Not found');
+            return;
+        }
+
+        const sources = await getSources(videoId);
+        if (sources) {
+            result.sources = sources;
+        }
+
+        const transcript = await getTranscript(videoId);
+        if (transcript) {
+            result.transcript = transcript;
+        }
+
+        const tags = await getTags(videoId);
+        if (tags) {
+            result.tags = tags;
+        }
+
+        res.send(result);
     });
 
     app.get('/video/info/:videoId', async (req, res) => {
-        res.send(await getInfo(req.params.videoId));
+        const info = await getInfo(req.params.videoId);
+        if (info) {
+            res.send(info);
+        }else {
+            res.status(404).send('Not found');
+        }
     });
 
     app.get('/video/sources/:videoId', async (req, res) => {
-        res.send(await getSources(req.params.videoId));
+        const sources = await getSources(req.params.videoId);
+        if (sources) {
+            res.send(sources);
+        }else {
+            res.status(404).send('Not found');
+        }
     });
 
     app.get('/video/transcript/:videoId', async (req, res) => {
-        res.send(await getTranscript(req.params.videoId));
+        const transcript = await getTranscript(req.params.videoId);
+        if (transcript) {
+            res.send(transcript);
+        }else {
+            res.status(404).send('Not found');
+        }
     });
 
     app.get('/video/tags/:videoId', async (req, res) => {
-        res.send(await getTags(req.params.videoId));
+        const tags = await getTags(req.params.videoId);
+        if (tags) {
+            res.send(tags);
+        }else {
+            res.status(404).send('Not found');
+        }
     });
 
     app.get('/playlists', async (req, res) => {

@@ -1,10 +1,10 @@
 import React from 'react';
+import queryString from 'query-string';
 import Card from 'react-bootstrap/Card';
 import ReactPlayer from 'react-player/soundcloud';
 import LastUpdatedTimestamp from '../../../components/LastUpdatedTimestamp';
 import Endpoint from '../../../Endpoint';
 import VideoDetailsContainer from '../../../components/VideoDetailsContainer';
-import { fetchVideoDetailsStaticPaths } from '../../../PageUtil';
 
 const Component = (props) => {
     const [playerHeight, setPlayerHeight] = React.useState(0);
@@ -66,5 +66,32 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
-    return await fetchVideoDetailsStaticPaths();
+    const params = {
+      startAt: 0, 
+      maxResults: 1000
+    };
+
+    const res = await fetch(`${Endpoint.url}/?${queryString.stringify(params)}`);
+    const items = await res.json();
+    
+    let paths = [];
+    for (const item of items) {
+        const res = await fetch(`${Endpoint.url}/video/info/${item.id}`);
+        if (res.status != 200) {
+            continue;
+        }
+        
+        const json = await res.json();
+        if (item.id == 'dSu5sXmsur4') {
+            console.log('hey', json.soundtrack);
+        }
+        if (json.soundtrack && json.soundtrack.url) {
+            paths.push({ params: { vid: item.id }});
+        }
+    }
+
+    return {
+        paths, 
+        fallback: false
+    }
 }
