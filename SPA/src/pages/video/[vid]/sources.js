@@ -1,6 +1,10 @@
+import React from 'react';
 import Card from 'react-bootstrap/Card';
 import chroma from 'chroma-js';
-import LastUpdatedTimestamp from './LastUpdatedTimestamp';
+import LastUpdatedTimestamp from '../../../components/LastUpdatedTimestamp';
+import Endpoint from '../../../Endpoint';
+import VideoDetailsContainer from '../../../components/VideoDetailsContainer';
+import { fetchVideoDetailsStaticPaths } from '../../../PageUtil';
 
 const domainTagColours = [chroma('#8dd3c7'),chroma('#ffffb3'),chroma('#bebada'),chroma('#fb8072'),chroma('#80b1d3'),chroma('#fdb462'),chroma('#b3de69'),chroma('#fccde5'),chroma('#d9d9d9'),chroma('#bc80bd'),chroma('#ccebc5'),chroma('#ffed6f')];
 
@@ -91,7 +95,7 @@ export default (props) => {
     }
 
     return (
-        <div>
+        <VideoDetailsContainer vid={props.vid} tab='sources' details={props.containerDetails}>
             <Card className='video-details-card'>
                 <Card.Body>
                     <p className='info-box'>
@@ -104,6 +108,32 @@ export default (props) => {
             </Card>
 
             <LastUpdatedTimestamp timestampMillis={props.lastUpdated}/>
-        </div>
+        </VideoDetailsContainer>
     );
 };
+
+export async function getStaticProps({ params }) {
+    const res = await fetch(`${Endpoint.url}/video/sources/${params.vid}`);
+    const sources = await res.json();
+
+    const containerDetails = await VideoDetailsContainer.fetchDetails(params.vid);
+
+    return {
+        props: {
+            vid: params.vid, 
+            containerDetails: containerDetails, 
+
+            sources: sources, 
+            lastUpdated: sources.last_updated, 
+
+            header: {
+                showBack: true, 
+                backUrl: '/'
+            }
+        }
+    }
+}
+
+export async function getStaticPaths() {
+    return await fetchVideoDetailsStaticPaths();
+}

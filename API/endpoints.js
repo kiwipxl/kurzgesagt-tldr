@@ -20,7 +20,13 @@ async function getTranscript(videoId) {
 
 async function getTags(videoId) {
     const videoInfo = await database.db().collection('video_info').findOne({id: videoId});
-    return videoInfo ? videoInfo.tags : {};
+    if (videoInfo) {
+        return {
+            tags: videoInfo.tags, 
+            last_scraped: videoInfo.last_scraped
+        };
+    }
+    return {};
 }
 
 async function getPlaylists() {
@@ -66,22 +72,20 @@ module.exports.start = function() {
         });
     });
 
-    app.get('/video/sources/:videoId', async (req, res) => {
-        const videoId = req.params.videoId;
+    app.get('/video/info/:videoId', async (req, res) => {
+        res.send(await getInfo(req.params.videoId));
+    });
 
-        res.send(await getSources(videoId));
+    app.get('/video/sources/:videoId', async (req, res) => {
+        res.send(await getSources(req.params.videoId));
     });
 
     app.get('/video/transcript/:videoId', async (req, res) => {
-        const videoId = req.params.videoId;
-
-        res.send(await getTranscript(videoId));
+        res.send(await getTranscript(req.params.videoId));
     });
 
     app.get('/video/tags/:videoId', async (req, res) => {
-        const videoId = req.params.videoId;
-
-        res.send(await getTags(videoId));
+        res.send(await getTags(req.params.videoId));
     });
 
     app.get('/playlists', async (req, res) => {

@@ -4,8 +4,8 @@ import '../App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App({Component, pageProps}) {
-  const [showBackButton, setShowBackButton] = React.useState(false);
-  
+  const [headerProps, setHeaderProps] = React.useState({});
+
   // const [feedItems, setFeedItems] = React.useState([]);
   // const [feedScrollY, setFeedScrollY] = React.useState(0);
   // const router = useRouter();
@@ -17,13 +17,13 @@ function App({Component, pageProps}) {
   // }
 
   if (pageProps.header) {
-    if (showBackButton != pageProps.header.showBack) {
-      setShowBackButton(pageProps.header.showBack);
+    if (JSON.stringify(headerProps) !== JSON.stringify(pageProps.header)) {
+      setHeaderProps(pageProps.header);
     }
   }
 
   return (
-    <Header showBack={showBackButton}>
+    <Header {...headerProps}>
       <Component {...pageProps}>
       </Component>
     </Header>

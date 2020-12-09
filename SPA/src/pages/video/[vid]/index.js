@@ -2,7 +2,10 @@ import React from 'react';
 import Card from 'react-bootstrap/Card';
 import parse from 'html-react-parser';
 import ReactPlayer from 'react-player/youtube';
-import LastUpdatedTimestamp from './LastUpdatedTimestamp';
+import LastUpdatedTimestamp from '../../../components/LastUpdatedTimestamp';
+import Endpoint from '../../../Endpoint';
+import VideoDetailsContainer from '../../../components/VideoDetailsContainer';
+import { fetchVideoDetailsStaticPaths } from '../../../PageUtil';
 
 // Quick and easy way to convert description to HTML elements
 function parseDescription(desc) {
@@ -21,7 +24,7 @@ function parseDescription(desc) {
     return parse(desc);
 }
 
-export default (props) => {
+const Component = (props) => {
     const [playerHeight, setPlayerHeight] = React.useState(0);
     const playerRef = React.useRef(null);
 
@@ -33,15 +36,15 @@ export default (props) => {
 
         resizeObserver.observe(playerRef.current);
     }, []);
-    
+
     return (
-        <div>
+        <VideoDetailsContainer vid={props.vid} tab='video' details={props.containerDetails}>
             <Card className='video-details-card'>
                 <div ref={playerRef} className='youtube-player'>
                     <ReactPlayer
                         width='100%'
                         height={playerHeight}
-                        url={`https://www.youtube.com/watch?v=${props.id}`}
+                        url={`https://www.youtube.com/watch?v=${props.vid}`}
                     />
                 </div>
 
@@ -51,6 +54,34 @@ export default (props) => {
             </Card>
 
             <LastUpdatedTimestamp timestampMillis={props.lastUpdated}/>
-        </div>
+        </VideoDetailsContainer>
     );
 };
+
+export default Component;
+
+export async function getStaticProps({ params }) {
+    const res = await fetch(`${Endpoint.url}/video/info/${params.vid}`);
+    const info = await res.json();
+
+    const containerDetails = await VideoDetailsContainer.fetchDetails(params.vid);
+
+    return {
+        props: {
+            vid: params.vid, 
+            containerDetails: containerDetails, 
+
+            description: info.description, 
+            lastUpdated: info.last_scraped, 
+
+            header: {
+                showBack: true, 
+                backUrl: '/'
+            }
+        }
+    }
+}
+
+export async function getStaticPaths() {
+    return await fetchVideoDetailsStaticPaths();
+}

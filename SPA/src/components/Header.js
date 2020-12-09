@@ -23,7 +23,11 @@ export default (props) => {
   }, []);
 
   function onClickBack() {
-    router.back();
+    if (props.backUrl) {
+      router.push(props.backUrl);
+    }else {
+      router.back();
+    }
   }
 
   return (
