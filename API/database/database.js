@@ -104,8 +104,8 @@ captions: [
     }
 ], 
 
-scrape_info: {
-    last_scraped_all_videos_list: DateTime, 
-    last_scraped_new_videos_list: DateTime
+misc: {
+    last_fetched_new_videos: DateTime, 
+    last_scraped_video_list: DateTime
 }
 */

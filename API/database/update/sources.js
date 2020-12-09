@@ -119,7 +119,7 @@ module.exports.generate = (htmlString) => {
 };
 
 // Updates the sources in the database for the given video.
-module.exports.updateDB = async (videoId) => {
+module.exports.update = async (videoId) => {
     const dbVideoInfo = await database.db().collection('video_info').findOne({id: videoId});
     if (!dbVideoInfo) {
         return false;

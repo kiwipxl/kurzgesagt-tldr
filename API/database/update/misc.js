@@ -33,9 +33,8 @@ async function findSoundTrackUrl(description) {
     });
 }
 
-// Updates some additional data or metadata for the given video after youtube data
-// has been collected.
-module.exports.updateDB = async (videoId) => {
+// Updates some additional data or metadata for the given video.
+module.exports.update = async (videoId) => {
     const dbVideoInfo = await database.db().collection('video_info').findOne({id: videoId});
     if (!dbVideoInfo || !dbVideoInfo.title) {
         return false;
@@ -56,5 +55,5 @@ module.exports.updateDB = async (videoId) => {
         { upsert: true }
     );
 
-    console.log(`updated youtube post-process for video ${videoId}`);
+    console.log(`updated misc data for video ${videoId}`);
 }

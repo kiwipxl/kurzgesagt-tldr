@@ -35,7 +35,7 @@ module.exports.generate = (srt) => {
 }
 
 // Updates the transcript in the database for the given video.
-module.exports.updateDB = async (videoId) => {
+module.exports.update = async (videoId) => {
     const captions = await database.db().collection('captions').findOne({id: videoId});
     if (!(captions && captions.captions && captions.captions.srt && captions.captions.srt.en)) {
         return false;

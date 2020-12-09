@@ -1,8 +1,31 @@
-const database = require('./database');
-const scrape = require('./data/yt-scrape/scrape');
+const database = require('./database/database');
+const database_scrape = require('./database/yt-scrape/scrape');
+const database_update = require('./database/update/update');
 const auth = require('./auth');
 const endpoints = require('./endpoints');
-const update_db = require('./data/update_db');
+
+async function fetchNewVideos() {
+    try {
+        console.log('scraping...');
+        await database_scrape.scrapeNew(auth.google(), 5);
+
+        console.log('updating database...');
+        await database_update.updateNew(5);
+
+        await database.db().collection('misc').updateOne(
+            {}, 
+            {
+                $set: { last_fetched_new_videos: Date.now() }
+            }, 
+            { upsert: true }
+        );
+
+        console.log('new videos fetched successfully.');
+    }
+    catch (err) {
+        console.error('failed to fetch new videos', err);
+    }
+}
 
 async function init() {
     try {
@@ -13,10 +36,8 @@ async function init() {
     }
 
     endpoints.start();
-    
-    // await update_db();
-    // TODO: set a timer to continuously scrape every few hours or so
-    // await scrape(auth.google());
+
+    await fetchNewVideos();
 }
 
 init();
