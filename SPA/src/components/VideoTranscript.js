@@ -8,7 +8,7 @@ export default (props) => {
             <Card className='video-details-card'>
                 <Card.Body>
                     <div>
-                        {parse(props.transcript.replaceAll('\n', '<br/>'))}
+                        {parse(props.transcript.replace(/\n/g, '<br/>'))}
                     </div>
                 </Card.Body>
             </Card>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { useRouter } from 'next/router';
-import Spinner from 'react-bootstrap/Spinner';
+import queryString from 'query-string';
 import VideoDetailsNav from '../../components/VideoDetailsNav';
 import VideoTranscript from '../../components/VideoTranscript';
 import VideoSources from '../../components/VideoSources';
@@ -9,7 +9,6 @@ import Video from '../../components/Video';
 import VideoSoundTrack from '../../components/VideoSoundTrack';
 import MissingDetails from '../../components/MissingDetails';
 import Endpoint from '../../Endpoint';
-import ErrorMessage from '../../components/ErrorMessage';
 
 function DetailsContainer(props) {
     return (
@@ -30,17 +29,13 @@ function DetailsContainer(props) {
 }
 
 export default (props) => {
+    const defaultTab = 'video';
+    const [tab, setTab] = React.useState(defaultTab);
+
     const router = useRouter();
     const { vid } = router.query;
 
-    const defaultTab = 'video';
-
-    const [tab, setTab] = React.useState(defaultTab);
-    const [videoDetails, setVideoDetails] = React.useState({});
-    const [isFetching, setIsFetching] = React.useState(true);
-    const [fetchError, setFetchError] = React.useState();
-
-    // props.setHeaderOptions(true);
+    const videoDetails = props.videoDetails;
 
     // if (window.location.hash !== '') {
     //     // Override current tab with hash tab (e.g. /video/3mnSDifDSxQ#transcript)
@@ -52,42 +47,6 @@ export default (props) => {
 
     function onClickTab(newTab) {
         setTab(newTab);
-    }
-
-    React.useEffect(() => {
-        fetch(`${Endpoint.url}/video/${vid}`)
-            .then(res => res.json())
-            .then(json => {
-                setVideoDetails(json);
-                setIsFetching(false);
-            })
-            .catch(err => {
-                console.error(`failed to fetch video details for ${vid}`, err);
-                setFetchError(err);
-            });
-    }, []);
-
-    if (fetchError) {
-        return (
-            <DetailsContainer noContentBox>
-                <ErrorMessage
-                    title="There was an error while fetching video details!"
-                    details={fetchError.message}
-                />
-            </DetailsContainer>
-        );
-    }
-
-    if (isFetching) {
-        return (
-            <DetailsContainer>
-                <div className='center'>
-                    <Spinner animation="border" role="status">
-                        <span className="sr-only">Loading...</span>
-                    </Spinner>
-                </div>
-            </DetailsContainer>
-        );
     }
 
     const hasSources = videoDetails.sources != undefined;
@@ -178,3 +137,37 @@ export default (props) => {
         </DetailsContainer>
     );
 };
+
+export async function getStaticProps({ params }) {
+    const res = await fetch(`${Endpoint.url}/video/${params.vid}`);
+    const json = await res.json();
+    
+    return {
+        props: {
+            videoDetails: json, 
+
+            header: {
+                showBack: true
+            }
+        }
+    }
+}
+
+export async function getStaticPaths() {
+    const params = {
+      startAt: 0, 
+      maxResults: 1000
+    };
+
+    const res = await fetch(`${Endpoint.url}/?${queryString.stringify(params)}`);
+    const items = await res.json();
+
+    const paths = items.map(item => (
+        { params: { vid: item.id }}
+    ));
+
+    return {
+        paths, 
+        fallback: false
+    }
+}

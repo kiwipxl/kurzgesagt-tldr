@@ -1,19 +1,24 @@
 import React from 'react';
 import queryString from 'query-string';
-import Endpoint from '../Endpoint';
-import VideoFeed from '../components/VideoFeed';
+import { useRouter } from 'next/router';
 import fs from 'fs';
 import path from 'path';
+import Endpoint from '../Endpoint';
+import VideoFeed from '../components/VideoFeed';
 
 export default (props) => {
-    // props.setHeaderOptions(false);
-    
+  const router = useRouter();
+
+  function onVideoClick(vid) {
+    router.push(`/video/${vid}`);
+  }
+
     return (
       <div className='content-container'>
           <div className='content'>
             {props.children}
 
-            <VideoFeed items={props.items}>
+            <VideoFeed items={props.items} onVideoClick={onVideoClick}>
 
             </VideoFeed>
           </div>
@@ -64,7 +69,10 @@ export async function getStaticProps(context) {
 
   return {
     props: {
-      items: initialItems
+      items: initialItems, 
+      header: {
+        showBack: false
+      }
     }
   }
 }

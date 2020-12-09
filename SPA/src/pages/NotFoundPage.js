@@ -2,8 +2,6 @@ import React from 'react';
 import Alert from 'react-bootstrap/Alert';
 
 export default (props) => {
-    // props.setHeaderOptions(false);
-
     return (
         <div className='content-container'>
             <Alert variant='warning'>
@@ -14,3 +12,13 @@ export default (props) => {
         </div>
     );
 };
+
+export async function getStaticProps(context) {
+    return {
+        props: {
+            header: {
+                showBack: false
+            }
+        }
+    }
+}

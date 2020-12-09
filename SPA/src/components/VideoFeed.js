@@ -95,7 +95,7 @@ export default (props) => {
               publishedAt={video.publishedAt}
               thumbnail={thumbnail}
               duration={video.duration}
-              onClick={() => props.onVideoClick && props.onVideoClick(video.id, items)}
+              onClick={() => props.onVideoClick && props.onVideoClick(video.id)}
             >
 
             </VideoCard>

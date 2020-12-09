@@ -1,11 +1,11 @@
 import Nav from 'react-bootstrap/Nav';
-import { useHistory } from 'react-router-dom';
+import { useRouter } from 'next/router';
 
 export default (props) => {
-    const routerHistory = useHistory();
+    const router = useRouter();
 
     const onClick = (eventKey) => {
-        routerHistory.replace(`/video/${props.videoId}#${eventKey}`);
+        router.replace(`/video/${props.videoId}#${eventKey}`);
 
         if (props.onClickTab) {
             props.onClickTab(eventKey);

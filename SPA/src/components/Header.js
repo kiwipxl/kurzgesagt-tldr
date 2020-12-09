@@ -1,5 +1,5 @@
 import React from 'react';
-import { useHistory } from 'react-router-dom';
+import { useRouter } from 'next/router';
 // import logo from '../assets/logo.png';
 import { VscGithubInverted } from 'react-icons/vsc';
 import { IoArrowBack } from 'react-icons/io5';
@@ -8,7 +8,7 @@ const logo = '';
 
 export default (props) => {
     const [expanded, setExpanded] = React.useState(true);
-    const routerHistory = useHistory();
+    const router = useRouter();
 
   function onScroll(ev) {
     setExpanded(expanded => {
@@ -23,7 +23,7 @@ export default (props) => {
   }, []);
 
   function onClickBack() {
-    routerHistory.goBack();
+    router.back();
   }
 
   return (
@@ -35,7 +35,7 @@ export default (props) => {
             </a>
           }
 
-          <a href='/' className='header-brand'>
+          <a href={router.basePath} className='header-brand'>
               <img
                   className='header-logo'
                   src={logo}
