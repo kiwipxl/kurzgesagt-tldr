@@ -1,4 +1,4 @@
 module.exports = {
-	assetPrefix: '/kurzgesagt-tldr', 
-	basePath: '/kurzgesagt-tldr'
+  assetPrefix: '/kurzgesagt-tldr',
+  basePath: '/kurzgesagt-tldr',
 };

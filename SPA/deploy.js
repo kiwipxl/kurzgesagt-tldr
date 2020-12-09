@@ -10,10 +10,10 @@ const path = require('path');
 // So adding an empty .nojekyll file fixes this.
 fs.writeFileSync(path.join(__dirname, 'out/.nojekyll'), '');
 
-ghPages.publish('out', {dotfiles: true}, (err) => {
-    if (err) {
-        console.error('deploy error', err);
-    }else {
-        console.log('successfully deployed.');
-    }
+ghPages.publish('out', { dotfiles: true }, (err) => {
+  if (err) {
+    console.error('deploy error', err);
+  } else {
+    console.log('successfully deployed.');
+  }
 });

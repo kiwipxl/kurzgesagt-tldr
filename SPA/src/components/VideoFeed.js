@@ -29,7 +29,7 @@ const Component = (props) => {
     }
 
     fetch(`/kurzgesagt-tldr/feed/page${page + 1}.json`)
-      .then(res => {
+      .then((res) => {
         if (res.status == 404) {
           // We've reached the end of the feed as there are no more pages left.
           // So stop fetching, we're done!
@@ -39,7 +39,7 @@ const Component = (props) => {
 
         return res.json();
       })
-      .then(newItems => {
+      .then((newItems) => {
         if (!newItems) {
           return;
         }
@@ -48,7 +48,7 @@ const Component = (props) => {
         setItems(items.concat(newItems));
         setIsFetching(false);
       })
-      .catch(err => {
+      .catch((err) => {
         console.error('video feed fetch error', err);
 
         setStopFetching(true);
@@ -63,12 +63,13 @@ const Component = (props) => {
 
     const rootRefBottom = rootRef.current.getClientRects()[0].bottom;
     const cardHeightPadding = 100; // rough value, good enough
-    const cardHeight = rootRef.current.firstElementChild.clientHeight + cardHeightPadding;
+    const cardHeight =
+      rootRef.current.firstElementChild.clientHeight + cardHeightPadding;
 
     if (rootRefBottom - cardHeight <= window.innerHeight) {
       setIsFetching(true);
     }
-  };
+  }
 
   React.useEffect(() => {
     window.addEventListener('scroll', onScroll);
@@ -78,12 +79,12 @@ const Component = (props) => {
 
   return (
     <div ref={rootRef} className="video-feed">
-      {items.map(video => {
-        const thumbnail = 
-          video.thumbnails.maxresUrl || 
-          video.thumbnails.standardUrl || 
-          video.thumbnails.highUrl || 
-          video.thumbnails.mediumUrl || 
+      {items.map((video) => {
+        const thumbnail =
+          video.thumbnails.maxresUrl ||
+          video.thumbnails.standardUrl ||
+          video.thumbnails.highUrl ||
+          video.thumbnails.mediumUrl ||
           video.thumbnails.defaultUrl;
 
         return (
@@ -96,30 +97,28 @@ const Component = (props) => {
               thumbnail={thumbnail}
               duration={video.duration}
               onClick={() => props.onVideoClick && props.onVideoClick(video.id)}
-            >
-
-            </VideoCard>
+            ></VideoCard>
           </div>
         );
       })}
 
-      {isFetching && !stopFetching && 
+      {isFetching && !stopFetching && (
         <div className="video-feed-spinner">
           <Spinner animation="border" role="status">
             <span className="sr-only">Loading...</span>
           </Spinner>
         </div>
-      }
+      )}
 
-      {fetchError && 
+      {fetchError && (
         <ErrorMessage
-          className='video-feed-error'
+          className="video-feed-error"
           title="Error when loading feed"
           message={fetchError.message}
         />
-      }
+      )}
     </div>
-  )
-}
+  );
+};
 
 export default Component;

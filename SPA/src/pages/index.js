@@ -13,17 +13,15 @@ const Component = (props) => {
     router.push(`/video/${vid}`);
   }
 
-    return (
-      <div className='content-container'>
-          <div className='content'>
-            {props.children}
+  return (
+    <div className="content-container">
+      <div className="content">
+        {props.children}
 
-            <VideoFeed items={props.items} onVideoClick={onVideoClick}>
-
-            </VideoFeed>
-          </div>
+        <VideoFeed items={props.items} onVideoClick={onVideoClick}></VideoFeed>
       </div>
-    );
+    </div>
+  );
 };
 
 export default Component;
@@ -31,11 +29,13 @@ export default Component;
 export async function getStaticProps(context) {
   async function fetchItems(startAt, maxResults) {
     const params = {
-      startAt: startAt, 
-      maxResults: maxResults
+      startAt: startAt,
+      maxResults: maxResults,
     };
 
-    const res = await fetch(`${Endpoint.url}/?${queryString.stringify(params)}`);
+    const res = await fetch(
+      `${Endpoint.url}/?${queryString.stringify(params)}`
+    );
     const items = await res.json();
 
     for (const item of items) {
@@ -56,11 +56,11 @@ export async function getStaticProps(context) {
 
     const feedDir = path.join(process.cwd(), 'public/feed');
     fs.writeFileSync(
-      path.join(feedDir, `page${page + 1}.json`), 
-      JSON.stringify(items), 
+      path.join(feedDir, `page${page + 1}.json`),
+      JSON.stringify(items),
       {
-        encoding: 'utf8', 
-        flag: 'w'
+        encoding: 'utf8',
+        flag: 'w',
       }
     );
 
@@ -71,10 +71,10 @@ export async function getStaticProps(context) {
 
   return {
     props: {
-      items: initialItems, 
+      items: initialItems,
       header: {
-        showBack: false
-      }
-    }
-  }
+        showBack: false,
+      },
+    },
+  };
 }
