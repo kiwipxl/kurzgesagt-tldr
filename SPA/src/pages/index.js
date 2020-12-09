@@ -55,6 +55,11 @@ export async function getStaticProps(context) {
     }
 
     const feedDir = path.join(process.cwd(), 'public/feed');
+
+    if (!fs.existsSync(feedDir)) {
+      fs.mkdirSync(feedDir);
+    }
+
     fs.writeFileSync(
       path.join(feedDir, `page${page + 1}.json`),
       JSON.stringify(items),

@@ -1,10 +1,7 @@
 import React from 'react';
 import { useRouter } from 'next/router';
-// import logo from '../assets/logo.png';
 import { VscGithubInverted } from 'react-icons/vsc';
 import { IoArrowBack } from 'react-icons/io5';
-
-const logo = '';
 
 const Component = (props) => {
   const [expanded, setExpanded] = React.useState(true);
@@ -40,7 +37,11 @@ const Component = (props) => {
         )}
 
         <a href={router.basePath} className="header-brand">
-          <img className="header-logo" src={logo} alt="logo" />
+          <img
+            className="header-logo"
+            src={'/kurzgesagt-tldr/logo.png'}
+            alt="logo"
+          />
 
           <span className="header-logo-text">kurzgesagt-tldr</span>
         </a>

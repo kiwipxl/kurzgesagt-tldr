@@ -6,6 +6,26 @@ const endpoints = require('./endpoints');
 
 async function fetchNewVideos() {
   try {
+    const fetchCooldownInMinutes = 120;
+
+    const misc = await database.db().collection('misc').findOne();
+    if (misc && misc.last_fetched_new_videos) {
+      const timeSinceLastScrape = Date.now() - misc.last_fetched_new_videos;
+
+      if (timeSinceLastScrape < fetchCooldownInMinutes * 60 * 1000) {
+        const cooldownMinutes = Math.round(
+          fetchCooldownInMinutes - timeSinceLastScrape / 60 / 1000
+        );
+
+        console.log(
+          'skipping fetching new videos. can try again in ' +
+            cooldownMinutes +
+            'm'
+        );
+        return;
+      }
+    }
+
     console.log('scraping...');
     await database_scrape.scrapeNew(auth.google(), 5);
 
