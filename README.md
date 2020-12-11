@@ -3,12 +3,14 @@
 </h1>
 
 <p align="center">
-  Displays all sorts of fun information from the Kurzgesagt youtube channel (educational science videos).
+  A webapp for all sorts of tidbits of information from the Kurzgesagt youtube channel (animated science videos).
 </p>
 
 <h3 align="center">
   Visit the app live at <a href="https://kiwipxl.github.io/kurzgesagt-tldr/">https://kiwipxl.github.io/kurzgesagt-tldr/</a>
 </h3>
+
+[App screenshot](SPA/design/progress-11-12-2020.png?raw=true)
 
 ## How it works
 The API (node.js) populates the MongoDB database by fetching data from the Kurzgesagt youtube channel (science and education) with the <a href="https://www.npmjs.com/package/youtube-api">youtube-api</a>. This includes uploaded videos, video information, video transcripts, tags, and video soundtrack. It even parses their research citations so that we can format them in a prettier way.

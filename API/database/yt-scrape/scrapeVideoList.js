@@ -1,4 +1,5 @@
 const database = require('../database');
+const scrapeVideoInfo = require('./scrapeVideoInfo');
 
 // Youtube uploaded videos are considered a playlist.
 // This is kurzgesagt's uploaded videos playlist.
@@ -31,6 +32,8 @@ async function scrapeVideoList(google, pageToken, maxResults) {
       });
 
       console.log('found new video', videoId);
+
+      await scrapeVideoInfo(google, videoId);
     }
   }
 
