@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-  A webapp for all sorts of tidbits of information from the Kurzgesagt youtube channel (animated science videos).
+  A webapp with all sorts of tidbits of information from the Kurzgesagt youtube channel (animated science videos).
 </p>
 
 <h3 align="center">

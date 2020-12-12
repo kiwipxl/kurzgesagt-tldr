@@ -21,6 +21,12 @@ module.exports = {
 /*
 Database model.
 
+uploaded_videos: [
+    {
+        id: String
+    }
+], 
+
 video_info: [
     {
         id: String, // video id

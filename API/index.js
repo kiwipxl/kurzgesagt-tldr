@@ -3,6 +3,7 @@ const database_scrape = require('./database/yt-scrape/scrape');
 const database_update = require('./database/update/update');
 const auth = require('./auth');
 const endpoints = require('./endpoints');
+const database_schemas = require('./database/schemas');
 
 async function fetchNewVideos() {
   try {
@@ -56,9 +57,34 @@ async function init() {
     console.error('failed to connect to database', err);
   }
 
-  endpoints.start();
+  // endpoints.start();
 
-  await fetchNewVideos();
+  // await fetchNewVideos();
+
+  await database.db().command({
+    collMod: 'video_info',
+    validator: {
+      $jsonSchema: database_schemas.collections.video_info,
+    },
+    validationLevel: 'strict',
+  });
+
+  const cursor = database
+    .db()
+    .collection('video_info')
+    .find({
+      $nor: [
+        {
+          $jsonSchema: database_schemas.collections.video_info,
+        },
+      ],
+    });
+
+  for await (const v of cursor) {
+    console.log(`video_info ${v.id} failed schema validation`);
+  }
+
+  console.log('done');
 }
 
 init();
