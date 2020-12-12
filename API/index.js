@@ -61,28 +61,8 @@ async function init() {
 
   // await fetchNewVideos();
 
-  await database.db().command({
-    collMod: 'video_info',
-    validator: {
-      $jsonSchema: database_schemas.collections.video_info,
-    },
-    validationLevel: 'strict',
-  });
-
-  const cursor = database
-    .db()
-    .collection('video_info')
-    .find({
-      $nor: [
-        {
-          $jsonSchema: database_schemas.collections.video_info,
-        },
-      ],
-    });
-
-  for await (const v of cursor) {
-    console.log(`video_info ${v.id} failed schema validation`);
-  }
+  database_schemas.applyAll();
+  database_schemas.validateAll();
 
   console.log('done');
 }

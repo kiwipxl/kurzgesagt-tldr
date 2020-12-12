@@ -1,4 +1,50 @@
+const database = require('./database');
+
+async function applyAll() {
+  apply('video_info', module.exports.collections.video_info);
+}
+
+async function apply(collectionName, schema) {
+  await database.db().command({
+    collMod: collectionName,
+    validator: {
+      $jsonSchema: schema,
+    },
+    validationLevel: 'strict',
+  });
+}
+
+async function validateAll() {
+  validate('video_info', module.exports.collections.video_info);
+}
+
+async function validate(collectionName, schema) {
+  const cursor = database
+    .db()
+    .collection(collectionName)
+    .find({
+      $nor: [
+        {
+          $jsonSchema: schema,
+        },
+      ],
+    });
+
+  for await (const document of cursor) {
+    throw new Error(
+      `${collectionName} failed schema validation with the following data: ${JSON.stringify(
+        document
+      )}`
+    );
+  }
+}
+
 module.exports = {
+  apply: apply,
+  applyAll: applyAll,
+  validate: validate,
+  validateAll: validateAll,
+
   collections: {
     video_info: {
       bsonType: 'object',
