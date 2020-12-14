@@ -6,7 +6,7 @@ const misc = require('./misc');
 async function update(limit) {
   let videosCursor = database
     .db()
-    .collection('video_info')
+    .collection('video_list')
     .find({})
     .sort({ publishedAt: -1 });
 

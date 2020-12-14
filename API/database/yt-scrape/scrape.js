@@ -10,7 +10,7 @@ module.exports.scrapeNew = async (google, limit) => {
 
   const videosCursor = database
     .db()
-    .collection('video_info')
+    .collection('video_list')
     .find({})
     .sort({ publishedAt: -1 })
     .limit(limit);
@@ -28,7 +28,7 @@ module.exports.scrapeAll = async (google) => {
 
   const videosCursor = database
     .db()
-    .collection('video_info')
+    .collection('video_list')
     .find({})
     .sort({ publishedAt: -1 });
 

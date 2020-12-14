@@ -46,7 +46,7 @@ async function fetchNewVideos() {
 
     console.log('new videos fetched successfully.');
   } catch (err) {
-    console.error('failed to fetch new videos', err);
+    console.error('error while fetching new videos', err);
   }
 }
 
@@ -57,14 +57,12 @@ async function init() {
     console.error('failed to connect to database', err);
   }
 
-  // endpoints.start();
-
-  // await fetchNewVideos();
-
   database_schemas.applyAll();
   database_schemas.validateAll();
 
-  console.log('done');
+  endpoints.start();
+
+  await fetchNewVideos();
 }
 
 init();

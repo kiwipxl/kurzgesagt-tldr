@@ -61,7 +61,7 @@ module.exports.start = function () {
     const cursor = await database
       .db()
       .collection('video_info')
-      .find({ title: { $exists: true } }) // ensure our database entry is valid
+      .find({})
       .sort({ publishedAt: -1 })
       .limit(maxResults)
       .skip(startAt);

@@ -21,17 +21,17 @@ async function scrapeVideoList(google, pageToken, maxResults) {
   for (const playlistItem of playlistItemsRes.data.items) {
     const videoId = playlistItem.snippet.resourceId.videoId;
 
-    const videoInfo = await database.db().collection('video_info').findOne({
+    const video = await database.db().collection('video_list').findOne({
       id: videoId,
     });
 
     // add new video if it doesn't already exist
-    if (!videoInfo || !videoInfo.title) {
-      await database.db().collection('video_info').insertOne({
+    if (!video) {
+      console.log('found new video', videoId);
+
+      await database.db().collection('video_list').insertOne({
         id: videoId,
       });
-
-      console.log('found new video', videoId);
 
       await scrapeVideoInfo(google, videoId);
     }
@@ -66,7 +66,7 @@ module.exports = async function (google, pageLimit) {
 
   await database
     .db()
-    .collection('scrape_info')
+    .collection('misc')
     .updateOne(
       {},
       {

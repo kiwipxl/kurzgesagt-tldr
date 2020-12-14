@@ -56,6 +56,16 @@ module.exports = {
   validateAll: validateAll,
 
   collections: {
+    video_list: {
+      bsonType: 'object',
+      required: ['id'],
+      properties: {
+        id: {
+          bsonType: 'string',
+        },
+      },
+    },
+
     video_info: {
       bsonType: 'object',
       required: [
