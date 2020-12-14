@@ -2,6 +2,9 @@ const database = require('./database');
 
 async function applyAll() {
   apply('video_info', module.exports.collections.video_info);
+  apply('sources', module.exports.collections.sources);
+  apply('captions', module.exports.collections.captions);
+  apply('playlists', module.exports.collections.playlists);
 }
 
 async function apply(collectionName, schema) {
@@ -16,6 +19,9 @@ async function apply(collectionName, schema) {
 
 async function validateAll() {
   validate('video_info', module.exports.collections.video_info);
+  validate('sources', module.exports.collections.sources);
+  validate('captions', module.exports.collections.captions);
+  validate('playlists', module.exports.collections.playlists);
 }
 
 async function validate(collectionName, schema) {
@@ -37,6 +43,10 @@ async function validate(collectionName, schema) {
       )}`
     );
   }
+
+  console.log(
+    `all documents in '${collectionName}' collection meet schema rules`
+  );
 }
 
 module.exports = {
@@ -122,6 +132,117 @@ module.exports = {
         },
         title: {
           bsonType: 'string',
+        },
+      },
+    },
+
+    sources: {
+      bsonType: 'object',
+      required: ['keyPoints'],
+      properties: {
+        keyPoints: {
+          bsonType: ['array', 'null'],
+          items: {
+            bsonType: 'object',
+            required: ['title', 'content'],
+            properties: {
+              title: {
+                bsonType: 'string',
+              },
+              content: {
+                bsonType: 'array',
+                items: {
+                  bsonType: 'object',
+                  required: ['type'],
+                  properties: {
+                    type: {
+                      bsonType: 'string',
+                    },
+                  },
+                },
+              },
+            },
+          },
+        },
+      },
+    },
+
+    captions: {
+      bsonType: 'object',
+      required: ['captions'],
+      properties: {
+        captions: {
+          bsonType: 'object',
+          required: ['srt'],
+          properties: {
+            srt: {
+              bsonType: 'object',
+              required: ['en'],
+              properties: {
+                en: {
+                  bsonType: 'string',
+                },
+              },
+            },
+          },
+        },
+        transcript: {
+          bsonType: 'object',
+          required: ['en'],
+          properties: {
+            en: {
+              bsonType: 'string',
+            },
+          },
+        },
+      },
+    },
+
+    playlists: {
+      bsonType: 'object',
+      required: [
+        'id',
+        'description',
+        'publishedAt',
+        'thumbnails',
+        'title',
+        'videos',
+      ],
+      properties: {
+        description: {
+          bsonType: 'string',
+        },
+        title: {
+          bsonType: 'string',
+        },
+        publishedAt: {
+          bsonType: 'string',
+        },
+        thumbnails: {
+          bsonType: 'object',
+          properties: {
+            defaultUrl: {
+              bsonType: ['string', 'null'],
+            },
+            mediumUrl: {
+              bsonType: ['string', 'null'],
+            },
+            highUrl: {
+              bsonType: ['string', 'null'],
+            },
+            standardUrl: {
+              bsonType: ['string', 'null'],
+            },
+            maxresUrl: {
+              bsonType: ['string', 'null'],
+            },
+          },
+        },
+        videos: {
+          bsonType: 'array',
+          items: {
+            bsonType: 'string',
+          },
         },
       },
     },
