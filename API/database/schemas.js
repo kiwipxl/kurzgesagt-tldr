@@ -7,6 +7,9 @@ async function applyAll() {
   apply('playlists', module.exports.collections.playlists);
 }
 
+// Applies a JSON schema to a collection.
+// Whenever we insert or update a document in that collection, it will be validated
+// against the schema.
 async function apply(collectionName, schema) {
   await database.db().command({
     collMod: collectionName,
@@ -24,6 +27,8 @@ async function validateAll() {
   validate('playlists', module.exports.collections.playlists);
 }
 
+// Searches through all existing documents in a given collection and throws
+// an error if any of them do not meet the given JSON schema.
 async function validate(collectionName, schema) {
   const cursor = database
     .db()

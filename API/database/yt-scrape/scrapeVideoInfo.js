@@ -13,6 +13,7 @@ module.exports = async (google, videoId) => {
   const videoInfo = videoInfoRes.data.items[0];
   const thumbnails = videoInfo.snippet.thumbnails;
 
+  // Save the data we want to the database.
   await database
     .db()
     .collection('video_info')

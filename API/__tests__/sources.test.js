@@ -7,8 +7,11 @@ describe('validate sources', () => {
   /*
   Generates sources from a sample site.
   The results must have the correct structure with all the right types.
+
+  NOTE: in the future this can be done more simply by using the jest-json-schema package.
+  https://github.com/americanexpress/jest-json-schema  
   */
-  test('make sure sources generator types are valid', () => {
+  test('make sure sources generator matches valid schema', () => {
     const sourcesStr = fs.readFileSync(
       path.join(__dirname, 'sources_corona.html')
     );

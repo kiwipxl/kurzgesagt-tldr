@@ -40,10 +40,13 @@ async function scrapeVideoList(google, pageToken, maxResults) {
   return playlistItemsRes.data.nextPageToken;
 }
 
+// Fetches the latest uploaded videos on the Kurzgesagt youtube channel.
+// For any new video found, it will be added to the database.
+// Set pageLimit to 0 to search through fetch ALL uploaded videos.
 module.exports = async function (google, pageLimit) {
   console.log('scraping uploaded videos list...');
 
-  // the maximum number of results youtube can return
+  // The maximum number of results yt-api can return.
   const numItemsPerPage = 50;
 
   let currentPage = 0;

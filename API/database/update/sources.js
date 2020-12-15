@@ -7,6 +7,14 @@ function removeWhitespace(str) {
   return str.replace(/[\t\n\r]/g, '');
 }
 
+// This function is pretty out there.
+// Basically, some of Kurzgesagt's youtube videos have sources such as
+// https://sites.google.com/view/sourceslargeststar
+// They are formatted in a very loose way, so this function attempts to parse them
+// and organise them into a structure.
+//
+// It returns a list of 'key points' from the data.
+// A key point is a bold title that contains text content within it or citations.
 module.exports.generate = (htmlString) => {
   let keyPoints = [];
   const $ = cheerio.load(htmlString);

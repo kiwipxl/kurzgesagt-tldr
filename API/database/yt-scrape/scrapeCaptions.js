@@ -1,6 +1,9 @@
 const database = require('../database');
 
 // Fetches the english SRT captions/subtitles for a given youtube id and saves it to the database.
+//
+// NOTE: the yt-api uses a LOT of quota for captions and the free account only has a very limited
+// amount. Something to be weary of...
 module.exports = async (google, videoId) => {
   const youtube = google.youtube('v3');
 
