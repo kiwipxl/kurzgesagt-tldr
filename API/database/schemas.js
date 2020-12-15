@@ -50,10 +50,10 @@ async function validate(collectionName, schema) {
 }
 
 module.exports = {
-  apply: apply,
-  applyAll: applyAll,
-  validate: validate,
-  validateAll: validateAll,
+  apply,
+  applyAll,
+  validate,
+  validateAll,
 
   collections: {
     video_list: {

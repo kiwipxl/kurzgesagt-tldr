@@ -1,6 +1,9 @@
 const request = require('request');
 const database = require('../database');
 
+// Most Kurzgesagt video descriptions contain a soundtrack link to soundcloud.
+// Given the description, try and find this soundtrack url.
+// Returns empty string if it could not be found.
 async function findSoundTrackUrl(description) {
   const pattern = /Soundtrack[a-zA-Z0-9\n: \\n]*Soundcloud: *(http[s]?:\/\/[a-zA-Z0-9\-\*\?\=\&\.\/]+)/g;
   const matches = pattern.exec(description);
@@ -34,7 +37,7 @@ async function findSoundTrackUrl(description) {
 }
 
 // Updates some additional data or metadata for the given video.
-module.exports.update = async (videoId) => {
+async function update(videoId) {
   const dbVideoInfo = await database
     .db()
     .collection('video_info')
@@ -63,4 +66,9 @@ module.exports.update = async (videoId) => {
     );
 
   console.log(`updated misc data for video ${videoId}`);
+}
+
+module.exports = {
+  findSoundTrackUrl,
+  update,
 };
