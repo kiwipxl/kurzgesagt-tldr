@@ -1,6 +1,7 @@
 const cheerio = require('cheerio');
 const request = require('request');
 const database = require('../database');
+const util = require('../../util');
 
 function removeWhitespace(str) {
   return str.replace(/[\t\n\r]/g, '');
@@ -11,9 +12,7 @@ module.exports.generate = (htmlString) => {
   const $ = cheerio.load(htmlString);
 
   function parseCitation(linkEl) {
-    // test if link text is a url.
-    const urlRegex = /(http[s]?:\/\/[a-zA-Z0-9\-\*\?\=\&\.\/]+)/g;
-    if (!urlRegex.test($(linkEl).text())) {
+    if (!util.isUrl($(linkEl).text())) {
       return null;
     }
 
