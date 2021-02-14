@@ -31,7 +31,7 @@ code {
 
 .video-feed {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-row-gap: 35px;
   grid-column-gap: 20px;
 }

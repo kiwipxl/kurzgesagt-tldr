@@ -47,7 +47,7 @@ export async function getStaticProps(context) {
   }
 
   let page = 0;
-  const maxItems = 10;
+  const maxItems = 20;
   while (true) {
     const items = await fetchItems(page * maxItems, maxItems);
     if (items.length == 0) {
