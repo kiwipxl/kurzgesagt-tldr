@@ -1,9 +1,11 @@
 const { MongoClient } = require('mongodb');
+const path = require('path');
+const fs = require('fs');
 
-// Includes password, but this is a free account so it's whatever!
-// Use your own credentials to connect to your own database.
+const credentials = JSON.parse(fs.readFileSync(path.join(__dirname, '../database_credentials.json')));
+
 const uri =
-  'mongodb+srv://admin:admin_password@kurzgesagt-tldr.u4ny2.mongodb.net/kurzgesagt-tldr?retryWrites=true&w=majority';
+  `mongodb+srv://${credentials.user}:${credentials.password}@${credentials.clusterUrl}?retryWrites=true&w=majority`;
 const client = new MongoClient(uri, {
   useUnifiedTopology: true,
 });

@@ -6,6 +6,7 @@ const database = require('../database');
 
 // Fetches new uploaded videos from kurzgesagt's youtube channel and saves it to the database.
 module.exports.scrapeNew = async (google, limit) => {
+  // Scrape only the first page (50 items), as we're only looking for new uploads
   await scrapeVideoList(google, 1);
 
   const videosCursor = database

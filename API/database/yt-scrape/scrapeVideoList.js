@@ -31,6 +31,7 @@ async function scrapeVideoList(google, pageToken, maxResults) {
 
       await database.db().collection('video_list').insertOne({
         id: videoId,
+        publishedAt: playlistItem.snippet.publishedAt,
       });
 
       await scrapeVideoInfo(google, videoId);

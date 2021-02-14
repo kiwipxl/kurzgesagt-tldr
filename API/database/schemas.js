@@ -63,9 +63,12 @@ module.exports = {
   collections: {
     video_list: {
       bsonType: 'object',
-      required: ['id'],
+      required: ['id', 'publishedAt'],
       properties: {
         id: {
+          bsonType: 'string',
+        },
+        publishedAt: {
           bsonType: 'string',
         },
       },

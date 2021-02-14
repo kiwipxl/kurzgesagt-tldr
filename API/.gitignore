@@ -1,4 +1,7 @@
 credentials.json
+database_credentials.json
+youtube_credentials.json
+*_credentials.json
 node_modules
 package-lock.json
 /export
